@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kam-theorem-suite-enhanced"
+version = "0.1.0"
+description = "Paper-facing certified proof package for golden-threshold maximality"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "mpmath", "pandas"]
+
+[project.optional-dependencies]
+dev = ["pytest", "nbformat", "nbclient"]
+
+[tool.setuptools]
+packages = ["kam_theorem_suite"]

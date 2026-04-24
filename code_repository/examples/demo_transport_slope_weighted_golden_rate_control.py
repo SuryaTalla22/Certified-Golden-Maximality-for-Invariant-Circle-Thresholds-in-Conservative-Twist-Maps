@@ -1,0 +1,5 @@
+from kam_theorem_suite.transport_slope_weighted_golden_rate_control import build_transport_slope_weighted_golden_rate_certificate
+from tests.test_certified_tail_modulus_control import _synthetic_ladder
+
+cert = build_transport_slope_weighted_golden_rate_certificate(_synthetic_ladder(), min_chain_length=5)
+print(cert.to_dict())
