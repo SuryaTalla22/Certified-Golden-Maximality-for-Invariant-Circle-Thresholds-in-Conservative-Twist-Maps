@@ -148,7 +148,4 @@ The manifest lists every JSON file in `artifacts/final_discharge/stage_cache/`.
 
 The heavy Theorem-IV regeneration path is not launched automatically from this
 paper-facing snapshot.  The cached Theorem-IV artifacts are included for the
-standard referee replay.  If a future archival environment exposes a one-command
-heavy regeneration path, wire it into `scripts/replay_full.py`, record the
-hardware/runtime in `RELEASE_INFO.md`, regenerate the cache, and update both
-`ARTIFACT_MANIFEST.tsv` and `HASHES.sha256`.
+standard referee replay. 
