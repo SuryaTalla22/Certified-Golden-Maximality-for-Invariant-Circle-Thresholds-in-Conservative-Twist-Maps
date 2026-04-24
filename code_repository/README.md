@@ -152,9 +152,3 @@ standard referee replay.  If a future archival environment exposes a one-command
 heavy regeneration path, wire it into `scripts/replay_full.py`, record the
 hardware/runtime in `RELEASE_INFO.md`, regenerate the cache, and update both
 `ARTIFACT_MANIFEST.tsv` and `HASHES.sha256`.
-
-## Release metadata
-
-Before public deposit, complete `RELEASE_INFO.md` with the repository URL,
-release tag, commit hash, archive DOI, Python version, operating system, runtime
-notes, and hardware notes for heavy Theorem-IV regeneration.
