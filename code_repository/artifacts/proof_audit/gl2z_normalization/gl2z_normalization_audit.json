@@ -1,0 +1,1365 @@
+{
+  "accepted_distinct_nongolden_count": 0,
+  "accepted_distinct_representative_count": 1,
+  "accepted_matrix_witness_count": 14,
+  "analytic_conjugacy_claimed": false,
+  "candidate_count": 58,
+  "certified": true,
+  "claimed_analytic_conjugacy_outside_Dnorm": false,
+  "duplicate_golden_representative_count": 0,
+  "failure_fields": [],
+  "gl2z_audit": {
+    "active_assumptions": [],
+    "audit_metadata": {
+      "phase": "phase6_gl2z_normalization",
+      "status": "passed"
+    },
+    "claim": "GL(2,Z) is used only as a certified representative-selection normalization inside Dnorm",
+    "derived_booleans": {
+      "gl2z_normalization_certified": {
+        "certified": true,
+        "derived_from": [
+          "representative_selection_convention_certified",
+          "golden_orbit_representative_unique_in_Dnorm",
+          "no_analytic_conjugacy_claim_used",
+          "golden_eta_inside_positive_domain_left",
+          "golden_eta_inside_positive_domain_right"
+        ],
+        "diagnostic_only": false,
+        "margin": 0.3819660112491051,
+        "name": "gl2z_normalization_certified",
+        "notes": "",
+        "source_artifact": "phase6-gl2z-normalization-audit",
+        "theorem_facing": true,
+        "trusted_as_input": false,
+        "value": true
+      },
+      "golden_orbit_representative_unique_in_Dnorm": {
+        "certified": true,
+        "derived_from": [
+          "one_accepted_distinct_representative",
+          "accepted_distinct_representative_exists",
+          "accepted_golden_representative_exists",
+          "duplicate_golden_representative_count_zero",
+          "nongolden_accepted_count_zero",
+          "candidate_records",
+          "Dnorm"
+        ],
+        "diagnostic_only": false,
+        "margin": 0.5,
+        "name": "golden_orbit_representative_unique_in_Dnorm",
+        "notes": "",
+        "source_artifact": "phase6-gl2z-normalization-audit",
+        "theorem_facing": true,
+        "trusted_as_input": false,
+        "value": true
+      },
+      "no_analytic_conjugacy_claim_used": {
+        "certified": true,
+        "derived_from": [
+          "analytic_conjugacy_claimed_false",
+          "certified_universe_normalization"
+        ],
+        "diagnostic_only": false,
+        "margin": 0.5,
+        "name": "no_analytic_conjugacy_claim_used",
+        "notes": "",
+        "source_artifact": "phase6-gl2z-normalization-audit",
+        "theorem_facing": true,
+        "trusted_as_input": false,
+        "value": true
+      },
+      "representative_selection_convention_certified": {
+        "certified": true,
+        "derived_from": [
+          "normalization_type_is_representative_selection",
+          "normalization_group_is_GL2Z",
+          "representative_rule_matches_certified_convention",
+          "certified_universe_normalization"
+        ],
+        "diagnostic_only": false,
+        "margin": 0.5,
+        "name": "representative_selection_convention_certified",
+        "notes": "",
+        "source_artifact": "phase6-gl2z-normalization-audit",
+        "theorem_facing": true,
+        "trusted_as_input": false,
+        "value": true
+      }
+    },
+    "derived_inequalities": {
+      "accepted_distinct_representative_exists": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "lhs:accepted_distinct_representative_exists",
+        "lhs_value": 1.0,
+        "margin": 0.5,
+        "name": "accepted_distinct_representative_exists",
+        "recomputed_margin": 0.5,
+        "rhs_label": "rhs:accepted_distinct_representative_exists",
+        "rhs_value": 0.5,
+        "sense": ">",
+        "source_artifact": "phase6-gl2z-normalization-audit",
+        "source_fields": [
+          "candidate_records",
+          "Dnorm"
+        ],
+        "theorem_facing": true
+      },
+      "accepted_golden_representative_exists": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "lhs:accepted_golden_representative_exists",
+        "lhs_value": 1.0,
+        "margin": 0.5,
+        "name": "accepted_golden_representative_exists",
+        "recomputed_margin": 0.5,
+        "rhs_label": "rhs:accepted_golden_representative_exists",
+        "rhs_value": 0.5,
+        "sense": ">",
+        "source_artifact": "phase6-gl2z-normalization-audit",
+        "source_fields": [
+          "candidate_records",
+          "Dnorm",
+          "golden_representative_eta"
+        ],
+        "theorem_facing": true
+      },
+      "analytic_conjugacy_claimed_false": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "lhs:analytic_conjugacy_claimed_false",
+        "lhs_value": 0.0,
+        "margin": 0.5,
+        "name": "analytic_conjugacy_claimed_false",
+        "recomputed_margin": 0.5,
+        "rhs_label": "rhs:analytic_conjugacy_claimed_false",
+        "rhs_value": 0.5,
+        "sense": "<",
+        "source_artifact": "phase6-gl2z-normalization-audit",
+        "source_fields": [
+          "certified_universe_normalization"
+        ],
+        "theorem_facing": true
+      },
+      "duplicate_golden_representative_count_zero": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "lhs:duplicate_golden_representative_count_zero",
+        "lhs_value": 0.0,
+        "margin": 0.5,
+        "name": "duplicate_golden_representative_count_zero",
+        "recomputed_margin": 0.5,
+        "rhs_label": "rhs:duplicate_golden_representative_count_zero",
+        "rhs_value": 0.5,
+        "sense": "<",
+        "source_artifact": "phase6-gl2z-normalization-audit",
+        "source_fields": [
+          "candidate_records",
+          "Dnorm"
+        ],
+        "theorem_facing": true
+      },
+      "golden_eta_inside_positive_domain_left": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "lhs:golden_eta_inside_positive_domain_left",
+        "lhs_value": 0.6180339887488949,
+        "margin": 0.6180339887488949,
+        "name": "golden_eta_inside_positive_domain_left",
+        "recomputed_margin": 0.6180339887488949,
+        "rhs_label": "rhs:golden_eta_inside_positive_domain_left",
+        "rhs_value": 0.0,
+        "sense": ">",
+        "source_artifact": "phase6-gl2z-normalization-audit",
+        "source_fields": [
+          "golden_representative_eta",
+          "normalization_domain_numeric_interval"
+        ],
+        "theorem_facing": true
+      },
+      "golden_eta_inside_positive_domain_right": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "lhs:golden_eta_inside_positive_domain_right",
+        "lhs_value": 1.0,
+        "margin": 0.3819660112491051,
+        "name": "golden_eta_inside_positive_domain_right",
+        "recomputed_margin": 0.3819660112491051,
+        "rhs_label": "rhs:golden_eta_inside_positive_domain_right",
+        "rhs_value": 0.6180339887508949,
+        "sense": ">",
+        "source_artifact": "phase6-gl2z-normalization-audit",
+        "source_fields": [
+          "golden_representative_eta",
+          "normalization_domain_numeric_interval"
+        ],
+        "theorem_facing": true
+      },
+      "nongolden_accepted_count_zero": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "lhs:nongolden_accepted_count_zero",
+        "lhs_value": 0.0,
+        "margin": 0.5,
+        "name": "nongolden_accepted_count_zero",
+        "recomputed_margin": 0.5,
+        "rhs_label": "rhs:nongolden_accepted_count_zero",
+        "rhs_value": 0.5,
+        "sense": "<",
+        "source_artifact": "phase6-gl2z-normalization-audit",
+        "source_fields": [
+          "candidate_records",
+          "Dnorm"
+        ],
+        "theorem_facing": true
+      },
+      "normalization_group_is_GL2Z": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "lhs:normalization_group_is_GL2Z",
+        "lhs_value": 1.0,
+        "margin": 0.5,
+        "name": "normalization_group_is_GL2Z",
+        "recomputed_margin": 0.5,
+        "rhs_label": "rhs:normalization_group_is_GL2Z",
+        "rhs_value": 0.5,
+        "sense": ">",
+        "source_artifact": "phase6-gl2z-normalization-audit",
+        "source_fields": [
+          "certified_universe_normalization"
+        ],
+        "theorem_facing": true
+      },
+      "normalization_type_is_representative_selection": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "lhs:normalization_type_is_representative_selection",
+        "lhs_value": 1.0,
+        "margin": 0.5,
+        "name": "normalization_type_is_representative_selection",
+        "recomputed_margin": 0.5,
+        "rhs_label": "rhs:normalization_type_is_representative_selection",
+        "rhs_value": 0.5,
+        "sense": ">",
+        "source_artifact": "phase6-gl2z-normalization-audit",
+        "source_fields": [
+          "certified_universe_normalization"
+        ],
+        "theorem_facing": true
+      },
+      "one_accepted_distinct_representative": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "lhs:one_accepted_distinct_representative",
+        "lhs_value": 1.0,
+        "margin": 0.5,
+        "name": "one_accepted_distinct_representative",
+        "recomputed_margin": 0.5,
+        "rhs_label": "rhs:one_accepted_distinct_representative",
+        "rhs_value": 1.5,
+        "sense": "<",
+        "source_artifact": "phase6-gl2z-normalization-audit",
+        "source_fields": [
+          "candidate_records",
+          "Dnorm"
+        ],
+        "theorem_facing": true
+      },
+      "representative_rule_matches_certified_convention": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "lhs:representative_rule_matches_certified_convention",
+        "lhs_value": 1.0,
+        "margin": 0.5,
+        "name": "representative_rule_matches_certified_convention",
+        "recomputed_margin": 0.5,
+        "rhs_label": "rhs:representative_rule_matches_certified_convention",
+        "rhs_value": 0.5,
+        "sense": ">",
+        "source_artifact": "phase6-gl2z-normalization-audit",
+        "source_fields": [
+          "certified_universe_normalization"
+        ],
+        "theorem_facing": true
+      }
+    },
+    "failure_fields": [],
+    "open_hypotheses": [],
+    "proof_payload_version": "v2",
+    "raw_interval_fields": {
+      "golden_representative_eta": {
+        "diagnostic_only": false,
+        "hi": 0.6180339887508949,
+        "label": "golden_representative_eta",
+        "lo": 0.6180339887488949,
+        "ordered": true,
+        "outward_rounded": true,
+        "source_artifact": "CERTIFIED_UNIVERSE.json:/arithmetic_domain/golden_eta",
+        "source_json_pointer": "/arithmetic_domain/golden_eta",
+        "theorem_facing": true,
+        "width": 1.999955756559757e-12
+      },
+      "nearest_rejected_gap_to_golden": {
+        "diagnostic_only": true,
+        "hi": 0.03785526045543077,
+        "label": "nearest_rejected_gap_to_golden",
+        "lo": 0.037855260453430774,
+        "ordered": true,
+        "outward_rounded": true,
+        "source_artifact": "bounded-gl2z-projective-enumeration",
+        "source_json_pointer": "/candidate_records",
+        "theorem_facing": false,
+        "width": 1.9999973899231804e-12
+      },
+      "normalization_domain_numeric_interval": {
+        "diagnostic_only": false,
+        "hi": 1.0,
+        "label": "normalization_domain_numeric_interval",
+        "lo": 0.0,
+        "ordered": true,
+        "outward_rounded": true,
+        "source_artifact": "CERTIFIED_UNIVERSE.json:/normalization",
+        "source_json_pointer": "/normalization",
+        "theorem_facing": true,
+        "width": 1.0
+      }
+    },
+    "raw_symbolic_fields": {
+      "Dnorm": {
+        "accept_only_canonical_golden_value": true,
+        "accepted_rule": "continued-fraction-positive-reduced-golden-orbit",
+        "canonical_golden_eta": 0.6180339887498949,
+        "canonical_tolerance": 1e-12,
+        "domain_label": "certified-positive-reduced-cf-representative-domain",
+        "equality_allowed_only_for": "golden-orbit-canonical-representative",
+        "interval_open": true,
+        "normalization_type": "representative_selection",
+        "numeric_interval": [
+          0.0,
+          1.0
+        ]
+      },
+      "candidate_records": [
+        {
+          "accepted_by_Dnorm": true,
+          "canonical_golden": true,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            -1,
+            -1,
+            -2
+          ],
+          "representative_label": "golden-canonical",
+          "representative_value": 0.6180339887498949,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": true,
+          "canonical_golden": true,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            0,
+            0,
+            -1
+          ],
+          "representative_label": "golden-canonical",
+          "representative_value": 0.6180339887498949,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": true,
+          "canonical_golden": true,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "representative_label": "golden-canonical",
+          "representative_value": 0.6180339887498949,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": true,
+          "canonical_golden": true,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "representative_label": "golden-canonical",
+          "representative_value": 0.6180339887498949,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": true,
+          "canonical_golden": true,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            -2,
+            -2,
+            -3
+          ],
+          "representative_label": "golden-canonical",
+          "representative_value": 0.6180339887498948,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": true,
+          "canonical_golden": true,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            0,
+            -1,
+            -1,
+            -1
+          ],
+          "representative_label": "golden-canonical",
+          "representative_value": 0.6180339887498948,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": true,
+          "canonical_golden": true,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "representative_label": "golden-canonical",
+          "representative_value": 0.6180339887498948,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": true,
+          "canonical_golden": true,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            2,
+            2,
+            3
+          ],
+          "representative_label": "golden-canonical",
+          "representative_value": 0.6180339887498948,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": true,
+          "canonical_golden": true,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            1,
+            1,
+            0
+          ],
+          "representative_label": "golden-canonical",
+          "representative_value": 0.6180339887498947,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": true,
+          "canonical_golden": true,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            -1,
+            -1,
+            0
+          ],
+          "representative_label": "golden-canonical",
+          "representative_value": 0.6180339887498947,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": true,
+          "canonical_golden": true,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -2,
+            1,
+            1,
+            -1
+          ],
+          "representative_label": "golden-canonical",
+          "representative_value": 0.6180339887498952,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": true,
+          "canonical_golden": true,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            2,
+            -1,
+            -1,
+            1
+          ],
+          "representative_label": "golden-canonical",
+          "representative_value": 0.6180339887498952,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": true,
+          "canonical_golden": true,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -3,
+            2,
+            2,
+            -1
+          ],
+          "representative_label": "golden-canonical",
+          "representative_value": 0.6180339887498939,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": true,
+          "canonical_golden": true,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            3,
+            -2,
+            -2,
+            1
+          ],
+          "representative_label": "golden-canonical",
+          "representative_value": 0.6180339887498939,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -2,
+            -1,
+            -3,
+            -2
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.5801787282954641,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            2,
+            -1,
+            3
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.5801787282954641,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            -2,
+            1,
+            -3
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.5801787282954641,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            2,
+            1,
+            3,
+            2
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.5801787282954641,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            -2,
+            -1,
+            -3
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.7236067977499789,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            -1,
+            -2,
+            -1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.7236067977499789,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            0,
+            -3,
+            1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.7236067977499789,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            0,
+            3,
+            -1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.7236067977499789,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            1,
+            2,
+            1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.7236067977499789,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            2,
+            1,
+            3
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.7236067977499789,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            0,
+            -1,
+            1,
+            -2
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.723606797749979,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            0,
+            1,
+            -1,
+            2
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.723606797749979,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -2,
+            -1,
+            -3,
+            -1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.7834576353408995,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            2,
+            -2,
+            3
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.7834576353408995,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            -2,
+            2,
+            -3
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.7834576353408995,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            2,
+            1,
+            3,
+            1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.7834576353408995,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            0,
+            -1,
+            1,
+            -3
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.4198212717045359,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            0,
+            1,
+            -1,
+            3
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.4198212717045359,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            -1,
+            -3,
+            -2
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.41982127170453587,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            1,
+            3,
+            2
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.41982127170453587,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -2,
+            1,
+            -1,
+            0
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.3819660112501053,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            2,
+            -1,
+            1,
+            0
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.3819660112501053,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            -1,
+            -2,
+            -3
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.38196601125010515,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            0,
+            -1,
+            -1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.38196601125010515,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            0,
+            -1,
+            -1,
+            -2
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.38196601125010515,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            0,
+            1,
+            1,
+            2
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.38196601125010515,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.38196601125010515,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            1,
+            2,
+            3
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.38196601125010515,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            1,
+            0,
+            1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.3819660112501051,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            -1,
+            0,
+            -1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.3819660112501051,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -3,
+            2,
+            -1,
+            1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.38196601125010476,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            3,
+            -2,
+            1,
+            -1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.38196601125010476,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -2,
+            1,
+            -3,
+            1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.2763932022500211,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            2,
+            -1,
+            3,
+            -1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.2763932022500211,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            0,
+            -2,
+            -1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.27639320225002106,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            0,
+            2,
+            1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.27639320225002106,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            1,
+            -1,
+            2
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.276393202250021,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            0,
+            -1,
+            -1,
+            -3
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.276393202250021,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            0,
+            1,
+            1,
+            3
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.276393202250021,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            -1,
+            1,
+            -2
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.276393202250021,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            0,
+            -3,
+            -1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.21654236465910048,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            -1,
+            1,
+            -2,
+            3
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.21654236465910046,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": -1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            -1,
+            2,
+            -3
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.21654236465910046,
+          "source": "bounded-gl2z-projective-enumeration"
+        },
+        {
+          "accepted_by_Dnorm": false,
+          "canonical_golden": false,
+          "determinant": 1,
+          "in_numeric_domain": true,
+          "matrix": [
+            1,
+            0,
+            3,
+            1
+          ],
+          "representative_label": "golden-orbit-noncanonical-rejected",
+          "representative_value": 0.21654236465910048,
+          "source": "bounded-gl2z-projective-enumeration"
+        }
+      ],
+      "certified_universe_normalization": {
+        "analytic_conjugacy_claimed": false,
+        "claimed_analytic_conjugacy_outside_Dnorm": false,
+        "convention": "continued-fraction-positive-reduced-golden-orbit",
+        "equality_case": "golden orbit unique in certified normalization domain",
+        "group": "GL(2,Z)",
+        "normalization_type": "representative_selection",
+        "representative_rule": "continued-fraction-positive-reduced-golden-orbit",
+        "threshold_invariance_scope": "certified-normalization-domain-only"
+      },
+      "matrix_bound": 3,
+      "no_analytic_conjugacy_verification": {
+        "analytic_conjugacy_claimed": false,
+        "certified": true,
+        "claimed_analytic_conjugacy_outside_Dnorm": false,
+        "failure_fields": [],
+        "group": "GL(2,Z)",
+        "normalization_type": "representative_selection",
+        "representative_rule": "continued-fraction-positive-reduced-golden-orbit",
+        "threshold_invariance_scope": "certified-normalization-domain-only"
+      },
+      "unique_representative_verification": {
+        "accepted_distinct_golden_count": 1,
+        "accepted_distinct_nongolden_count": 0,
+        "accepted_distinct_representative_count": 1,
+        "accepted_matrix_witness_count": 14,
+        "accepted_representative_clusters": [
+          {
+            "accepted_by_Dnorm": true,
+            "canonical_golden": true,
+            "matrix_witness_count": 14,
+            "matrix_witnesses": [
+              [
+                -1,
+                -1,
+                -1,
+                -2
+              ],
+              [
+                -1,
+                0,
+                0,
+                -1
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                2
+              ],
+              [
+                -1,
+                -2,
+                -2,
+                -3
+              ],
+              [
+                0,
+                -1,
+                -1,
+                -1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2,
+                3
+              ],
+              [
+                -1,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                -1,
+                -1,
+                0
+              ],
+              [
+                -2,
+                1,
+                1,
+                -1
+              ],
+              [
+                2,
+                -1,
+                -1,
+                1
+              ],
+              [
+                -3,
+                2,
+                2,
+                -1
+              ],
+              [
+                3,
+                -2,
+                -2,
+                1
+              ]
+            ],
+            "representative_labels": [
+              "golden-canonical"
+            ],
+            "representative_value": 0.6180339887498949
+          }
+        ],
+        "candidate_count": 58,
+        "certified": true,
+        "duplicate_golden_representative_count": 0,
+        "failure_fields": [],
+        "nearest_rejected_gap_to_golden": 0.03785526045443077,
+        "rejected_in_domain_count": 44
+      }
+    },
+    "shell_payload": {
+      "accepted_distinct_representative_count": 1,
+      "analytic_conjugacy_claimed": false,
+      "candidate_count": 58,
+      "failure_fields": [],
+      "golden_orbit_representative_unique_in_Dnorm": true,
+      "normalization_type": "representative_selection"
+    },
+    "source_artifacts": [
+      "CERTIFIED_UNIVERSE.json",
+      "phase5-arithmetic-domain-grammar-audit"
+    ],
+    "theorem_layer": "VIII.GL2Z",
+    "validator_recomputed": true
+  },
+  "golden_orbit_representative_unique_in_Dnorm": true,
+  "normalization_type": "representative_selection",
+  "status": "passed",
+  "validator_failures": []
+}

@@ -1,0 +1,39 @@
+{
+  "active_assumptions": [
+    "Phase 5C uses nextafter outward rounding and conservative inflations but is not an independently verified formal interval proof.",
+    "Fourier residual, frame, reducibility, and nonlinear constants still need a formal outward-rounded implementation/replay in Phase 5E or later.",
+    "Branch/chart compatibility and final theorem graph consumption remain to be validated by the final replay gate.",
+    "The scaffold certifies only a direct lower anchor candidate, not a full parameter interval or mesh corridor."
+  ],
+  "certificate_path": "artifacts/proof_audit/theorem_iii_trackb/phase5d_certificate_scaffold_selected_seed/theorem_iii_trackb_phase5d_certificate_scaffold.json",
+  "diagnostic_only": true,
+  "failed_replay_checks": [],
+  "negative_controls_passed": true,
+  "next_phase_recommendation": "Proceed to Phase 5E theorem-facing replay gate and formal certificate promotion only if independent interval checks are attached.",
+  "open_hypotheses": [
+    "Independent formal interval arithmetic backend reproduces or improves the Phase 5C bounds.",
+    "Final replay rejects this scaffold unless promoted by a theorem-facing Phase 5E certificate.",
+    "The lower anchor is consumed by the threshold-identification layer with matching branch/chart labels."
+  ],
+  "promotion_allowed": false,
+  "replay_passed": true,
+  "replay_path": "artifacts/proof_audit/theorem_iii_trackb/phase5d_certificate_scaffold_selected_seed/phase5d_replay_summary.json",
+  "schema": "theorem_iii_trackb_phase5d_compact_report_v1",
+  "selected_candidate": {
+    "K": 0.971635,
+    "M": 8192,
+    "Q_interval_upper": 551.0006605725524,
+    "Y_interval_upper": 7.06239340228929e-08,
+    "Z_interval_upper": 0.22895403677540946,
+    "cutoff_spec": "full",
+    "nu": 1.001,
+    "radii_margin_interval_lower": 2.2564834368199524e-05,
+    "radii_relative_margin_interval_lower": 0.7521611456066508,
+    "radius": 3e-05,
+    "recommendation_label": "backend_ready_candidate",
+    "record_path": "artifacts/proof_audit/theorem_iii_trackb/phase5c_interval_backend_selected_seed_stress/records/K0p971635_M8192_nu1p001_full_tail0p9_g4_r3em05.phase5c_interval_backend.json",
+    "tail_start_frac": 0.9
+  },
+  "status": "phase5d-certificate-scaffold-assembled",
+  "theorem_facing": false
+}

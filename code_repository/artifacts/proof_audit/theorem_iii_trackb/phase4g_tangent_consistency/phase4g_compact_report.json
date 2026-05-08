@@ -1,0 +1,55 @@
+{
+  "counts": {
+    "completed_records": 3,
+    "tasks": 3
+  },
+  "diagnostic_only": true,
+  "parameters": {
+    "force_sign": null,
+    "grid_factors": [
+      1,
+      2,
+      4
+    ]
+  },
+  "schema": "theorem_iii_trackb_phase4g_summary_v1",
+  "status": "phase4g-tangent-consistency-complete",
+  "top_candidates": [
+    {
+      "K": 0.971635,
+      "M": 4096,
+      "best_native_scalar_residual_linf": 7.334671481284971e-09,
+      "best_sign": 1,
+      "max_derivative_vs_tangent_x_linf_best_sign": 1.7763568394002505e-15,
+      "max_scalar_residual_linf_over_grids_best_sign": 7.4457026100205326e-09,
+      "max_tangent_residual_linf_over_grids_best_sign": 0.00011216270299740927,
+      "npz_path": "artifacts/proof_audit/theorem_iii_trackb/phase4f_lsq_polish_M4096_os2/embeddings/K0p9716350000_M4096_lsqdealias2_full_fromM1024.npz",
+      "recommendation_label": "high_frequency_derivative_or_aliasing_suspected",
+      "record_path": "artifacts/proof_audit/theorem_iii_trackb/phase4g_tangent_consistency/records/K0p9716350000_M4096_lsqdealias2_full_fromM1024.phase4g_tangent_consistency.json"
+    },
+    {
+      "K": 0.971635,
+      "M": 4096,
+      "best_native_scalar_residual_linf": 1.055676692220083e-13,
+      "best_sign": 1,
+      "max_derivative_vs_tangent_x_linf_best_sign": 1.7763568394002505e-15,
+      "max_scalar_residual_linf_over_grids_best_sign": 1.6209144887424642e-08,
+      "max_tangent_residual_linf_over_grids_best_sign": 0.00021761426630928504,
+      "npz_path": "artifacts/proof_audit/theorem_iii_trackb/phase4c_refined_seeds/embeddings/K0p9716350000_M4096_fromM1024.npz",
+      "recommendation_label": "seed_residual_too_large_for_interval_prep",
+      "record_path": "artifacts/proof_audit/theorem_iii_trackb/phase4g_tangent_consistency/records/K0p9716350000_M4096_fromM1024.phase4g_tangent_consistency.json"
+    },
+    {
+      "K": 0.971635,
+      "M": 4096,
+      "best_native_scalar_residual_linf": 1.0696588045541223e-06,
+      "best_sign": 1,
+      "max_derivative_vs_tangent_x_linf_best_sign": 1.7763568394002505e-15,
+      "max_scalar_residual_linf_over_grids_best_sign": 1.0696588045541223e-06,
+      "max_tangent_residual_linf_over_grids_best_sign": 0.01376413823709588,
+      "npz_path": "artifacts/proof_audit/theorem_iii_trackb/phase4f_lsq_polish_M4096_os4_from_os2/embeddings/K0p9716350000_M4096_lsqdealias4_full_fromM1024.npz",
+      "recommendation_label": "seed_residual_too_large_for_interval_prep",
+      "record_path": "artifacts/proof_audit/theorem_iii_trackb/phase4g_tangent_consistency/records/K0p9716350000_M4096_lsqdealias4_full_fromM1024.phase4g_tangent_consistency.json"
+    }
+  ]
+}

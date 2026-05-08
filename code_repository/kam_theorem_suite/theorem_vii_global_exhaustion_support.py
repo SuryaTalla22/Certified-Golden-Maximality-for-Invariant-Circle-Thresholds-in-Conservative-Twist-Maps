@@ -24,6 +24,54 @@ def _termination_labels(termination: Mapping[str, Any], key: str) -> list[str]:
             if isinstance(rr, Mapping): labels.extend(str(x) for x in rr.get('retired_classes', []))
     return sorted(set(labels))
 
+
+
+def _domain_grammar_audit_summary(support: Mapping[str, Any], undischarged: Sequence[str]) -> dict[str, Any]:
+    """Lightweight Phase-5 route-count summary emitted with VII support.
+
+    The proof-carrying Phase-5 audit lives in kam_theorem_suite.audit; this
+    in-module summary keeps Theorem-VII support self-describing without storing
+    a downstream theorem artifact.
+    """
+    certs = support.get('support_certificates', support)
+    if not isinstance(certs, Mapping):
+        certs = {}
+    ranking = dict(certs.get('exact_near_top_lagrange_spectrum_ranking_certificate', {}) or {})
+    pruning = dict(certs.get('theorem_level_pruning_certificate', {}) or {})
+    screened = dict(certs.get('screened_panel_global_completeness_certificate', {}) or {})
+    lifecycle = dict(certs.get('deferred_retired_domination_certificate', {}) or {})
+    term = dict(certs.get('termination_search_exclusion_certificate', {}) or {})
+    omitted = dict(certs.get('omitted_class_global_control_certificate', {}) or {})
+    counts = {
+        'generated_record_count': 0,
+        'screened_count': len(screened.get('theorem_level_complete_records', []) or screened.get('screened_panel_labels', []) or []),
+        'ranked_count': len(ranking.get('ranking_records', []) or []),
+        'pruned_count': len(pruning.get('dominated_region_records', []) or []),
+        'lifecycle_count': len(lifecycle.get('domination_records', []) or []),
+        'termination_count': len(term.get('promotion_records', []) or []),
+        'omitted_count': len(omitted.get('control_records', []) or []),
+        'uncontrolled_count': 0,
+        'certified': not bool(undischarged),
+    }
+    counts['generated_record_count'] = sum(counts[k] for k in ('screened_count','ranked_count','pruned_count','lifecycle_count','termination_count','omitted_count'))
+    if ranking.get('unranked_labels'):
+        counts['uncontrolled_count'] += len(ranking.get('unranked_labels') or [])
+    if pruning.get('unproved_pruning_labels'):
+        counts['uncontrolled_count'] += len(pruning.get('unproved_pruning_labels') or [])
+    if screened.get('missing_completion_labels'):
+        counts['uncontrolled_count'] += len(screened.get('missing_completion_labels') or [])
+    if lifecycle.get('uncontrolled_deferred_labels'):
+        counts['uncontrolled_count'] += len(lifecycle.get('uncontrolled_deferred_labels') or [])
+    if lifecycle.get('uncontrolled_retired_labels'):
+        counts['uncontrolled_count'] += len(lifecycle.get('uncontrolled_retired_labels') or [])
+    if term.get('unpromoted_candidate_labels'):
+        counts['uncontrolled_count'] += len(term.get('unpromoted_candidate_labels') or [])
+    if omitted.get('uncontrolled_omitted_labels'):
+        counts['uncontrolled_count'] += len(omitted.get('uncontrolled_omitted_labels') or [])
+    counts['certified'] = counts['generated_record_count'] > 0 and counts['uncontrolled_count'] == 0 and not bool(undischarged)
+    return counts
+
+
 def build_theorem_vii_global_exhaustion_support_certificate(*, screen: Mapping[str, Any], termination: Mapping[str, Any] | None = None, theorem_vi_certificate: Mapping[str, Any] | None = None, reference_lower_bound: float | None = None, eta_cut: float | None = None, omitted_labels: Sequence[str] | None = None) -> dict[str, Any]:
     screen = dict(screen); termination = {} if termination is None else dict(termination); theorem_vi_certificate = {} if theorem_vi_certificate is None else dict(theorem_vi_certificate)
     labels = _screened_labels(screen)
@@ -42,4 +90,4 @@ def build_theorem_vii_global_exhaustion_support_certificate(*, screen: Mapping[s
     if not deferred.get('proves_deferred_or_retired_classes_are_globally_dominated'): undischarged.append('deferred_or_retired_classes_are_globally_dominated')
     if not term.get('proves_termination_search_promotes_to_theorem_exclusion'): undischarged.append('termination_search_promotes_to_theorem_exclusion')
     if not omitted.get('omitted_classes_globally_controlled'): undischarged.append('omitted_nongolden_irrationals_outside_screened_panel_controlled')
-    return {'status': 'theorem-vii-global-exhaustion-support-certified' if not undischarged else 'theorem-vii-global-exhaustion-support-frontier', 'support_certificates': support, 'all_vii_assumptions_dischargeable': not undischarged, 'discharged_vii_assumptions': [x for x in _STAGE106_ASSUMPTIONS if x not in undischarged], 'undischarged_vii_assumptions': undischarged, 'screened_panel_labels': labels, 'notes': 'Stage 106 aggregates exact ranking, pruning, finite-panel completion, deferred/retired domination, termination promotion, and omitted-tail control into one theorem-facing support payload for Theorem VII.'}
+    return {'status': 'theorem-vii-global-exhaustion-support-certified' if not undischarged else 'theorem-vii-global-exhaustion-support-frontier', 'support_certificates': support, 'domain_grammar_audit': _domain_grammar_audit_summary(support, undischarged), 'all_vii_assumptions_dischargeable': not undischarged, 'discharged_vii_assumptions': [x for x in _STAGE106_ASSUMPTIONS if x not in undischarged], 'undischarged_vii_assumptions': undischarged, 'screened_panel_labels': labels, 'notes': 'Stage 106 aggregates exact ranking, pruning, finite-panel completion, deferred/retired domination, termination promotion, and omitted-tail control into one theorem-facing support payload for Theorem VII.'}

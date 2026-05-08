@@ -24,10 +24,10 @@ def main() -> int:
     args = parser.parse_args()
     message = (
         "Full archival replay is not configured in this paper-facing snapshot. "
-        "Use scripts/replay_minimal.py for smoke checks and "
-        "scripts/replay_downstream_from_cache.py for the cache-backed referee replay. "
-        "Wire the heavy Theorem-IV regeneration command here before describing this "
-        "script as a full one-command reproduction path."
+        "Use scripts/replay_minimal.py for smoke checks, "
+        "scripts/replay_downstream_from_cache.py for the cache-backed referee replay, "
+        "and scripts/replay_full_verified.py for the Phase-7 tiered heavy audit protocol. "
+        "This script remains a fail-closed sentinel rather than a theorem dependency."
     )
     if args.acknowledge_archival_stub:
         print(message)

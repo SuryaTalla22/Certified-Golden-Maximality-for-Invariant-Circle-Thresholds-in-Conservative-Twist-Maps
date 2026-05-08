@@ -1,0 +1,163 @@
+{
+  "config": {
+    "K_target": 0.05,
+    "M": 32,
+    "accept_linf": 1e-06,
+    "continuation_steps": 4,
+    "damping_min": 0.0001,
+    "gmres_atol": 1e-13,
+    "gmres_maxiter": 200,
+    "gmres_restart": 40,
+    "gmres_rtol": 1e-08,
+    "max_newton": 8,
+    "newton_tol": 1e-11,
+    "nu": 1.015,
+    "omega": 0.6180339887498949,
+    "phase_pin_index": 0,
+    "verbose": false
+  },
+  "continuation_success_count": 4,
+  "continuation_total_count": 4,
+  "converged": true,
+  "diagnostic_only": true,
+  "elapsed_seconds": 0.014279842376708984,
+  "estimated_nu_from_decay": 26.738393055709725,
+  "estimated_strip_width": 3.2861004747187863,
+  "max_abs_r": 0.6222586320445903,
+  "max_abs_u": 0.0022889572220911956,
+  "mean_u": -1.1231656880592022e-18,
+  "output_npz": "artifacts/proof_audit/theorem_iii_trackb/phase1_seed_sanity/embeddings/K0p0500000000_M32_steps4.npz",
+  "phase_pin_value": 0.0,
+  "promotion_allowed": false,
+  "record_path": "artifacts/proof_audit/theorem_iii_trackb/phase1_seed_sanity/records/K0p0500000000_M32_steps4.json",
+  "residual_l1_nu": 1.3780832370025366e-14,
+  "residual_l2": 5.723494128259721e-15,
+  "residual_linf": 9.645279366865545e-15,
+  "schema": "theorem_iii_trackb_phase1_seed_v1",
+  "solve_status": "converged-target",
+  "step_records": [
+    {
+      "K": 0.01844501153432564,
+      "accepted": true,
+      "correction_linf": 0.0008448060351626633,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.002075793104507424,
+      "residual_linf": 0.0029356147610749505
+    },
+    {
+      "K": 0.01844501153432564,
+      "accepted": true,
+      "correction_linf": 2.2114622278298788e-08,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 2.312141260182559e-08,
+      "residual_linf": 4.135523434551508e-08
+    },
+    {
+      "K": 0.01844501153432564,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 2.9816252521997055e-16,
+      "residual_linf": 4.2370620900733513e-16
+    },
+    {
+      "K": 0.03350615111533883,
+      "accepted": true,
+      "correction_linf": 0.0006895739118502809,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0016949845071729493,
+      "residual_linf": 0.002397021045488625
+    },
+    {
+      "K": 0.03350615111533883,
+      "accepted": true,
+      "correction_linf": 2.6701860382155165e-08,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 2.8004122455242943e-08,
+      "residual_linf": 5.00525180946107e-08
+    },
+    {
+      "K": 0.03350615111533883,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 7.402565576214697e-16,
+      "residual_linf": 1.3444106938820255e-15
+    },
+    {
+      "K": 0.04455905897939923,
+      "accepted": true,
+      "correction_linf": 0.0005057860382908625,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.001243915313440147,
+      "residual_linf": 0.00175904317709523
+    },
+    {
+      "K": 0.04455905897939923,
+      "accepted": true,
+      "correction_linf": 1.903582044549601e-08,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 2.0057067462358745e-08,
+      "residual_linf": 3.5809170235816257e-08
+    },
+    {
+      "K": 0.04455905897939923,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 4.1123403218368224e-15,
+      "residual_linf": 7.729060447214664e-15
+    },
+    {
+      "K": 0.05,
+      "accepted": true,
+      "correction_linf": 0.0002488642451563764,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0006123437772398685,
+      "residual_linf": 0.0008658815174895562
+    },
+    {
+      "K": 0.05,
+      "accepted": true,
+      "correction_linf": 5.156065882706194e-09,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 5.453640181875316e-09,
+      "residual_linf": 9.727534364817325e-09
+    },
+    {
+      "K": 0.05,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 5.723494054322723e-15,
+      "residual_linf": 9.645279366865545e-15
+    }
+  ],
+  "tail_ratio_top_10pct": 7.451752235442397e-16,
+  "theorem_facing": false,
+  "weighted_coeff_l1_nu": 0.0023582368338203987
+}

@@ -1,0 +1,431 @@
+{
+  "K": 0.968,
+  "M": 256,
+  "diagnostic_only": true,
+  "elapsed_seconds": 0.024810314178466797,
+  "finite_resolved_cohomology": {
+    "max_inverse": 31.673949008509837,
+    "max_inverse_mode": 89,
+    "note": "finite double-precision diagnostic multiplier bound; theorem phase must intervalize/exactify"
+  },
+  "max_mode": 128,
+  "npz_path": "artifacts/proof_audit/theorem_iii_trackb/phase1_seed/embeddings/K0p9680000000_M256_steps44.npz",
+  "nu_grid": [
+    1.002,
+    1.003,
+    1.005,
+    1.008
+  ],
+  "omega": 0.6180339887498949,
+  "phase": "TrackB-Phase3-small-divisor-cohomology-audit",
+  "promotion_allowed": false,
+  "recommendation": {
+    "label": "strong_phase3_candidate",
+    "note": "Diagnostic only. Phase 4 must validate automatic reducibility/radii bounds with outward rounding.",
+    "reasons": [
+      "residual_linf<1e-10",
+      "rep_cohomology_correction_l1_nu<1e-8",
+      "zero_mode_residual_abs<1e-12",
+      "finite_max_inverse<500"
+    ],
+    "representative_correction_l1_nu": 2.8680302004925347e-12,
+    "representative_nu_used": 1.003,
+    "representative_residual_l1_nu": 2.0873161816447542e-12,
+    "score": 6
+  },
+  "record_path": "artifacts/proof_audit/theorem_iii_trackb/phase3_small_divisor/records/K0p9680000000_M256_steps44.phase3_small_divisor_audit.json",
+  "residual_linf": 8.577860644010116e-13,
+  "schema": "theorem_iii_trackb_phase3_small_divisor_audit_v1",
+  "small_divisor_diagnostics": {
+    "diagnostic_tail_inverse_at_max_mode_plus_one": 80.625,
+    "diagnostic_tail_inverse_bound_form": "|inv_k| <= k/(4c) for c=0.40, not theorem-facing",
+    "diagnostic_tail_inverse_slope": 0.625,
+    "golden_diagnostic_diophantine_constant_c": 0.4,
+    "max_inverse": 31.673949008509844,
+    "max_inverse_mode": 89,
+    "max_mode": 128,
+    "min_denominator": 0.03157168686895751,
+    "min_denominator_mode": 89,
+    "min_k_times_denominator": 1.864064847626455,
+    "min_k_times_dist": 0.3819660112501051,
+    "min_k_times_dist_mode": 1,
+    "omega": 0.6180339887498949,
+    "worst_modes_by_denominator": [
+      {
+        "denominator_abs_exp_minus_1": 0.03157168686895751,
+        "dist_to_integer": 0.0050249987406445484,
+        "inverse_abs": 31.673949008509844,
+        "k": 89,
+        "k_times_denominator": 2.8098801313372186,
+        "k_times_dist": 0.4472248879173648
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.0510806292927736,
+        "dist_to_integer": 0.008130618755778585,
+        "inverse_abs": 19.576892725193392,
+        "k": 55,
+        "k_times_denominator": 2.809434611102548,
+        "k_times_dist": 0.44718403156782216
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.08263565239474235,
+        "dist_to_integer": 0.013155617496426686,
+        "inverse_abs": 12.101314275624022,
+        "k": 34,
+        "k_times_denominator": 2.8096121814212403,
+        "k_times_dist": 0.4472909948785073
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.10212793286361427,
+        "dist_to_integer": 0.01626123751155717,
+        "inverse_abs": 9.79164046466543,
+        "k": 110,
+        "k_times_denominator": 11.234072614997569,
+        "k_times_dist": 1.7887361262712886
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.1141700819997185,
+        "dist_to_integer": 0.018180616237074787,
+        "inverse_abs": 8.758862063377213,
+        "k": 123,
+        "k_times_denominator": 14.042920085965376,
+        "k_times_dist": 2.236215797160199
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.1336457052571388,
+        "dist_to_integer": 0.021286236252207047,
+        "inverse_abs": 7.482470148037803,
+        "k": 21,
+        "k_times_denominator": 2.806559810399915,
+        "k_times_dist": 0.447010961296348
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.16513017202104854,
+        "dist_to_integer": 0.026311234992853372,
+        "inverse_abs": 6.055828488282163,
+        "k": 68,
+        "k_times_denominator": 11.2288516974313,
+        "k_times_dist": 1.7891639795140293
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.18456856577922853,
+        "dist_to_integer": 0.029416855007987408,
+        "inverse_abs": 5.418040692780529,
+        "k": 76,
+        "k_times_denominator": 14.027210999221369,
+        "k_times_dist": 2.235680980607043
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.2159825287926004,
+        "dist_to_integer": 0.03444185374863373,
+        "inverse_abs": 4.630004128529586,
+        "k": 13,
+        "k_times_denominator": 2.8077728743038053,
+        "k_times_dist": 0.4477440987322385
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.24734266715006298,
+        "dist_to_integer": 0.03946685248928361,
+        "inverse_abs": 4.042974111673581,
+        "k": 102,
+        "k_times_denominator": 25.228952049306425,
+        "k_times_dist": 4.025618953906928
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.2666939755206134,
+        "dist_to_integer": 0.042572472504414094,
+        "inverse_abs": 3.7496160085652464,
+        "k": 42,
+        "k_times_denominator": 11.201146971865763,
+        "k_times_dist": 1.788043845185392
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.29795047749817133,
+        "dist_to_integer": 0.047597471245062195,
+        "inverse_abs": 3.3562624513872024,
+        "k": 47,
+        "k_times_denominator": 14.003672442414052,
+        "k_times_dist": 2.237081148517923
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.3172314273430944,
+        "dist_to_integer": 0.05070309126019623,
+        "inverse_abs": 3.152272800886379,
+        "k": 97,
+        "k_times_denominator": 30.771448452280158,
+        "k_times_dist": 4.918199852239034
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.34836390075862517,
+        "dist_to_integer": 0.05572809000084078,
+        "inverse_abs": 2.870561495672542,
+        "k": 8,
+        "k_times_denominator": 2.7869112060690013,
+        "k_times_dist": 0.44582472000672624
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.3794095589711313,
+        "dist_to_integer": 0.06075308874148533,
+        "inverse_abs": 2.635674237390757,
+        "k": 81,
+        "k_times_denominator": 30.732174276661638,
+        "k_times_dist": 4.921000188060312
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.39855004650412823,
+        "dist_to_integer": 0.06385870875661936,
+        "inverse_abs": 2.5090951783131756,
+        "k": 63,
+        "k_times_denominator": 25.10865292976008,
+        "k_times_dist": 4.02309865166702
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.4294388580825095,
+        "dist_to_integer": 0.06888370749726747,
+        "inverse_abs": 2.3286202009410775,
+        "k": 26,
+        "k_times_denominator": 11.165410310145246,
+        "k_times_dist": 1.790976394928954
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.44847617258638667,
+        "dist_to_integer": 0.07198932751239795,
+        "inverse_abs": 2.229772864482287,
+        "k": 118,
+        "k_times_denominator": 52.920188365193624,
+        "k_times_dist": 8.494740646462958
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.46022064989912725,
+        "dist_to_integer": 0.07390870623791557,
+        "inverse_abs": 2.172870774527791,
+        "k": 115,
+        "k_times_denominator": 52.92537473839963,
+        "k_times_dist": 8.49950121736029
+      },
+      {
+        "denominator_abs_exp_minus_1": 0.47918798523499867,
+        "dist_to_integer": 0.0770143262530496,
+        "inverse_abs": 2.086863675243422,
+        "k": 29,
+        "k_times_denominator": 13.89645157181496,
+        "k_times_dist": 2.2334154613384385
+      }
+    ]
+  },
+  "source_npz_schema": "theorem_iii_trackb_phase1_embedding_npz_v1",
+  "tail_start_fracs": [
+    0.5,
+    0.75,
+    0.85,
+    0.9
+  ],
+  "theorem_facing": false,
+  "weighted_cohomology_norms": {
+    "nu_1.002000": {
+      "cohomology_correction_l1_nu": 2.669653167353515e-12,
+      "correction_tail_ratios": {
+        "frac_0.500": {
+          "tail_start_mode": 64.0,
+          "weighted_tail_l1": 1.5945494896243998e-12,
+          "weighted_tail_ratio": 0.5972871341954548
+        },
+        "frac_0.750": {
+          "tail_start_mode": 96.0,
+          "weighted_tail_l1": 7.068274968124705e-13,
+          "weighted_tail_ratio": 0.26476379233680153
+        },
+        "frac_0.850": {
+          "tail_start_mode": 108.8,
+          "weighted_tail_l1": 5.861896382004498e-13,
+          "weighted_tail_ratio": 0.21957520376384781
+        },
+        "frac_0.900": {
+          "tail_start_mode": 115.2,
+          "weighted_tail_l1": 1.613092569067839e-13,
+          "weighted_tail_ratio": 0.06042330100381289
+        }
+      },
+      "correction_to_u_l1_nu_ratio": 2.9212386194334804e-11,
+      "nu": 1.002,
+      "residual_l1_nu": 1.9657824514567365e-12,
+      "residual_tail_ratios": {
+        "frac_0.500": {
+          "tail_start_mode": 64.0,
+          "weighted_tail_l1": 9.040350042479712e-13,
+          "weighted_tail_ratio": 0.45988558071522057
+        },
+        "frac_0.750": {
+          "tail_start_mode": 96.0,
+          "weighted_tail_l1": 5.164892354346297e-13,
+          "weighted_tail_ratio": 0.2627397731889849
+        },
+        "frac_0.850": {
+          "tail_start_mode": 108.8,
+          "weighted_tail_l1": 3.7712119803528837e-13,
+          "weighted_tail_ratio": 0.19184279407714927
+        },
+        "frac_0.900": {
+          "tail_start_mode": 115.2,
+          "weighted_tail_l1": 1.3922414118066752e-13,
+          "weighted_tail_ratio": 0.07082377863201289
+        }
+      },
+      "u_l1_nu": 0.09138771306094962
+    },
+    "nu_1.003000": {
+      "cohomology_correction_l1_nu": 2.8680302004925347e-12,
+      "correction_tail_ratios": {
+        "frac_0.500": {
+          "tail_start_mode": 64.0,
+          "weighted_tail_l1": 1.7558359255949795e-12,
+          "weighted_tail_ratio": 0.6122097059136424
+        },
+        "frac_0.750": {
+          "tail_start_mode": 96.0,
+          "weighted_tail_l1": 7.905148110712405e-13,
+          "weighted_tail_ratio": 0.2756298768874481
+        },
+        "frac_0.850": {
+          "tail_start_mode": 108.8,
+          "weighted_tail_l1": 6.568906466568638e-13,
+          "weighted_tail_ratio": 0.22903895731085894
+        },
+        "frac_0.900": {
+          "tail_start_mode": 115.2,
+          "weighted_tail_l1": 1.822033205137901e-13,
+          "weighted_tail_ratio": 0.06352908016188248
+        }
+      },
+      "correction_to_u_l1_nu_ratio": 3.122296169092255e-11,
+      "nu": 1.003,
+      "residual_l1_nu": 2.0873161816447542e-12,
+      "residual_tail_ratios": {
+        "frac_0.500": {
+          "tail_start_mode": 64.0,
+          "weighted_tail_l1": 9.972250870930104e-13,
+          "weighted_tail_ratio": 0.47775468607119276
+        },
+        "frac_0.750": {
+          "tail_start_mode": 96.0,
+          "weighted_tail_l1": 5.774721022360899e-13,
+          "weighted_tail_ratio": 0.2766577039521899
+        },
+        "frac_0.850": {
+          "tail_start_mode": 108.8,
+          "weighted_tail_l1": 4.231313728052905e-13,
+          "weighted_tail_ratio": 0.20271551407792626
+        },
+        "frac_0.900": {
+          "tail_start_mode": 115.2,
+          "weighted_tail_l1": 1.57202753870773e-13,
+          "weighted_tail_ratio": 0.07531334028508371
+        }
+      },
+      "u_l1_nu": 0.09185644298844196
+    },
+    "nu_1.005000": {
+      "cohomology_correction_l1_nu": 3.3214473313055007e-12,
+      "correction_tail_ratios": {
+        "frac_0.500": {
+          "tail_start_mode": 64.0,
+          "weighted_tail_l1": 2.129960073230623e-12,
+          "weighted_tail_ratio": 0.6412746796118662
+        },
+        "frac_0.750": {
+          "tail_start_mode": 96.0,
+          "weighted_tail_l1": 9.885926964338132e-13,
+          "weighted_tail_ratio": 0.2976391307235467
+        },
+        "frac_0.850": {
+          "tail_start_mode": 108.8,
+          "weighted_tail_l1": 8.246946936495721e-13,
+          "weighted_tail_ratio": 0.24829377418591322
+        },
+        "frac_0.900": {
+          "tail_start_mode": 115.2,
+          "weighted_tail_l1": 2.323834874235752e-13,
+          "weighted_tail_ratio": 0.06996452577564627
+        }
+      },
+      "correction_to_u_l1_nu_ratio": 3.577809549849636e-11,
+      "nu": 1.005,
+      "residual_l1_nu": 2.364313823909037e-12,
+      "residual_tail_ratios": {
+        "frac_0.500": {
+          "tail_start_mode": 64.0,
+          "weighted_tail_l1": 1.2141819400147e-12,
+          "weighted_tail_ratio": 0.5135451680467836
+        },
+        "frac_0.750": {
+          "tail_start_mode": 96.0,
+          "weighted_tail_l1": 7.21777087393892e-13,
+          "weighted_tail_ratio": 0.3052797306748992
+        },
+        "frac_0.850": {
+          "tail_start_mode": 108.8,
+          "weighted_tail_l1": 5.32541522136063e-13,
+          "weighted_tail_ratio": 0.2252414703795902
+        },
+        "frac_0.900": {
+          "tail_start_mode": 115.2,
+          "weighted_tail_l1": 2.0035853383966887e-13,
+          "weighted_tail_ratio": 0.08474278321834881
+        }
+      },
+      "u_l1_nu": 0.09283466000712895
+    },
+    "nu_1.008000": {
+      "cohomology_correction_l1_nu": 4.173465006452313e-12,
+      "correction_tail_ratios": {
+        "frac_0.500": {
+          "tail_start_mode": 64.0,
+          "weighted_tail_l1": 2.8489750716612024e-12,
+          "weighted_tail_ratio": 0.6826402203580464
+        },
+        "frac_0.750": {
+          "tail_start_mode": 96.0,
+          "weighted_tail_l1": 1.381863084556476e-12,
+          "weighted_tail_ratio": 0.33110690575338975
+        },
+        "frac_0.850": {
+          "tail_start_mode": 108.8,
+          "weighted_tail_l1": 1.1593669982104582e-12,
+          "weighted_tail_ratio": 0.2777948290971744
+        },
+        "frac_0.900": {
+          "tail_start_mode": 115.2,
+          "weighted_tail_l1": 3.3443944184552884e-13,
+          "weighted_tail_ratio": 0.08013471811276111
+        }
+      },
+      "correction_to_u_l1_nu_ratio": 4.420252781227284e-11,
+      "nu": 1.008,
+      "residual_l1_nu": 2.8831042631689045e-12,
+      "residual_tail_ratios": {
+        "frac_0.500": {
+          "tail_start_mode": 64.0,
+          "weighted_tail_l1": 1.6337697942683053e-12,
+          "weighted_tail_ratio": 0.5666703820390391
+        },
+        "frac_0.750": {
+          "tail_start_mode": 96.0,
+          "weighted_tail_l1": 1.0081912907942487e-12,
+          "weighted_tail_ratio": 0.3496895008875316
+        },
+        "frac_0.850": {
+          "tail_start_mode": 108.8,
+          "weighted_tail_l1": 7.514440437612351e-13,
+          "weighted_tail_ratio": 0.2606371380184846
+        },
+        "frac_0.900": {
+          "tail_start_mode": 115.2,
+          "weighted_tail_l1": 2.8805267144527573e-13,
+          "weighted_tail_ratio": 0.09991059814419219
+        }
+      },
+      "u_l1_nu": 0.09441688548168392
+    }
+  },
+  "zero_mode_residual_abs": 1.2167062908105844e-17
+}

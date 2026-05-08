@@ -4,14 +4,25 @@ from __future__ import annotations
 
 The minimal replay uses compact theorem-facing shells.  The downstream replay
 uses the same compact theorem-facing fields, but it is required to attach and
-validate provenance from cached heavy I--II/III/IV artifacts.  This module keeps
-those two paths explicit so that a referee can distinguish a smoke test from a
-cache-backed replay.
+validate provenance from cached heavy I--II/III/IV artifacts.  Phase 1 adds a
+third, stricter entry point, :func:`build_shells_from_proof_audit`, which refuses
+to build theorem-facing shells unless a proof-carrying audit bundle derives the
+relevant Booleans from raw interval/symbolic payloads.  This module keeps the
+three paths explicit so that a referee can distinguish a smoke test, a
+cache-provenance replay, and a proof-audit-derived replay.
 """
 
 from copy import deepcopy
 from pathlib import Path
 from typing import Any, Mapping, Sequence
+
+from kam_theorem_suite.audit.proof_payload_validator import (
+    assert_layer_payload_valid,
+    validate_arithmetic_domain_payload,
+    validate_gl2z_normalization_payload,
+    validate_transport_budget_payload,
+    validate_upper_obstruction_payload,
+)
 import hashlib
 
 
@@ -228,6 +239,7 @@ def validate_paper_replay_shells(
     shells: Sequence[Mapping[str, Any]],
     *,
     require_cached_upstream: bool = False,
+    require_proof_audit_payloads: bool = False,
 ) -> None:
     """Fail closed on paper-facing shell inconsistencies before final replay."""
 
@@ -303,6 +315,76 @@ def validate_paper_replay_shells(
         if values:
             raise PaperReplayValidationError(f"Theorem VII failure field is nonempty: {name}")
 
+    _validate_attached_proof_audit_payloads(
+        theorem_iii,
+        theorem_iv,
+        theorem_v,
+        theorem_vii,
+        require_proof_audit_payloads=require_proof_audit_payloads,
+    )
+
+
+def _raise_payload_failures(label: str, failures: Sequence[Any]) -> None:
+    if failures:
+        detail = "; ".join(
+            f"{getattr(f, 'code', 'failure')}: {getattr(f, 'message', f)} at {getattr(f, 'location', '')}"
+            for f in failures
+        )
+        raise PaperReplayValidationError(f"{label} proof-audit payload failed hardened validation: {detail}")
+
+
+def _validate_attached_proof_audit_payloads(
+    theorem_iii: Mapping[str, Any],
+    theorem_iv: Mapping[str, Any],
+    theorem_v: Mapping[str, Any],
+    theorem_vii: Mapping[str, Any],
+    *,
+    require_proof_audit_payloads: bool,
+) -> None:
+    """Validate attached proof-audit payloads when final replay consumes them.
+
+    Compact smoke shells may still exist for lightweight regression testing.
+    Once a shell is marked proof-audit verified, or when the caller asks for the
+    proof-audit path, the final replay refuses to trust compact Booleans and
+    revalidates the embedded payloads using the Phase-8 hardened validators.
+    """
+
+    lower_payload = theorem_iii.get("proof_audit_bundle")
+    upper_payload = theorem_iv.get("upper_obstruction_audit") or theorem_iv.get("proof_audit_bundle")
+    transport_payload = theorem_v.get("transport_budget_audit") or theorem_v.get("proof_audit_bundle")
+    domain_payload = theorem_vii.get("domain_audit_bundle") or theorem_vii.get("proof_audit_bundle")
+    gl2z_shell = theorem_vii.get("theorem_viii_gl2z_normalization") or {}
+    gl2z_payload = None
+    if isinstance(gl2z_shell, Mapping):
+        gl2z_payload = gl2z_shell.get("gl2z_audit_bundle") or gl2z_shell.get("proof_audit_bundle")
+
+    required = {
+        "Theorem III lower": lower_payload,
+        "Theorem IV upper": upper_payload,
+        "Theorem V transport": transport_payload,
+        "Theorem VII domain": domain_payload,
+    }
+    if require_proof_audit_payloads:
+        missing = [name for name, payload in required.items() if payload is None]
+        if missing:
+            raise PaperReplayValidationError(f"proof-audit replay is missing payloads: {missing}")
+
+    if lower_payload is not None:
+        try:
+            assert_layer_payload_valid(lower_payload, require_lower_final_anchor=True)
+        except Exception as exc:
+            raise PaperReplayValidationError(f"Theorem III lower proof-audit payload failed hardened validation: {exc}") from exc
+    if upper_payload is not None:
+        _raise_payload_failures("Theorem IV upper", validate_upper_obstruction_payload(upper_payload))
+    if transport_payload is not None:
+        _raise_payload_failures("Theorem V transport", validate_transport_budget_payload(transport_payload))
+    if domain_payload is not None:
+        _raise_payload_failures("Theorem VII domain", validate_arithmetic_domain_payload(domain_payload))
+    if gl2z_payload is not None:
+        _raise_payload_failures("Theorem VIII GL2Z", validate_gl2z_normalization_payload(gl2z_payload))
+    elif require_proof_audit_payloads:
+        raise PaperReplayValidationError("proof-audit replay is missing Theorem VIII GL(2,Z) normalization payload")
+
 
 def build_shells_from_stage_cache(
     stage_cache_dir: str | Path,
@@ -326,3 +408,47 @@ def build_shells_from_stage_cache(
     shells = tuple(deepcopy(x) for x in (workstream, theorem_iii, theorem_iv, theorem_v, ident, theorem_vi, theorem_vii))
     validate_paper_replay_shells(shells, require_cached_upstream=require_cache)
     return shells
+
+def build_shells_from_proof_audit(
+    audit_bundle: Mapping[str, Any] | str | Path,
+    *,
+    base_shells: Sequence[Mapping[str, Any]] | None = None,
+    allow_missing_layers: bool = False,
+) -> tuple[dict[str, Any], ...]:
+    """Build final replay shells from proof-carrying audit payloads.
+
+    This is the Phase-1 theorem-facing path.  Unlike
+    :func:`build_minimal_theorem_shells` and :func:`build_shells_from_stage_cache`,
+    it does not accept status strings or hash provenance as mathematical input.
+    The audit bundle must contain derived Booleans whose dependencies trace back
+    to raw payload fields, and the proof-audit validator must recompute positive
+    margins.  Missing layers are rejected unless ``allow_missing_layers=True`` is
+    supplied explicitly for diagnostics.
+    """
+
+    import json
+
+    from kam_theorem_suite.audit.artifact_shell_builder import (
+        build_all_shells_from_proof_audits,
+        build_final_replay_shells_from_audit_bundle,
+    )
+
+    if isinstance(audit_bundle, (str, Path)):
+        path = Path(audit_bundle)
+        if path.is_dir():
+            if base_shells is not None or allow_missing_layers:
+                # Directory mode represents the final strict proof-audit path.
+                # Use an explicit JSON bundle for diagnostic partial builds.
+                raise PaperReplayValidationError(
+                    "directory proof-audit mode does not accept base_shells or allow_missing_layers"
+                )
+            return build_all_shells_from_proof_audits(path)
+        payload = json.loads(path.read_text())
+    else:
+        payload = dict(audit_bundle)
+    return build_final_replay_shells_from_audit_bundle(
+        payload,
+        base_shells=base_shells,
+        allow_missing_layers=allow_missing_layers,
+    )
+

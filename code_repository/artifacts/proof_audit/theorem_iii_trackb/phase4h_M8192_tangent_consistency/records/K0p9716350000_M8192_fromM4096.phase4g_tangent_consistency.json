@@ -1,0 +1,175 @@
+{
+  "K": 0.971635,
+  "M": 8192,
+  "best_native_scalar_residual_linf": 1.4577228313328305e-13,
+  "best_sign": 1,
+  "diagnostic_only": true,
+  "grid_rows": [
+    {
+      "derivative_residual_linf": 0.00017222328315269486,
+      "derivative_vs_tangent_x_linf": 1.3322676295501878e-15,
+      "du_linf": 9.484940699906819,
+      "grid_size": 8192,
+      "scalar_residual_linf": 1.4577228313328305e-13,
+      "scalar_residual_rms": 7.104699565237768e-15,
+      "sign": 1,
+      "tangent_combined_linf": 0.00017222328315269486,
+      "tangent_x_residual_linf": 0.00017222328315247282,
+      "tangent_y_residual_linf": 0.00017222328315269486,
+      "u_linf": 0.05063080627606233,
+      "x_tangent_max_abs": 10.484940699906819,
+      "x_tangent_min_abs": 0.3890444554108228
+    },
+    {
+      "derivative_residual_linf": 0.00017222328315313895,
+      "derivative_vs_tangent_x_linf": 1.7763568394002505e-15,
+      "du_linf": 9.484940699906819,
+      "grid_size": 16384,
+      "scalar_residual_linf": 6.585396894465134e-09,
+      "scalar_residual_rms": 5.322493864699196e-10,
+      "sign": 1,
+      "tangent_combined_linf": 0.00017222328315313895,
+      "tangent_x_residual_linf": 0.0001722232831529169,
+      "tangent_y_residual_linf": 0.00017222328315313895,
+      "u_linf": 0.05063095612577175,
+      "x_tangent_max_abs": 10.484940699906819,
+      "x_tangent_min_abs": 0.3890444554108228
+    },
+    {
+      "derivative_residual_linf": 20.37505688502903,
+      "derivative_vs_tangent_x_linf": 3.552713678800501e-15,
+      "du_linf": 9.484940699906819,
+      "grid_size": 8192,
+      "scalar_residual_linf": 0.3092810223579956,
+      "scalar_residual_rms": 0.22500622450294516,
+      "sign": -1,
+      "tangent_combined_linf": 20.375056885029032,
+      "tangent_x_residual_linf": 20.375056885029032,
+      "tangent_y_residual_linf": 20.37505688502903,
+      "u_linf": 0.05063080627606233,
+      "x_tangent_max_abs": 10.484940699906819,
+      "x_tangent_min_abs": 0.3890444554108228
+    },
+    {
+      "derivative_residual_linf": 20.37505688502903,
+      "derivative_vs_tangent_x_linf": 3.552713678800501e-15,
+      "du_linf": 9.484940699906819,
+      "grid_size": 16384,
+      "scalar_residual_linf": 0.30928102564387144,
+      "scalar_residual_rms": 0.22500622450294513,
+      "sign": -1,
+      "tangent_combined_linf": 20.375056885029032,
+      "tangent_x_residual_linf": 20.375056885029032,
+      "tangent_y_residual_linf": 20.37505688502903,
+      "u_linf": 0.05063095612577175,
+      "x_tangent_max_abs": 10.484940699906819,
+      "x_tangent_min_abs": 0.3890444554108228
+    }
+  ],
+  "max_derivative_vs_tangent_x_linf_best_sign": 1.7763568394002505e-15,
+  "max_scalar_residual_linf_over_grids_best_sign": 6.585396894465134e-09,
+  "max_tangent_residual_linf_over_grids_best_sign": 0.00017222328315313895,
+  "metadata": {
+    "K": 0.971635,
+    "npz_keys": [
+      "schema",
+      "diagnostic_only",
+      "theorem_facing",
+      "K",
+      "M",
+      "omega",
+      "theta",
+      "u",
+      "x",
+      "r",
+      "residual",
+      "u_coeff",
+      "residual_coeff",
+      "freq"
+    ],
+    "omega": 0.6180339887498949,
+    "u_source": "direct_u_key"
+  },
+  "npz_path": "artifacts/proof_audit/theorem_iii_trackb/phase4h_native_M8192_refine_compare/embeddings/K0p9716350000_M8192_fromM4096.npz",
+  "omega": 0.6180339887498949,
+  "promotion_allowed": false,
+  "recommendation_label": "high_frequency_derivative_or_aliasing_suspected",
+  "schema": "theorem_iii_trackb_phase4g_tangent_consistency_v1",
+  "spectrum_metrics_native_best_sign": {
+    "derivative_residual_linf": 0.00017222328315269486,
+    "derivative_vs_tangent_x_linf": 1.3322676295501878e-15,
+    "du_linf": 9.484940699906819,
+    "grid_size": 8192,
+    "scalar_residual_l1_coeff": 2.8892446545658514e-13,
+    "scalar_residual_linf": 1.4577228313328305e-13,
+    "scalar_residual_rms": 7.104699565237768e-15,
+    "scalar_residual_tail_l1_frac_0.25": 1.7260423729486806e-13,
+    "scalar_residual_tail_l1_frac_0.50": 1.333365870630683e-13,
+    "scalar_residual_tail_l1_frac_0.75": 8.434435994937969e-14,
+    "scalar_residual_tail_l1_frac_0.90": 3.881097077558704e-14,
+    "scalar_residual_tail_l1_frac_0.95": 2.4722379408518346e-14,
+    "scalar_residual_tail_ratio_frac_0.25": 0.5974026360907266,
+    "scalar_residual_tail_ratio_frac_0.50": 0.46149289175756547,
+    "scalar_residual_tail_ratio_frac_0.75": 0.2919252954784945,
+    "scalar_residual_tail_ratio_frac_0.90": 0.13432912548355627,
+    "scalar_residual_tail_ratio_frac_0.95": 0.08556692964526129,
+    "scalar_residual_top_modes": [
+      {
+        "abs_coeff": 1.9302704965493642e-15,
+        "mode": -1
+      },
+      {
+        "abs_coeff": 1.9302704965493635e-15,
+        "mode": 1
+      },
+      {
+        "abs_coeff": 8.755412794770926e-16,
+        "mode": 988
+      },
+      {
+        "abs_coeff": 8.755412794770926e-16,
+        "mode": -988
+      },
+      {
+        "abs_coeff": 8.723184719788796e-16,
+        "mode": -986
+      },
+      {
+        "abs_coeff": 8.723184719788795e-16,
+        "mode": 986
+      },
+      {
+        "abs_coeff": 8.358797823439052e-16,
+        "mode": 3023
+      },
+      {
+        "abs_coeff": 8.358797823439052e-16,
+        "mode": -3023
+      },
+      {
+        "abs_coeff": 8.348429121184552e-16,
+        "mode": -3025
+      },
+      {
+        "abs_coeff": 8.348429121184552e-16,
+        "mode": 3025
+      },
+      {
+        "abs_coeff": 7.559357522090857e-16,
+        "mode": 4010
+      },
+      {
+        "abs_coeff": 7.559357522090855e-16,
+        "mode": -4010
+      }
+    ],
+    "sign": 1,
+    "tangent_combined_linf": 0.00017222328315269486,
+    "tangent_x_residual_linf": 0.00017222328315247282,
+    "tangent_y_residual_linf": 0.00017222328315269486,
+    "u_linf": 0.05063080627606233,
+    "x_tangent_max_abs": 10.484940699906819,
+    "x_tangent_min_abs": 0.3890444554108228
+  },
+  "theorem_facing": false
+}

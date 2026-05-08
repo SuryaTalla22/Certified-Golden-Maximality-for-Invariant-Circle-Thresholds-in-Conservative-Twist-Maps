@@ -1,0 +1,31 @@
+{
+  "status": "phase2p-diagnostic-modewise-tail-not-closed",
+  "theorem_ready_count": 0,
+  "theorem_eligible_count": 3936,
+  "best_theorem_eligible": {
+    "model_name": "strict_modewise_tail_from_strict_source_tail_radius_x1_08_sg1.000e-07_os16_cut1536",
+    "tail_model": "strict_modewise_geometric_tail_response",
+    "theorem_ready": false,
+    "sigma": 1e-07,
+    "tail_cutoff": 1536,
+    "radii_margin": -2.7440453145471783e-08,
+    "tail_T": 4.798442052833432e-07,
+    "allowable_tail_max": 4.524047521378716e-07,
+    "tail_response_bound": 3.6074502062746955e-07,
+    "nonlinear_guard": 1.1909918465587367e-07,
+    "failure_reasons": [
+      "analytic_radii_margin_not_safely_positive"
+    ]
+  },
+  "conclusion": {
+    "closed": false,
+    "recommended_next_step": "if_modewise_tail_fails_change_the_lower_norm_or_recompute_a_better_finite_inverse",
+    "message": "No theorem-eligible modewise tail row closed.",
+    "best_eligible_margin": -2.7440453145471783e-08,
+    "best_eligible_tail_T": 4.798442052833432e-07,
+    "best_eligible_allowable_tail_max": 4.524047521378716e-07
+  }
+}
+wrote report: artifacts/proof_audit/lower_corridor/phase2p_modewise_tail/phase2p_collar_012b1_d00_p0008_modewise_tail_scan.json
+wrote csv: tables/proof_audit/lower_corridor/phase2p_modewise_tail/phase2p_collar_012b1_d00_p0008_modewise_tail_scan.csv
+wrote candidate: artifacts/proof_audit/lower_corridor/phase2p_modewise_tail/phase2p_collar_012b1_d00_p0008_modewise_tail_candidate.json

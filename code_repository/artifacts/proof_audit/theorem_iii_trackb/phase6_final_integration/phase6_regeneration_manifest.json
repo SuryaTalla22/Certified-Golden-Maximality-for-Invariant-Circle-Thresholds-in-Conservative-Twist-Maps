@@ -1,0 +1,30 @@
+{
+  "commands_file": "artifacts/proof_audit/theorem_iii_trackb/phase6_final_integration/phase6_regenerate_large_artifacts_PLAN.sh",
+  "does_not_generate_large_artifacts": true,
+  "downstream_output_root": "artifacts/proof_audit/final_integration_regenerated",
+  "notes": [
+    "This manifest intentionally does not run the large generators.",
+    "Run the emitted shell script after mapping the command placeholders to the repository's existing generators if the exact final artifact scripts have different names.",
+    "Theorem III should be consumed only through the Phase 6 final artifact path recorded here."
+  ],
+  "recommended_large_artifacts_to_regenerate": [
+    "global theorem graph / theorem dependency manifest",
+    "combined proof audit summary",
+    "paper-facing certificate index",
+    "final Theorem III closure report",
+    "any final PDF/LaTeX tables that quote Theorem III constants"
+  ],
+  "schema": "theorem_iii_trackb_phase6_regeneration_manifest_v1",
+  "status": "phase6-regeneration-manifest-created",
+  "theorem_iii_replacement_policy": {
+    "obsolete_theorem_iii_artifact_should_not_be_used": true,
+    "replacement_artifact": "artifacts/proof_audit/theorem_iii_trackb/phase6_final_integration/theorem_iii_trackb_PHASE6_FINAL_LOWER_ANCHOR_CERTIFICATE.json",
+    "replacement_kind": "promoted_direct_lower_anchor_trackB_certificate"
+  },
+  "theorem_inputs": {
+    "theorem_III_artifact": "artifacts/proof_audit/theorem_iii_trackb/phase6_final_integration/theorem_iii_trackb_PHASE6_FINAL_LOWER_ANCHOR_CERTIFICATE.json",
+    "theorem_II_artifact": "artifacts/final_discharge/stage_cache/theorem_i_ii.json",
+    "theorem_IV_artifact": "artifacts/final_discharge/stage_cache/theorem_iv.json",
+    "theorem_I_artifact": "artifacts/final_discharge/stage_cache/theorem_i_ii.json"
+  }
+}

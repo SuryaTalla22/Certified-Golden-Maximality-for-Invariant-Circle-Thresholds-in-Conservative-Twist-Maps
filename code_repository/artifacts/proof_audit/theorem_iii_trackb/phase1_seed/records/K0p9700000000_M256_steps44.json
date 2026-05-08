@@ -1,0 +1,1613 @@
+{
+  "config": {
+    "K_target": 0.97,
+    "M": 256,
+    "accept_linf": 1e-08,
+    "continuation_steps": 44,
+    "damping_min": 0.0001,
+    "gmres_atol": 1e-13,
+    "gmres_maxiter": 1000,
+    "gmres_restart": 120,
+    "gmres_rtol": 1e-11,
+    "max_newton": 20,
+    "newton_tol": 1e-11,
+    "nu": 1.015,
+    "omega": 0.6180339887498949,
+    "phase_pin_index": 0,
+    "verbose": false
+  },
+  "continuation_success_count": 44,
+  "continuation_total_count": 44,
+  "converged": true,
+  "diagnostic_only": true,
+  "elapsed_seconds": 79.51450443267822,
+  "estimated_nu_from_decay": 1.0660592337549266,
+  "estimated_strip_width": 0.0639688905741267,
+  "max_abs_r": 0.6841962595589602,
+  "max_abs_u": 0.050401980532745846,
+  "mean_u": 6.113165529342268e-15,
+  "output_npz": "artifacts/proof_audit/theorem_iii_trackb/phase1_seed/embeddings/K0p9700000000_M256_steps44.npz",
+  "phase_pin_value": 0.0,
+  "promotion_allowed": false,
+  "record_path": "artifacts/proof_audit/theorem_iii_trackb/phase1_seed/records/K0p9700000000_M256_steps44.json",
+  "residual_l1_nu": 9.676685107471375e-12,
+  "residual_l2": 3.5961650205518146e-13,
+  "residual_linf": 1.72492575778449e-12,
+  "schema": "theorem_iii_trackb_phase1_seed_v1",
+  "solve_status": "converged-target",
+  "step_records": [
+    {
+      "K": 0.03503149676845801,
+      "accepted": true,
+      "correction_linf": 0.0016045695332357987,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.00394242851500596,
+      "residual_linf": 0.00557543587460785
+    },
+    {
+      "K": 0.03503149676845801,
+      "accepted": true,
+      "correction_linf": 1.512954757364471e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.5840562794324643e-07,
+      "residual_linf": 2.8328722678164914e-07
+    },
+    {
+      "K": 0.03503149676845801,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 1.4768985732866208e-15,
+      "residual_linf": 3.908331991375746e-15
+    },
+    {
+      "K": 0.06957754604092879,
+      "accepted": true,
+      "correction_linf": 0.0015823328517741706,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.003887885833448574,
+      "residual_linf": 0.005497895231169976
+    },
+    {
+      "K": 0.06957754604092879,
+      "accepted": true,
+      "correction_linf": 2.8857795274550174e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 3.0597941873190645e-07,
+      "residual_linf": 5.469362582260356e-07
+    },
+    {
+      "K": 0.06957754604092879,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 7.355236817254168e-15,
+      "residual_linf": 2.0405552247915182e-14
+    },
+    {
+      "K": 0.1036335565224702,
+      "accepted": true,
+      "correction_linf": 0.0015600284061066721,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0038329960020625814,
+      "residual_linf": 0.005420126854131478
+    },
+    {
+      "K": 0.1036335565224702,
+      "accepted": true,
+      "correction_linf": 4.074686659018029e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 4.4294754849416784e-07,
+      "residual_linf": 7.909027602281959e-07
+    },
+    {
+      "K": 0.1036335565224702,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 2.1998351495511193e-14,
+      "residual_linf": 5.718342466209947e-14
+    },
+    {
+      "K": 0.13719478123432885,
+      "accepted": true,
+      "correction_linf": 0.0015377199983477837,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0037777289455944475,
+      "residual_linf": 0.005341361303042889
+    },
+    {
+      "K": 0.13719478123432885,
+      "accepted": true,
+      "correction_linf": 5.054900943311114e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 5.695874774634512e-07,
+      "residual_linf": 1.0154782872119628e-06
+    },
+    {
+      "K": 0.13719478123432885,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 4.5013334801670607e-14,
+      "residual_linf": 1.0782347237281442e-13
+    },
+    {
+      "K": 0.17025630823835844,
+      "accepted": true,
+      "correction_linf": 0.001515950997233682,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.003722054871576206,
+      "residual_linf": 0.005261659905078722
+    },
+    {
+      "K": 0.17025630823835844,
+      "accepted": true,
+      "correction_linf": 5.815630278182874e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 6.862414142370967e-07,
+      "residual_linf": 1.2213196302936213e-06
+    },
+    {
+      "K": 0.17025630823835844,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 7.599044467218704e-14,
+      "residual_linf": 1.7791323969618134e-13
+    },
+    {
+      "K": 0.20281305055849538,
+      "accepted": true,
+      "correction_linf": 0.00149508855990931,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.00366594388195441,
+      "residual_linf": 0.005181566347731044
+    },
+    {
+      "K": 0.20281305055849538,
+      "accepted": true,
+      "correction_linf": 6.387354847461745e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 7.933180388065309e-07,
+      "residual_linf": 1.410069051917262e-06
+    },
+    {
+      "K": 0.20281305055849538,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 1.122958156572834e-13,
+      "residual_linf": 2.616726280102455e-13
+    },
+    {
+      "K": 0.23485973520697687,
+      "accepted": true,
+      "correction_linf": 0.0014753911632427526,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.003609365599181928,
+      "residual_linf": 0.005100180132608649
+    },
+    {
+      "K": 0.23485973520697687,
+      "accepted": true,
+      "correction_linf": 6.86259231264658e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 8.912847500915662e-07,
+      "residual_linf": 1.5827231427678612e-06
+    },
+    {
+      "K": 0.23485973520697687,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 1.5240037611596053e-13,
+      "residual_linf": 3.453765051730784e-13
+    },
+    {
+      "K": 0.2663908912096105,
+      "accepted": true,
+      "correction_linf": 0.0014571205596709547,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.00355228880736433,
+      "residual_linf": 0.005018238569125359
+    },
+    {
+      "K": 0.2663908912096105,
+      "accepted": true,
+      "correction_linf": 7.388669922473814e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 9.806529430574867e-07,
+      "residual_linf": 1.74054355560338e-06
+    },
+    {
+      "K": 0.2663908912096105,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 1.9612266355773848e-13,
+      "residual_linf": 4.501399253342697e-13
+    },
+    {
+      "K": 0.2974008365086674,
+      "accepted": true,
+      "correction_linf": 0.0014404034021173863,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0034946811079430255,
+      "residual_linf": 0.0049353699151051394
+    },
+    {
+      "K": 0.2974008365086674,
+      "accepted": true,
+      "correction_linf": 8.052560344514196e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.0619588967346962e-06,
+      "residual_linf": 1.8861835160352558e-06
+    },
+    {
+      "K": 0.2974008365086674,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 2.4610947064046646e-13,
+      "residual_linf": 5.772118893965228e-13
+    },
+    {
+      "K": 0.32788366360337523,
+      "accepted": true,
+      "correction_linf": 0.0014252481585602915,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.003436508588181208,
+      "residual_linf": 0.004851185600535483
+    },
+    {
+      "K": 0.32788366360337523,
+      "accepted": true,
+      "correction_linf": 8.848379316623948e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.1357427609585195e-06,
+      "residual_linf": 2.0197493641668784e-06
+    },
+    {
+      "K": 0.32788366360337523,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 3.0688160838227045e-13,
+      "residual_linf": 7.646175359532492e-13
+    },
+    {
+      "K": 0.3578332237659174,
+      "accepted": true,
+      "correction_linf": 0.001411584377315453,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0033777354994625804,
+      "residual_linf": 0.004766570753952343
+    },
+    {
+      "K": 0.3578332237659174,
+      "accepted": true,
+      "correction_linf": 9.72302951877185e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.202527862782794e-06,
+      "residual_linf": 2.1430408140774015e-06
+    },
+    {
+      "K": 0.3578332237659174,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 3.840224697002052e-13,
+      "residual_linf": 1.001962401936396e-12
+    },
+    {
+      "K": 0.38724310964453146,
+      "accepted": true,
+      "correction_linf": 0.0013994684892233626,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0033183239411596222,
+      "residual_linf": 0.004680695580411724
+    },
+    {
+      "K": 0.38724310964453146,
+      "accepted": true,
+      "correction_linf": 1.0642128031166732e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.26280212724542e-06,
+      "residual_linf": 2.256850842791147e-06
+    },
+    {
+      "K": 0.38724310964453146,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 4.813149658099231e-13,
+      "residual_linf": 1.2688461392684758e-12
+    },
+    {
+      "K": 0.41610663603376036,
+      "accepted": true,
+      "correction_linf": 0.0013886990226412777,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0032582335446008116,
+      "residual_linf": 0.004593448469357116
+    },
+    {
+      "K": 0.41610663603376036,
+      "accepted": true,
+      "correction_linf": 1.1560233190476179e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.3170028616700867e-06,
+      "residual_linf": 2.3610894110126512e-06
+    },
+    {
+      "K": 0.41610663603376036,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 6.003994023815072e-13,
+      "residual_linf": 1.589769982324185e-12
+    },
+    {
+      "K": 0.44441681855391657,
+      "accepted": true,
+      "correction_linf": 0.0013790878973217293,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0031974211504610783,
+      "residual_linf": 0.004505662931461388
+    },
+    {
+      "K": 0.44441681855391657,
+      "accepted": true,
+      "correction_linf": 1.2473986992888352e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.3655055557028243e-06,
+      "residual_linf": 2.458120283030385e-06
+    },
+    {
+      "K": 0.44441681855391657,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 7.408612566523634e-13,
+      "residual_linf": 1.9453744171116227e-12
+    },
+    {
+      "K": 0.4721663499357822,
+      "accepted": true,
+      "correction_linf": 0.0013705040290771249,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0031358404716872166,
+      "residual_linf": 0.004416449121550384
+    },
+    {
+      "K": 0.4721663499357822,
+      "accepted": true,
+      "correction_linf": 1.3424448678863415e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.4086167873543905e-06,
+      "residual_linf": 2.546885311816016e-06
+    },
+    {
+      "K": 0.4721663499357822,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 9.014492568662331e-13,
+      "residual_linf": 2.3470531074210044e-12
+    },
+    {
+      "K": 0.4993475735504656,
+      "accepted": true,
+      "correction_linf": 0.0013629442512331346,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0030734417327899933,
+      "residual_linf": 0.004325764698331833
+    },
+    {
+      "K": 0.4993475735504656,
+      "accepted": true,
+      "correction_linf": 1.4472569925269614e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.4465708845631292e-06,
+      "residual_linf": 2.6287678662750835e-06
+    },
+    {
+      "K": 0.4993475735504656,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 1.0812866726318272e-12,
+      "residual_linf": 2.813430044490417e-12
+    },
+    {
+      "K": 0.5259524537555168,
+      "accepted": true,
+      "correction_linf": 0.0013557571345842912,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.003010171274894122,
+      "residual_linf": 0.004234231521733536
+    },
+    {
+      "K": 0.5259524537555168,
+      "accepted": true,
+      "correction_linf": 1.5652855160239048e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.479529734941503e-06,
+      "residual_linf": 2.704748778573074e-06
+    },
+    {
+      "K": 0.5259524537555168,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 1.2804342714386446e-12,
+      "residual_linf": 3.384278968177057e-12
+    },
+    {
+      "K": 0.55197254254342,
+      "accepted": true,
+      "correction_linf": 0.0013489159435907455,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.002945971114210569,
+      "residual_linf": 0.004141220364355408
+    },
+    {
+      "K": 0.55197254254342,
+      "accepted": true,
+      "correction_linf": 1.6903053582152756e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.507585084702906e-06,
+      "residual_linf": 2.7739464616843845e-06
+    },
+    {
+      "K": 0.55197254254342,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 1.499503482022804e-12,
+      "residual_linf": 4.064457104213659e-12
+    },
+    {
+      "K": 0.5773989418728804,
+      "accepted": true,
+      "correction_linf": 0.0013419059493733204,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0028807784394164395,
+      "residual_linf": 0.0040465866726787925
+    },
+    {
+      "K": 0.5773989418728804,
+      "accepted": true,
+      "correction_linf": 1.8184097248047333e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.5307627895661126e-06,
+      "residual_linf": 2.8361268826632147e-06
+    },
+    {
+      "K": 0.5773989418728804,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 1.7384695046835207e-12,
+      "residual_linf": 4.854838753232116e-12
+    },
+    {
+      "K": 0.6022222609308188,
+      "accepted": true,
+      "correction_linf": 0.0013343005373576777,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0028145250305830717,
+      "residual_linf": 0.003950616168634763
+    },
+    {
+      "K": 0.6022222609308188,
+      "accepted": true,
+      "correction_linf": 1.942407169842328e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.549028700289747e-06,
+      "residual_linf": 2.8902841417571823e-06
+    },
+    {
+      "K": 0.6022222609308188,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 1.994750208957124e-12,
+      "residual_linf": 5.721229046073972e-12
+    },
+    {
+      "K": 0.6264325674054938,
+      "accepted": true,
+      "correction_linf": 0.0013265193330413362,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.002747136578508103,
+      "residual_linf": 0.003853184432780765
+    },
+    {
+      "K": 0.6264325674054938,
+      "accepted": true,
+      "correction_linf": 2.0540410345158373e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.5622960801218506e-06,
+      "residual_linf": 2.9344158925248554e-06
+    },
+    {
+      "K": 0.6264325674054938,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 2.2617802694859436e-12,
+      "residual_linf": 6.58424703647853e-12
+    },
+    {
+      "K": 0.6500193316375731,
+      "accepted": true,
+      "correction_linf": 0.0013183401720660416,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.002678531878223016,
+      "residual_linf": 0.003753907920964389
+    },
+    {
+      "K": 0.6500193316375731,
+      "accepted": true,
+      "correction_linf": 2.1484684399001184e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.5704345678494654e-06,
+      "residual_linf": 2.965479313207786e-06
+    },
+    {
+      "K": 0.6500193316375731,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 2.5289999026614586e-12,
+      "residual_linf": 7.373629484774824e-12
+    },
+    {
+      "K": 0.6729713622408658,
+      "accepted": true,
+      "correction_linf": 0.0013106237912864514,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0026086218635664495,
+      "residual_linf": 0.00365271036499025
+    },
+    {
+      "K": 0.6729713622408658,
+      "accepted": true,
+      "correction_linf": 2.228878632976027e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.5732806631281382e-06,
+      "residual_linf": 2.9814199149075238e-06
+    },
+    {
+      "K": 0.6729713622408658,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 2.7837149356947737e-12,
+      "residual_linf": 8.092151948524418e-12
+    },
+    {
+      "K": 0.6952767314264364,
+      "accepted": true,
+      "correction_linf": 0.0013035430584417138,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.002537308440344769,
+      "residual_linf": 0.0035499321797612116
+    },
+    {
+      "K": 0.6952767314264364,
+      "accepted": true,
+      "correction_linf": 2.307489973551785e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.5706495320808806e-06,
+      "residual_linf": 2.9789321185219597e-06
+    },
+    {
+      "K": 0.6952767314264364,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 3.0152902347198285e-12,
+      "residual_linf": 8.790787542345413e-12
+    },
+    {
+      "K": 0.7169226877925525,
+      "accepted": true,
+      "correction_linf": 0.0012965980145570408,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.002464483062725254,
+      "residual_linf": 0.003445059785119081
+    },
+    {
+      "K": 0.7169226877925525,
+      "accepted": true,
+      "correction_linf": 2.398325774767161e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.5623476861891558e-06,
+      "residual_linf": 2.956836755496628e-06
+    },
+    {
+      "K": 0.7169226877925525,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "residual_l2": 3.222115452943668e-12,
+      "residual_linf": 9.629963493296145e-12
+    },
+    {
+      "K": 0.7378955537148039,
+      "accepted": true,
+      "correction_linf": 0.0012889848383182887,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.002390024979613295,
+      "residual_linf": 0.003337898368649825
+    },
+    {
+      "K": 0.7378955537148039,
+      "accepted": true,
+      "correction_linf": 2.506607756860669e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.5481858925703574e-06,
+      "residual_linf": 2.915791352461894e-06
+    },
+    {
+      "K": 0.7378955537148039,
+      "accepted": true,
+      "correction_linf": 3.609915921666102e-11,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 3.4243045312438748e-12,
+      "residual_linf": 1.0788356319402226e-11
+    },
+    {
+      "K": 0.7378955537148039,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 3,
+      "residual_l2": 5.5282822258879264e-15,
+      "residual_linf": 1.4231671396913725e-14
+    },
+    {
+      "K": 0.7581806036220362,
+      "accepted": true,
+      "correction_linf": 0.001280066250144447,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.002313799054443998,
+      "residual_linf": 0.0032283059282516013
+    },
+    {
+      "K": 0.7581806036220362,
+      "accepted": true,
+      "correction_linf": 2.654326131473165e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.5279916445457232e-06,
+      "residual_linf": 2.8599445209415153e-06
+    },
+    {
+      "K": 0.7581806036220362,
+      "accepted": true,
+      "correction_linf": 7.016490223484162e-11,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 3.690787827787324e-12,
+      "residual_linf": 1.2510423252898306e-11
+    },
+    {
+      "K": 0.7581806036220362,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 3,
+      "residual_l2": 6.20914726456769e-15,
+      "residual_linf": 1.482061001700785e-14
+    },
+    {
+      "K": 0.7777619182796368,
+      "accepted": true,
+      "correction_linf": 0.0012698577904599886,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.002235653012535206,
+      "residual_linf": 0.0031163539092518427
+    },
+    {
+      "K": 0.7777619182796368,
+      "accepted": true,
+      "correction_linf": 2.890572930500961e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.5016206096570677e-06,
+      "residual_linf": 2.81171799090818e-06
+    },
+    {
+      "K": 0.7777619182796368,
+      "accepted": true,
+      "correction_linf": 1.699241988889203e-10,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 4.204230451432547e-12,
+      "residual_linf": 1.5314249868225716e-11
+    },
+    {
+      "K": 0.7777619182796368,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 3,
+      "residual_l2": 5.703335683455114e-15,
+      "residual_linf": 2.4819556132538168e-14
+    },
+    {
+      "K": 0.7966222085781769,
+      "accepted": true,
+      "correction_linf": 0.0012623508012594767,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0021554139566182986,
+      "residual_linf": 0.0030016885630731183
+    },
+    {
+      "K": 0.7966222085781769,
+      "accepted": true,
+      "correction_linf": 3.2983232947026446e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.4689670377616436e-06,
+      "residual_linf": 2.7832108022707303e-06
+    },
+    {
+      "K": 0.7966222085781769,
+      "accepted": true,
+      "correction_linf": 4.192441224490258e-10,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 5.439131204670046e-12,
+      "residual_linf": 2.055675074608132e-11
+    },
+    {
+      "K": 0.7966222085781769,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 3,
+      "residual_l2": 6.103830719489303e-15,
+      "residual_linf": 2.1843638009499955e-14
+    },
+    {
+      "K": 0.8147426000188455,
+      "accepted": true,
+      "correction_linf": 0.0012570051615654336,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0020728838476924954,
+      "residual_linf": 0.0028839490007747104
+    },
+    {
+      "K": 0.8147426000188455,
+      "accepted": true,
+      "correction_linf": 5.03196934795942e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.4299734146847946e-06,
+      "residual_linf": 2.7472163794256543e-06
+    },
+    {
+      "K": 0.8147426000188455,
+      "accepted": true,
+      "correction_linf": 1.1304615537749604e-09,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 8.824743642098433e-12,
+      "residual_linf": 3.53376355954893e-11
+    },
+    {
+      "K": 0.8147426000188455,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 3,
+      "residual_l2": 6.1618733424919424e-15,
+      "residual_linf": 2.1951190865010517e-14
+    },
+    {
+      "K": 0.8321023657414408,
+      "accepted": true,
+      "correction_linf": 0.0012494455392783794,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.001987833593405029,
+      "residual_linf": 0.0027628598790084835
+    },
+    {
+      "K": 0.8321023657414408,
+      "accepted": true,
+      "correction_linf": 9.120249979543519e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.3846436292110792e-06,
+      "residual_linf": 2.6986763395214775e-06
+    },
+    {
+      "K": 0.8321023657414408,
+      "accepted": true,
+      "correction_linf": 3.4502299584390794e-09,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 2.0585305659315992e-11,
+      "residual_linf": 8.641387605479167e-11
+    },
+    {
+      "K": 0.8321023657414408,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 3,
+      "residual_l2": 6.234410526292027e-15,
+      "residual_linf": 2.1094237467877974e-14
+    },
+    {
+      "K": 0.8486785909730115,
+      "accepted": true,
+      "correction_linf": 0.001243433606511147,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.00189999516065049,
+      "residual_linf": 0.002638090461590775
+    },
+    {
+      "K": 0.8486785909730115,
+      "accepted": true,
+      "correction_linf": 1.8817075111746e-05,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.3331139760115094e-06,
+      "residual_linf": 2.646596408195645e-06
+    },
+    {
+      "K": 0.8486785909730115,
+      "accepted": true,
+      "correction_linf": 1.2429021370810945e-08,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 8.556034210456021e-11,
+      "residual_linf": 3.428506367697537e-10
+    },
+    {
+      "K": 0.8486785909730115,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 3,
+      "residual_l2": 3.799709067341453e-15,
+      "residual_linf": 1.1934897514720433e-14
+    },
+    {
+      "K": 0.8644457442003449,
+      "accepted": true,
+      "correction_linf": 0.0012593160590238129,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0018090508411292088,
+      "residual_linf": 0.002509274880797774
+    },
+    {
+      "K": 0.8644457442003449,
+      "accepted": true,
+      "correction_linf": 5.5126946061620605e-05,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.2772789023207946e-06,
+      "residual_linf": 2.633127138482183e-06
+    },
+    {
+      "K": 0.8644457442003449,
+      "accepted": true,
+      "correction_linf": 6.368956305478714e-08,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 1.0547715339185066e-09,
+      "residual_linf": 3.3871424276465945e-09
+    },
+    {
+      "K": 0.8644457442003449,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 3,
+      "residual_l2": 3.882960394144895e-15,
+      "residual_linf": 1.021405182655144e-14
+    },
+    {
+      "K": 0.8793751184609491,
+      "accepted": true,
+      "correction_linf": 0.008205475748278873,
+      "damping": 1.0,
+      "gmres_info": 1000,
+      "iteration": 0,
+      "residual_l2": 0.001714618296471473,
+      "residual_linf": 0.002376015430473638
+    },
+    {
+      "K": 0.8793751184609491,
+      "accepted": true,
+      "correction_linf": 0.007177987085224335,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 2.4024355521097193e-05,
+      "residual_linf": 6.31766960363378e-05
+    },
+    {
+      "K": 0.8793751184609491,
+      "accepted": true,
+      "correction_linf": 0.000721753964775495,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 2.1042395733850687e-05,
+      "residual_linf": 5.1433221136876206e-05
+    },
+    {
+      "K": 0.8793751184609491,
+      "accepted": true,
+      "correction_linf": 1.7079923900001223e-05,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 3,
+      "residual_l2": 1.6029449646489294e-07,
+      "residual_linf": 5.206897454729242e-07
+    },
+    {
+      "K": 0.8793751184609491,
+      "accepted": true,
+      "correction_linf": 1.0692208294442484e-08,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 4,
+      "residual_l2": 9.725734595451026e-11,
+      "residual_linf": 2.9935087741961297e-10
+    },
+    {
+      "K": 0.8793751184609491,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 5,
+      "residual_l2": 6.058590963765158e-15,
+      "residual_linf": 1.7572748811645056e-14
+    },
+    {
+      "K": 0.8934340867502804,
+      "accepted": true,
+      "correction_linf": 0.0013484864980767813,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0016162291444652293,
+      "residual_linf": 0.0022375293549160846
+    },
+    {
+      "K": 0.8934340867502804,
+      "accepted": true,
+      "correction_linf": 0.00026149185645447373,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.1832560512311827e-06,
+      "residual_linf": 2.916898137250712e-06
+    },
+    {
+      "K": 0.8934340867502804,
+      "accepted": true,
+      "correction_linf": 5.40317716887864e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 1.910050685360667e-08,
+      "residual_linf": 5.6805568943163465e-08
+    },
+    {
+      "K": 0.8934340867502804,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 3,
+      "residual_l2": 5.90522046639228e-14,
+      "residual_linf": 1.9606538614880265e-13
+    },
+    {
+      "K": 0.9065850826045436,
+      "accepted": true,
+      "correction_linf": 0.0013244187331625042,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0015132972827173973,
+      "residual_linf": 0.0020930410254218212
+    },
+    {
+      "K": 0.9065850826045436,
+      "accepted": true,
+      "correction_linf": 0.0002680163873344684,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.107307120509157e-06,
+      "residual_linf": 2.8264681196793484e-06
+    },
+    {
+      "K": 0.9065850826045436,
+      "accepted": true,
+      "correction_linf": 5.846840657454602e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 1.8145830740880348e-08,
+      "residual_linf": 5.908806971488545e-08
+    },
+    {
+      "K": 0.9065850826045436,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 3,
+      "residual_l2": 6.653541991997451e-14,
+      "residual_linf": 2.06584749307126e-13
+    },
+    {
+      "K": 0.9187841581297088,
+      "accepted": true,
+      "correction_linf": 0.0013380059268453357,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0014050701575569014,
+      "residual_linf": 0.001941543167305243
+    },
+    {
+      "K": 0.9187841581297088,
+      "accepted": true,
+      "correction_linf": 0.0003259486699606396,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.0449958772826586e-06,
+      "residual_linf": 2.874439176764332e-06
+    },
+    {
+      "K": 0.9187841581297088,
+      "accepted": true,
+      "correction_linf": 8.247497268122621e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 2.5512569503090554e-08,
+      "residual_linf": 8.734405404497991e-08
+    },
+    {
+      "K": 0.9187841581297088,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 3,
+      "residual_l2": 1.3657904475904323e-13,
+      "residual_linf": 5.123401702888941e-13
+    },
+    {
+      "K": 0.9299788602606937,
+      "accepted": true,
+      "correction_linf": 0.0013412737828217389,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0012905500901392493,
+      "residual_linf": 0.0017816885540564154
+    },
+    {
+      "K": 0.9299788602606937,
+      "accepted": true,
+      "correction_linf": 0.00039541610277183097,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 9.891711530661483e-07,
+      "residual_linf": 3.027645655240274e-06
+    },
+    {
+      "K": 0.9299788602606937,
+      "accepted": true,
+      "correction_linf": 1.258755231817007e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 3.747286085382592e-08,
+      "residual_linf": 1.3157806194596944e-07
+    },
+    {
+      "K": 0.9299788602606937,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 3,
+      "residual_l2": 3.8491660970362234e-13,
+      "residual_linf": 1.6843748618100562e-12
+    },
+    {
+      "K": 0.9401049379740916,
+      "accepted": true,
+      "correction_linf": 0.001333852478385083,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0011683592874952332,
+      "residual_linf": 0.0016116042601865
+    },
+    {
+      "K": 0.9401049379740916,
+      "accepted": true,
+      "correction_linf": 0.0004411228050240137,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 9.32394795265945e-07,
+      "residual_linf": 3.1822729646413528e-06
+    },
+    {
+      "K": 0.9401049379740916,
+      "accepted": true,
+      "correction_linf": 3.137658506360526e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 5.084169145824585e-08,
+      "residual_linf": 1.769642485327516e-07
+    },
+    {
+      "K": 0.9401049379740916,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 3,
+      "residual_l2": 1.5178560437082097e-12,
+      "residual_linf": 6.545597397433767e-12
+    },
+    {
+      "K": 0.9490808787089214,
+      "accepted": true,
+      "correction_linf": 0.0014984122173149071,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0010364890246809953,
+      "residual_linf": 0.0014285465409470122
+    },
+    {
+      "K": 0.9490808787089214,
+      "accepted": true,
+      "correction_linf": 0.0004800741486697439,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 8.57338279146047e-07,
+      "residual_linf": 3.230489029559802e-06
+    },
+    {
+      "K": 0.9490808787089214,
+      "accepted": true,
+      "correction_linf": 7.239957428078742e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 6.043579874991932e-08,
+      "residual_linf": 2.0724681396022682e-07
+    },
+    {
+      "K": 0.9490808787089214,
+      "accepted": true,
+      "correction_linf": 3.2236737924896408e-09,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 3,
+      "residual_l2": 7.172462911892824e-12,
+      "residual_linf": 3.088325428723948e-11
+    },
+    {
+      "K": 0.9490808787089214,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 4,
+      "residual_l2": 4.5441655362349616e-15,
+      "residual_linf": 1.321859288694327e-14
+    },
+    {
+      "K": 0.9567979473789595,
+      "accepted": true,
+      "correction_linf": 0.001616895214738417,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0008917797032942451,
+      "residual_linf": 0.0012281853702608148
+    },
+    {
+      "K": 0.9567979473789595,
+      "accepted": true,
+      "correction_linf": 0.0005796380510832232,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 7.424895490992014e-07,
+      "residual_linf": 3.027654706028171e-06
+    },
+    {
+      "K": 0.9567979473789595,
+      "accepted": true,
+      "correction_linf": 1.4003955441535313e-05,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 6.516302418048327e-08,
+      "residual_linf": 2.1654306318896754e-07
+    },
+    {
+      "K": 0.9567979473789595,
+      "accepted": true,
+      "correction_linf": 1.0535058051324133e-08,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 3,
+      "residual_l2": 3.005891437355698e-11,
+      "residual_linf": 1.0631932834126445e-10
+    },
+    {
+      "K": 0.9567979473789595,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 4,
+      "residual_l2": 3.0765575238830224e-15,
+      "residual_linf": 7.882583474838611e-15
+    },
+    {
+      "K": 0.963099263492501,
+      "accepted": true,
+      "correction_linf": 0.001681259306965108,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0007286528956029532,
+      "residual_linf": 0.0010028599446367803
+    },
+    {
+      "K": 0.963099263492501,
+      "accepted": true,
+      "correction_linf": 0.0007008853945225685,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 5.934360162860934e-07,
+      "residual_linf": 2.510274676750801e-06
+    },
+    {
+      "K": 0.963099263492501,
+      "accepted": true,
+      "correction_linf": 2.2333978098424107e-05,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 8.136283233242611e-08,
+      "residual_linf": 2.699380436260723e-07
+    },
+    {
+      "K": 0.963099263492501,
+      "accepted": true,
+      "correction_linf": 3.023055644351965e-08,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 3,
+      "residual_l2": 7.673825218445405e-11,
+      "residual_linf": 2.6199985236896595e-10
+    },
+    {
+      "K": 0.963099263492501,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 4,
+      "residual_l2": 6.230006101042693e-15,
+      "residual_linf": 1.85268467234323e-14
+    },
+    {
+      "K": 0.967723605897049,
+      "accepted": true,
+      "correction_linf": 0.002595020434571085,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0005350297624302789,
+      "residual_linf": 0.0007359649479031782
+    },
+    {
+      "K": 0.967723605897049,
+      "accepted": true,
+      "correction_linf": 0.0021898358880988967,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 1.161668709805044e-06,
+      "residual_linf": 4.128209703843644e-06
+    },
+    {
+      "K": 0.967723605897049,
+      "accepted": true,
+      "correction_linf": 0.00013589141509705204,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 1.0023880527706738e-06,
+      "residual_linf": 3.688127690165688e-06
+    },
+    {
+      "K": 0.967723605897049,
+      "accepted": true,
+      "correction_linf": 9.373416307050869e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 3,
+      "residual_l2": 2.5846700576274427e-09,
+      "residual_linf": 1.0739530459380475e-08
+    },
+    {
+      "K": 0.967723605897049,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 4,
+      "residual_l2": 1.2481047231012777e-13,
+      "residual_linf": 5.631051180898794e-13
+    },
+    {
+      "K": 0.97,
+      "accepted": true,
+      "correction_linf": 0.0007074642923817286,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "residual_l2": 0.0002634841278252975,
+      "residual_linf": 0.0003622876284665455
+    },
+    {
+      "K": 0.97,
+      "accepted": true,
+      "correction_linf": 0.00019643968778720403,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "residual_l2": 9.711642474832347e-08,
+      "residual_linf": 4.241470647758927e-07
+    },
+    {
+      "K": 0.97,
+      "accepted": true,
+      "correction_linf": 1.6487383529532009e-06,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 2,
+      "residual_l2": 5.596987849362518e-09,
+      "residual_linf": 2.341478047562795e-08
+    },
+    {
+      "K": 0.97,
+      "accepted": true,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 3,
+      "residual_l2": 3.596165019882376e-13,
+      "residual_linf": 1.72492575778449e-12
+    }
+  ],
+  "tail_ratio_top_10pct": 0.0001258106972332045,
+  "theorem_facing": false,
+  "weighted_coeff_l1_nu": 0.1004670967206253
+}

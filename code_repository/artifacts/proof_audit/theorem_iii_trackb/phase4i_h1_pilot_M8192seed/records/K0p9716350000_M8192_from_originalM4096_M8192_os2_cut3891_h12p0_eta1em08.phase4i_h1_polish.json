@@ -1,0 +1,68 @@
+{
+  "K": 0.971635,
+  "M_in": 8192,
+  "M_out": 8192,
+  "after": {
+    "native_scalar_residual_linf": 5.62674673521002e-09,
+    "oversampled_derivative_residual_linf": 0.0001593069674268359,
+    "oversampled_scalar_residual_linf": 5.6267466796988685e-09,
+    "weighted_native_residual_l1_nu": 0.0011134873473347164,
+    "weighted_oversampled_derivative_residual_l1_nu": 1712.6892970261497,
+    "weighted_oversampled_residual_l1_nu": 0.04539137806104067
+  },
+  "before": {
+    "native_scalar_residual_linf": 3.75851430534091e-09,
+    "oversampled_derivative_residual_linf": 0.0001839264814545272,
+    "oversampled_scalar_residual_linf": 7.3894969587762205e-09,
+    "weighted_native_residual_l1_nu": 0.0011983979119927928,
+    "weighted_oversampled_derivative_residual_l1_nu": 1763.2850860703638,
+    "weighted_oversampled_residual_l1_nu": 0.04679508644269959
+  },
+  "converged_h1": false,
+  "cutoff_mode": 3891,
+  "diagnostic_only": true,
+  "elapsed_seconds": 21.965163707733154,
+  "eta_high": 1e-08,
+  "history": [
+    {
+      "accepted": true,
+      "alpha": 1.0,
+      "base_merit": 0.006908201045139064,
+      "iteration": 0,
+      "lsmr_istop": 7,
+      "lsmr_itn": 900,
+      "lsmr_normr": 0.002659745964734894,
+      "native_scalar_residual_linf": 5.62674673521002e-09,
+      "new_merit": 0.003818884204168572,
+      "oversampled_derivative_residual_linf": 0.0001593069674268359,
+      "oversampled_scalar_residual_linf": 5.6267466796988685e-09,
+      "weighted_native_residual_l1_nu": 0.0011134873473347164,
+      "weighted_oversampled_derivative_residual_l1_nu": 1712.6892970261497,
+      "weighted_oversampled_residual_l1_nu": 0.04539137806104067
+    },
+    {
+      "accepted": false,
+      "alpha": 5.960464477539063e-08,
+      "base_merit": 0.003818884204168572,
+      "iteration": 1,
+      "lsmr_istop": 7,
+      "lsmr_itn": 900,
+      "lsmr_normr": 0.0026354955357341674,
+      "native_scalar_residual_linf": 5.62674673521002e-09,
+      "new_merit": 0.003818884204168572,
+      "oversampled_derivative_residual_linf": 0.0001593069674268359,
+      "oversampled_scalar_residual_linf": 5.6267466796988685e-09,
+      "weighted_native_residual_l1_nu": 0.0011134873473347164,
+      "weighted_oversampled_derivative_residual_l1_nu": 1712.6892970261497,
+      "weighted_oversampled_residual_l1_nu": 0.04539137806104067
+    }
+  ],
+  "lambda_h1": 2.0,
+  "npz_path": "artifacts/proof_audit/theorem_iii_trackb/phase4h_M8192_unique_inputs/K0p9716350000_M8192_from_originalM4096.npz",
+  "output_npz": "artifacts/proof_audit/theorem_iii_trackb/phase4i_h1_pilot_M8192seed/embeddings/K0p9716350000_M8192_from_originalM4096_M8192_os2_cut3891_h12p0_eta1em08.npz",
+  "oversample": 2,
+  "promotion_allowed": false,
+  "schema": "theorem_iii_trackb_phase4i_h1_polish_record_v1",
+  "solve_status": "line-search-stalled",
+  "theorem_facing": false
+}

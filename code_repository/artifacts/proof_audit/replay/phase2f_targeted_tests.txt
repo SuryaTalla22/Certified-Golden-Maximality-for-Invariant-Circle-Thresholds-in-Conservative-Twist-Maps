@@ -1,0 +1,29 @@
+
+STDERR:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.vJDWZqkmKn/artifact_tool_v2-2.6.11/presentation_artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.vJDWZqkmKn/artifact_tool_v2-2.6.11/presentation_artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.vJDWZqkmKn/artifact_tool_v2-2.6.11/presentation_artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.vJDWZqkmKn/artifact_tool_v2-2.6.11/presentation_artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.vJDWZqkmKn/artifact_tool_v2-2.6.11/presentation_artifact_tool/generated/interface/models.py", line 35986, in hydrate_crdt_from_proto
+  File "/tmp/tmp.vJDWZqkmKn/artifact_tool_v2-2.6.11/presentation_artifact_tool/rpc/remote.py", line 747, in __call__
+  File "/tmp/tmp.vJDWZqkmKn/artifact_tool_v2-2.6.11/presentation_artifact_tool/rpc/client.py", line 150, in call
+presentation_artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_chunk_slice_keeps_global_segment_ids_and_is_not_promotable (tests.test_lower_anchor_phase2f_full_grid.LowerAnchorPhase2FFullGridTests.test_chunk_slice_keeps_global_segment_ids_and_is_not_promotable) ... ok
+test_full_grid_plan_reaches_near_critical_anchor (tests.test_lower_anchor_phase2f_full_grid.LowerAnchorPhase2FFullGridTests.test_full_grid_plan_reaches_near_critical_anchor) ... ok
+test_merge_full_synthetic_chunks_can_pass_phase2b_ingestion (tests.test_lower_anchor_phase2f_full_grid.LowerAnchorPhase2FFullGridTests.test_merge_full_synthetic_chunks_can_pass_phase2b_ingestion) ... ok
+test_merge_rejects_nonoverlapping_rows (tests.test_lower_anchor_phase2f_full_grid.LowerAnchorPhase2FFullGridTests.test_merge_rejects_nonoverlapping_rows) ... ok
+test_phase2e_direct_radii_ledger_can_promote_without_legacy_status_string (tests.test_lower_anchor_heavy_phase2e.HeavyLowerAnchorPhase2EIngestionTests.test_phase2e_direct_radii_ledger_can_promote_without_legacy_status_string) ... ok
+test_phase2e_direct_radii_ledger_is_fail_closed_when_disabled_or_unavailable (tests.test_lower_anchor_heavy_phase2e.HeavyLowerAnchorPhase2EIngestionTests.test_phase2e_direct_radii_ledger_is_fail_closed_when_disabled_or_unavailable) ... ok
+test_candidate_starting_after_existing_corridor_is_rejected (tests.test_lower_anchor_closure_phase2b.Phase2BLowerAnchorClosureTests.test_candidate_starting_after_existing_corridor_is_rejected) ... ok
+test_diagnostic_candidate_is_rejected_even_if_numerically_shaped (tests.test_lower_anchor_closure_phase2b.Phase2BLowerAnchorClosureTests.test_diagnostic_candidate_is_rejected_even_if_numerically_shaped) ... ok
+test_no_candidate_fails_closed_without_claiming_final_anchor (tests.test_lower_anchor_closure_phase2b.Phase2BLowerAnchorClosureTests.test_no_candidate_fails_closed_without_claiming_final_anchor) ... ok
+test_stale_candidate_margin_is_rejected_at_ingestion (tests.test_lower_anchor_closure_phase2b.Phase2BLowerAnchorClosureTests.test_stale_candidate_margin_is_rejected_at_ingestion) ... ok
+test_synthetic_theorem_shaped_candidate_passes_in_temp_only (tests.test_lower_anchor_closure_phase2b.Phase2BLowerAnchorClosureTests.test_synthetic_theorem_shaped_candidate_passes_in_temp_only) ... ok
+test_template_is_diagnostic_and_not_theorem_facing (tests.test_lower_anchor_closure_phase2b.Phase2BLowerAnchorClosureTests.test_template_is_diagnostic_and_not_theorem_facing) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.891s
+
+OK

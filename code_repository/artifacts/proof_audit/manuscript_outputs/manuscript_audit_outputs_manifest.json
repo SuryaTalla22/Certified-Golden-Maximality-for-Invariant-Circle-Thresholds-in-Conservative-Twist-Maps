@@ -1,0 +1,118 @@
+{
+  "expected_figures": {
+    "arithmetic_domain_route_counts": "figures/proof_audit/arithmetic_domain_route_counts.pdf",
+    "lower_chain_margins": "figures/proof_audit/lower_chain_margins.pdf",
+    "replay_protocol_tiers": "figures/proof_audit/replay_protocol_tiers.pdf",
+    "transport_budget_waterfall": "figures/proof_audit/transport_budget_waterfall.pdf",
+    "upper_obstruction_margin_decomposition": "figures/proof_audit/upper_obstruction_margin_decomposition.pdf"
+  },
+  "expected_tables": {
+    "domain_grammar_counts": "tables/proof_audit/domain_grammar_counts.tex",
+    "lower_corridor_segments": "tables/proof_audit/lower_corridor_segments.tex",
+    "replay_protocol": "tables/proof_audit/replay_protocol.tex",
+    "transport_budget": "tables/proof_audit/transport_budget.tex",
+    "upper_obstruction_margin": "tables/proof_audit/upper_obstruction_margin.tex"
+  },
+  "generation_principle": "All manuscript tables and figures are generated directly from proof-audit JSON/CSV payloads.",
+  "known_lower_gap": true,
+  "lower_status": "failed",
+  "manual_editing_allowed": false,
+  "outputs": [
+    {
+      "bytes": 2410,
+      "path": "figures/proof_audit/arithmetic_domain_route_counts.pdf",
+      "sha256": "b5285e1200f2fef42dcbbc8a8a7af2895fb5fd3221ceade3cb56ee3db792d256"
+    },
+    {
+      "bytes": 2253,
+      "path": "figures/proof_audit/lower_chain_margins.pdf",
+      "sha256": "2763dce596737aa68f8df2f34683969f987ea7f2e1fb7632d5c1cef1d66d68c7"
+    },
+    {
+      "bytes": 2251,
+      "path": "figures/proof_audit/replay_protocol_tiers.pdf",
+      "sha256": "a14523451e212625c241ef9228f735e96304001bcb92a51d573588e074d6e88e"
+    },
+    {
+      "bytes": 1735,
+      "path": "figures/proof_audit/transport_budget_waterfall.pdf",
+      "sha256": "43ddc7f88680219f391158d9552411e6aa8099fa1a414b4ea4a71f2e1d2b8b20"
+    },
+    {
+      "bytes": 2088,
+      "path": "figures/proof_audit/upper_obstruction_margin_decomposition.pdf",
+      "sha256": "ed776b943444f278c98b811cfa2ca6088969ee2f616407f296ce40ff43c00ada"
+    },
+    {
+      "bytes": 885,
+      "path": "tables/proof_audit/domain_grammar_counts.tex",
+      "sha256": "35fc4d6e93dbd65b4942612eca39ca68752afc3166ea9ad964678bf7d5acf42a"
+    },
+    {
+      "bytes": 987,
+      "path": "tables/proof_audit/lower_corridor_segments.tex",
+      "sha256": "df906f2b0a527cdb8a57b424336dab92e26cf95ef0255061cedf4b0fb541775f"
+    },
+    {
+      "bytes": 977,
+      "path": "tables/proof_audit/replay_protocol.tex",
+      "sha256": "da6a601ca6f400db9d5bd539d48ffb6cf76d2e1fce21b0a2cbeb7843bf2bb6bc"
+    },
+    {
+      "bytes": 1044,
+      "path": "tables/proof_audit/transport_budget.tex",
+      "sha256": "0c97f6b0b0527f14a41c590ca2b0244729559ee13a4520dc4f99579bc65656c9"
+    },
+    {
+      "bytes": 915,
+      "path": "tables/proof_audit/upper_obstruction_margin.tex",
+      "sha256": "6ea297a4d2e09395dc7e7ba260c1ef63da001ec355d461d938967998c2fa0fae"
+    }
+  ],
+  "schema": "phase10_manuscript_audit_outputs_v1",
+  "source_payloads": [
+    {
+      "bytes": 59646,
+      "key": "lower",
+      "path": "artifacts/proof_audit/lower_corridor/lower_corridor_audit.json",
+      "sha256": "bea46b9ee3a3bd34a2ffd248333de516002274f854b890e2e34401d696147829"
+    },
+    {
+      "bytes": 26808,
+      "key": "upper",
+      "path": "artifacts/proof_audit/upper_obstruction/upper_obstruction_audit.json",
+      "sha256": "b4203ddeeacb2b9bb5d1d07333c0ff7cb4091786f287854c1ee40b3de0d7be77"
+    },
+    {
+      "bytes": 29236,
+      "key": "transport",
+      "path": "artifacts/proof_audit/transport_budget/transport_budget_audit.json",
+      "sha256": "9aebc8b6fd2e3c47080cd7b3937cd4cace44a945a2dcac35538d953021abab81"
+    },
+    {
+      "bytes": 24735,
+      "key": "domain",
+      "path": "artifacts/proof_audit/arithmetic_domain/arithmetic_domain_audit.json",
+      "sha256": "c2e59ecb5464e1dbc08fc968d710d213901521e3d5d32627d6d205a6ec13cfc0"
+    },
+    {
+      "bytes": 41715,
+      "key": "gl2z",
+      "path": "artifacts/proof_audit/gl2z_normalization/gl2z_normalization_audit.json",
+      "sha256": "92cbb2522941f8577f2c36d7d1c3e060475d60d48220265ca3d6a92c003a2280"
+    },
+    {
+      "bytes": 1688,
+      "key": "replay",
+      "path": "artifacts/proof_audit/replay/replay_runtime_table.json",
+      "sha256": "68816f5d1b462058a34a7e2839379f72b06baa829b7f6ef58ca3d1da09d78be0"
+    },
+    {
+      "bytes": 368,
+      "key": "full_verified",
+      "path": "artifacts/proof_audit/replay/full_verified_report.json",
+      "sha256": "d1cca5c357c4fb62103e3561093fdd9578b3d67919fca8fcd9c06605cbccdb5b"
+    }
+  ],
+  "status": "passed-with-known-lower-gap"
+}

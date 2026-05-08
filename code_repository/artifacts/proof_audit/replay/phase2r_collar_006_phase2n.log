@@ -1,0 +1,31 @@
+
+$ /pscratch/sd/s/suryact/phase2k_venv/bin/python scripts/audit/run_lower_anchor_phase2n_batch.py --segment-id phase2n_collar_006 --K-lo 0.9630001 --K-hi 0.9635002 --K-mid 0.96325015 --N-values 1024 --oversample-factors 16 --sigma-caps 0.0001 --timeout-seconds 1200.0 --skip-existing --seed-json artifacts/proof_audit/lower_corridor/phase2n_probes/phase2n_collar_005_N1024_os16_sg0p0001.json
+{
+  "attempt_count": 1,
+  "best": {
+    "K_mid": 0.96325015,
+    "N": 1024,
+    "elapsed_seconds": 15.998024940490723,
+    "failure_reasons": [
+      "analytic_radii_margin_not_safely_positive"
+    ],
+    "finite_radii_margin": 6.631216456087075e-07,
+    "linear_Z": 0.4392739468229486,
+    "oversample_factor": 16,
+    "path": "artifacts/proof_audit/lower_corridor/phase2n_probes/phase2n_collar_006_N1024_os16_sg0p0001.json",
+    "radii_margin": -7.4673482162378266e-06,
+    "radius_r": 1.182641052713136e-06,
+    "residual_Y": 5.5842865586286734e-09,
+    "segment_id": "phase2n_collar_006",
+    "sigma_cap": 0.0001,
+    "sigma_used": 0.0001,
+    "source_theorem_margin": -7.92953932224166e-06,
+    "status": "phase2n-diagnostic-single-N",
+    "tail_T": 8.124900579492188e-06,
+    "theorem_ready": false
+  },
+  "best_candidate_path": "artifacts/proof_audit/lower_corridor/phase2n_probes/phase2n_collar_006_best_single_segment_candidate.json",
+  "csv_path": "tables/proof_audit/lower_corridor/phase2n_probes/phase2n_collar_006_phase2n_batch_summary.csv",
+  "summary_path": "artifacts/proof_audit/lower_corridor/phase2n_probes/phase2n_collar_006_phase2n_batch_summary.json",
+  "theorem_ready_count": 0
+}

@@ -1,0 +1,129 @@
+{
+  "checks": [
+    {
+      "detail": "theorem_iii_trackb_phase5d_certificate_scaffold_v1",
+      "name": "schema",
+      "ok": true
+    },
+    {
+      "detail": true,
+      "name": "diagnostic_only_true",
+      "ok": true
+    },
+    {
+      "detail": false,
+      "name": "theorem_facing_false",
+      "ok": true
+    },
+    {
+      "detail": false,
+      "name": "promotion_allowed_false",
+      "ok": true
+    },
+    {
+      "detail": {
+        "anchor_interval": [
+          0.971635,
+          0.971635
+        ],
+        "family": "standard_sine_twist_map",
+        "lower_anchor_K": 0.971635,
+        "lower_anchor_meets_target": true,
+        "omega": "golden",
+        "required_min_lower_anchor_K": 0.971635,
+        "statement": "Diagnostic scaffold for a direct lower-anchor persistence certificate for the golden invariant circle."
+      },
+      "name": "lower_anchor_meets_target",
+      "ok": true
+    },
+    {
+      "detail": [
+        7.06239340228929e-08,
+        0.22895403677540946,
+        551.0006605725524,
+        3e-05
+      ],
+      "name": "finite_YZQr",
+      "ok": true
+    },
+    {
+      "detail": 3e-05,
+      "name": "positive_radius",
+      "ok": true
+    },
+    {
+      "detail": 2.2564834368199524e-05,
+      "name": "positive_reported_margin",
+      "ok": true
+    },
+    {
+      "detail": 2.256485436819953e-05,
+      "name": "positive_recomputed_margin",
+      "ok": true
+    },
+    {
+      "detail": 0.7521611456066508,
+      "name": "relative_margin_threshold",
+      "ok": true
+    },
+    {
+      "detail": 0.22895403677540946,
+      "name": "Z_below_threshold",
+      "ok": true
+    },
+    {
+      "detail": {
+        "recomputed": 7.4351456318004735e-06,
+        "reported": 7.435155631800474e-06
+      },
+      "name": "reported_lhs_covers_recomputed_lhs",
+      "ok": true
+    },
+    {
+      "detail": 0.001087432533666174,
+      "name": "small_divisor_positive",
+      "ok": true
+    },
+    {
+      "detail": 919.5972798685693,
+      "name": "cohomology_inverse_finite",
+      "ok": true
+    },
+    {
+      "detail": 1.4650834088702989,
+      "name": "twist_average_finite",
+      "ok": true
+    },
+    {
+      "detail": 0.0001717048746847638,
+      "name": "upper_triangular_defect_finite",
+      "ok": true
+    },
+    {
+      "detail": [
+        "Phase 5C uses nextafter outward rounding and conservative inflations but is not an independently verified formal interval proof.",
+        "Fourier residual, frame, reducibility, and nonlinear constants still need a formal outward-rounded implementation/replay in Phase 5E or later.",
+        "Branch/chart compatibility and final theorem graph consumption remain to be validated by the final replay gate.",
+        "The scaffold certifies only a direct lower anchor candidate, not a full parameter interval or mesh corridor."
+      ],
+      "name": "active_assumptions_nonempty",
+      "ok": true
+    },
+    {
+      "detail": [
+        "Independent formal interval arithmetic backend reproduces or improves the Phase 5C bounds.",
+        "Final replay rejects this scaffold unless promoted by a theorem-facing Phase 5E certificate.",
+        "The lower anchor is consumed by the threshold-identification layer with matching branch/chart labels."
+      ],
+      "name": "open_hypotheses_nonempty",
+      "ok": true
+    }
+  ],
+  "diagnostic_only": true,
+  "failed_checks": [],
+  "passed": true,
+  "promotion_allowed": false,
+  "schema": "theorem_iii_trackb_phase5d_replay_summary_v1",
+  "status": "phase5d-replay-scaffold-complete",
+  "theorem_facing": false
+}

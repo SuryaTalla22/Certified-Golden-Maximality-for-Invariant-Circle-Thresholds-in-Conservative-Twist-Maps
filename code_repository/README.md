@@ -7,9 +7,6 @@ artifacts listed in `ARTIFACT_MANIFEST.tsv`.  The final proof path is replayable
 through the scripts in `scripts/` and audited by the validator conventions in
 `docs/VALIDATOR_SPEC.md`.
 
-The repository also contains examples and notebooks from the development history.
-Those files are useful for provenance and experimentation, but they are not the
-official proof path.  The official proof/audit path is:
 
 ```text
 CERTIFIED_UNIVERSE.json
@@ -56,8 +53,6 @@ tests/                   regression and negative-control tests
 docs/                    validator specification, glossary, referee audit protocol
 artifacts/final_discharge/stage_cache/
                          cached heavy upstream theorem artifacts
-examples/                exploratory examples and provenance material
-notebooks/               staged/exploratory notebook provenance
 ```
 
 ## Install
@@ -144,17 +139,26 @@ sha256sum -c HASHES.sha256
 The manifest lists every JSON file in `artifacts/final_discharge/stage_cache/`.
 `HASHES.sha256` lists those artifacts plus the core paper-facing audit files.
 
-## Full Theorem-IV regeneration
+## Full Theorem-IV or III regeneration
 
-The heavy Theorem-IV regeneration path is not launched automatically from this
-paper-facing snapshot.  The cached Theorem-IV artifacts are included for the
-standard referee replay.  If a future archival environment exposes a one-command
-heavy regeneration path, wire it into `scripts/replay_full.py`, record the
-hardware/runtime in `RELEASE_INFO.md`, regenerate the cache, and update both
-`ARTIFACT_MANIFEST.tsv` and `HASHES.sha256`.
+The heavy Theorem-IV or III regeneration path is not launched automatically from this
+paper-facing snapshot.  The cached Theorem-IV and III artifacts are included for the
+standard referee replay.
 
 ## Release metadata
 
 Before public deposit, complete `RELEASE_INFO.md` with the repository URL,
 release tag, commit hash, archive DOI, Python version, operating system, runtime
 notes, and hardware notes for heavy Theorem-IV regeneration.
+
+## Theorem III TrackB direct lower-anchor closeout
+
+The current theorem-facing Theorem III object is `artifacts/final_discharge/stage_cache/theorem_iii.json`. It is a TrackB `direct_lower_anchor_persistence_certificate` proving the lower anchor `K = 0.971635` for the final strict comparison. The strict proof-audit path is now:
+
+```bash
+python scripts/replay_heavy_lower.py --mode regenerate-heavy --no-figures
+python scripts/replay_artifact_audit_suite.py --strict-final --refresh-manifest
+python scripts/replay_full_verified.py --skip-figures
+```
+
+`replay_full.py` remains an archival/fail-closed sentinel. Use `replay_full_verified.py` for strict artifact-derived proof-audit closeout.

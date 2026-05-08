@@ -79,6 +79,29 @@ class TheoremVCompressedContractCertificate:
         }
 
 
+def _extract_uniform_majorant_budget(theorem_v_certificate: Mapping[str, Any], final_bridge: Mapping[str, Any], uniform_error: Mapping[str, Any]) -> dict[str, Any]:
+    """Extract a decomposed Phase-4 transport budget when available.
+
+    The compressed contract remains backward-compatible with old compact shells,
+    but if a proof-audit transport budget has been attached, downstream code can
+    inspect the actual available gap, component charges, total, remaining margin,
+    and margin ratio instead of trusting a bare ``preserves_golden_gap`` flag.
+    """
+
+    candidates = [
+        theorem_v_certificate.get('proof_audit_transport_budget'),
+        theorem_v_certificate.get('transport_budget'),
+        (theorem_v_certificate.get('uniform_majorant') or {}).get('budget') if isinstance(theorem_v_certificate.get('uniform_majorant'), Mapping) else None,
+        (theorem_v_certificate.get('compressed_contract') or {}).get('uniform_majorant', {}).get('budget') if isinstance(theorem_v_certificate.get('compressed_contract'), Mapping) else None,
+        final_bridge.get('uniform_majorant_budget'),
+        uniform_error.get('budget'),
+    ]
+    for candidate in candidates:
+        if isinstance(candidate, Mapping) and candidate:
+            return dict(candidate)
+    return {}
+
+
 def build_theorem_v_compressed_contract_certificate(
     theorem_v_certificate: Mapping[str, Any],
     theorem_iii_certificate: Mapping[str, Any] | None = None,
@@ -128,6 +151,12 @@ def build_theorem_v_compressed_contract_certificate(
         or final_error.get('error_law_preserves_gap', False)
         or uniform_error.get('gap_preservation_certified', False)
     )
+    exposed_budget = _extract_uniform_majorant_budget(theorem_v_certificate, final_bridge, uniform_error)
+    if exposed_budget:
+        try:
+            gap_certified = bool(gap_certified or float(exposed_budget.get('remaining_margin', 0.0)) > 0.0)
+        except Exception:
+            pass
     two_sided_certified = bool(gap_certified and lower_compat.get('lower_compatibility_certified', False) and upper_certified)
 
     formal_assumptions_remaining: list[str] = []
@@ -156,7 +185,7 @@ def build_theorem_v_compressed_contract_certificate(
         theorem_status=theorem_status,
         target_interval={'lo': None if target_interval is None else target_interval[0], 'hi': None if target_interval is None else target_interval[1], 'width': target_width},
         transport_lock={'locked': transport_locked, 'identification_lock': identification_lock, 'source_status': str(final_bridge.get('bridge_status', 'unknown')), 'upper_tail_source': final_bridge.get('upper_tail_source')},
-        uniform_majorant={'status': str(final_bridge.get('uniform_error_law_status', uniform_error.get('theorem_status', 'missing'))), 'certified': majorant_certified, 'preserves_golden_gap': gap_certified},
+        uniform_majorant={'status': str(final_bridge.get('uniform_error_law_status', uniform_error.get('theorem_status', 'missing'))), 'certified': majorant_certified, 'preserves_golden_gap': gap_certified, 'budget': exposed_budget},
         branch_identity={'status': str(final_bridge.get('branch_identification_status', branch_ident.get('theorem_status', 'missing'))), 'sufficient_for_downstream': branch_sufficient, 'no_branch_switch_certified': bool(branch_ident.get('branch_identification_locked', False))},
         lower_compatibility=lower_compat,
         upper_compatibility={'status': 'theorem-v-upper-compatibility-strong' if upper_certified else 'theorem-v-upper-compatibility-incomplete', 'certified': upper_certified},

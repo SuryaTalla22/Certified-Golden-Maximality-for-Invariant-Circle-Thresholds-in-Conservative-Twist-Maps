@@ -1,0 +1,4351 @@
+{
+  "K": 0.9705,
+  "M": 1024,
+  "cases": {
+    "L1024_cut_0.500": {
+      "cutoff_frac": 0.5,
+      "cutoff_mode": 256,
+      "grid_size": 1024,
+      "oversample_factor": 1,
+      "scalar_metrics": {
+        "a11_minus_1_linf": 0.005018009541549073,
+        "a21_linf": 0.007336668953627168,
+        "a22_minus_1_linf": 0.0012337074268627957,
+        "embedding_residual_linf_max_lift_aware": 1.8244772604925075e-06,
+        "frame_det_defect_linf": 0.0046142609090793485,
+        "frame_normal_norm_max": 1.8853457884308606,
+        "frame_tangent_norm_max": 5.541976496427218,
+        "frame_tangent_norm_min": 0.5304066798442751,
+        "lift_residual_matches_scalar_linf": 4.163336342344337e-16,
+        "r_lift_residual_linf": 1.8244772604925075e-06,
+        "rprime_linf": 2.4188428005199882,
+        "scalar_residual_linf": 1.8244772605063853e-06,
+        "tangent_residual_linf_max": 0.003003710572310858,
+        "tangent_residual_r_linf": 0.003003710572310858,
+        "tangent_residual_x_linf": 0.003003710572310858,
+        "twist_average": 1.3254494431633062,
+        "twist_centered_linf": 3.926620031068458,
+        "twist_max": 5.252069474231764,
+        "twist_min": -0.16236070328843077,
+        "upper_triangular_defect_linf_max": 0.007336668953627168,
+        "x_lift_residual_linf": 1.8244772604925075e-06,
+        "xprime_max": 4.986251396923778,
+        "xprime_min": 0.5090259678611373
+      },
+      "weighted_metrics": {
+        "nu_1.002000": {
+          "a21_l1_nu": 0.024397541552609044,
+          "embedding_residual_l1_nu_lift_aware": 6.079178698415039e-06,
+          "nu": 1.002,
+          "scalar_residual_l1_nu": 6.0791786983641155e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.018904815381811456,
+                "weighted_tail_ratio": 0.7748655880366683
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 5.274919236827103e-06,
+                "weighted_tail_ratio": 0.8677026122371702
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.009338678077149228,
+                "weighted_tail_ratio": 0.892862812132178
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.009338678077149748,
+                "weighted_tail_ratio": 0.8928628121321451
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.003875891985838915,
+                "weighted_tail_ratio": 0.15886403871804994
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 1.9192534672050415e-07,
+                "weighted_tail_ratio": 0.03157093354932148
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.0005319152816417258,
+                "weighted_tail_ratio": 0.05085595308663745
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.0005319152816418593,
+                "weighted_tail_ratio": 0.05085595308664551
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0016077543852992336,
+                "weighted_tail_ratio": 0.06589821281100769
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 6.226520881350869e-08,
+                "weighted_tail_ratio": 0.010242371856952325
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0001956881589502269,
+                "weighted_tail_ratio": 0.01870957307424446
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0001956881589502941,
+                "weighted_tail_ratio": 0.018709573074249156
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.010459253034460134,
+          "twist_centered_l1_nu": 13.968585323851782,
+          "upper_triangular_defect_l1_nu": 0.02686146905475425
+        },
+        "nu_1.003000": {
+          "a21_l1_nu": 0.032787664820068854,
+          "embedding_residual_l1_nu_lift_aware": 7.995089202170312e-06,
+          "nu": 1.003,
+          "scalar_residual_l1_nu": 7.995089202113515e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.026155321605689272,
+                "weighted_tail_ratio": 0.7977183416148618
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 6.990600012285807e-06,
+                "weighted_tail_ratio": 0.874361728251616
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.012459005174128825,
+                "weighted_tail_ratio": 0.8981126931802832
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.01245900517412957,
+                "weighted_tail_ratio": 0.8981126931802539
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.006050988889015042,
+                "weighted_tail_ratio": 0.18455077304899492
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 2.953826986939461e-07,
+                "weighted_tail_ratio": 0.03694551633218316
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.000821876340083679,
+                "weighted_tail_ratio": 0.05924530594035333
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.0008218763400838838,
+                "weighted_tail_ratio": 0.059245305940362605
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.002616509184328251,
+                "weighted_tail_ratio": 0.07980163267762587
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 9.975602404474264e-08,
+                "weighted_tail_ratio": 0.012477162108256648
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0003140275088994012,
+                "weighted_tail_ratio": 0.02263680669592925
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0003140275088995089,
+                "weighted_tail_ratio": 0.02263680669593492
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.013872429672507715,
+          "twist_centered_l1_nu": 15.896142186584449,
+          "upper_triangular_defect_l1_nu": 0.0393355925232927
+        },
+        "nu_1.005000": {
+          "a21_l1_nu": 0.06066901727053792,
+          "embedding_residual_l1_nu_lift_aware": 1.3914900514123523e-05,
+          "nu": 1.005,
+          "scalar_residual_l1_nu": 1.3914900514043988e-05,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.05089253946464166,
+                "weighted_tail_ratio": 0.8388555106752337
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 1.233955972139677e-05,
+                "weighted_tail_ratio": 0.8867874915054359
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.022335448347206036,
+                "weighted_tail_ratio": 0.9083358195996785
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.022335448347207566,
+                "weighted_tail_ratio": 0.9083358195996555
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.014798412411577571,
+                "weighted_tail_ratio": 0.24392042392227728
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 7.011740453709002e-07,
+                "weighted_tail_ratio": 0.05039015871246951
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.001966740611717044,
+                "weighted_tail_ratio": 0.07998321402433117
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.001966740611717529,
+                "weighted_tail_ratio": 0.07998321402434339
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.006923586670084429,
+                "weighted_tail_ratio": 0.11412063325849618
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 2.557659537069854e-07,
+                "weighted_tail_ratio": 0.01838072456564434
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0008078622801795847,
+                "weighted_tail_ratio": 0.03285406386222738
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0008078622801798619,
+                "weighted_tail_ratio": 0.03285406386223557
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.024589417113432568,
+          "twist_centered_l1_nu": 21.702596923719987,
+          "upper_triangular_defect_l1_nu": 0.08732990822122819
+        }
+      }
+    },
+    "L1024_cut_0.750": {
+      "cutoff_frac": 0.75,
+      "cutoff_mode": 384,
+      "grid_size": 1024,
+      "oversample_factor": 1,
+      "scalar_metrics": {
+        "a11_minus_1_linf": 0.014021121287415061,
+        "a21_linf": 0.008613221894771428,
+        "a22_minus_1_linf": 0.002259858764590006,
+        "embedding_residual_linf_max_lift_aware": 1.610350761849233e-06,
+        "frame_det_defect_linf": 0.011749534249263838,
+        "frame_normal_norm_max": 1.8715171469798753,
+        "frame_tangent_norm_max": 5.861205855757579,
+        "frame_tangent_norm_min": 0.5343258551564599,
+        "lift_residual_matches_scalar_linf": 4.163336342344337e-16,
+        "r_lift_residual_linf": 1.6103507617382107e-06,
+        "rprime_linf": 2.5591178644295622,
+        "scalar_residual_linf": 1.610350761779844e-06,
+        "tangent_residual_linf_max": 0.0038638972467641974,
+        "tangent_residual_r_linf": 0.0038638972467641974,
+        "tangent_residual_x_linf": 0.0038638972467641697,
+        "twist_average": 1.3258517613896035,
+        "twist_centered_linf": 3.857511927339123,
+        "twist_max": 5.183363688728726,
+        "twist_min": -0.15829919610473864,
+        "upper_triangular_defect_linf_max": 0.014021121287415061,
+        "x_lift_residual_linf": 1.610350761849233e-06,
+        "xprime_max": 5.273011458315296,
+        "xprime_min": 0.48125468644307134
+      },
+      "weighted_metrics": {
+        "nu_1.002000": {
+          "a21_l1_nu": 0.03515525222445996,
+          "embedding_residual_l1_nu_lift_aware": 6.369972602714027e-06,
+          "nu": 1.002,
+          "scalar_residual_l1_nu": 6.369972602624064e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.03260220500195328,
+                "weighted_tail_ratio": 0.9273779290159565
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 6.349586525847885e-06,
+                "weighted_tail_ratio": 0.9967996602108178
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.015826761392040308,
+                "weighted_tail_ratio": 0.9984808743756352
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.015826761392040298,
+                "weighted_tail_ratio": 0.9984808743756259
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.02258884655458677,
+                "weighted_tail_ratio": 0.6425454270776113
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 5.528633081201605e-06,
+                "weighted_tail_ratio": 0.8679210141224352
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.013858875304045365,
+                "weighted_tail_ratio": 0.8743306093188159
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.013858875304045538,
+                "weighted_tail_ratio": 0.8743306093188193
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.004456294305619366,
+                "weighted_tail_ratio": 0.12676041341324273
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 2.9750751876939805e-07,
+                "weighted_tail_ratio": 0.04670467792072481
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.000969781040497653,
+                "weighted_tail_ratio": 0.06118167812626513
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0009697810404977405,
+                "weighted_tail_ratio": 0.06118167812627012
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.015850840810483376,
+          "twist_centered_l1_nu": 14.822081304310643,
+          "upper_triangular_defect_l1_nu": 0.07147744931049847
+        },
+        "nu_1.003000": {
+          "a21_l1_nu": 0.05152621322235114,
+          "embedding_residual_l1_nu_lift_aware": 9.424468162673665e-06,
+          "nu": 1.003,
+          "scalar_residual_l1_nu": 9.424468162519995e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.048489868739347824,
+                "weighted_tail_ratio": 0.9410718488102245
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 9.399808978841888e-06,
+                "weighted_tail_ratio": 0.9973834933438289
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.023476048792010623,
+                "weighted_tail_ratio": 0.998735075372235
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.023476048792010647,
+                "weighted_tail_ratio": 0.998735075372227
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.0342788405055742,
+                "weighted_tail_ratio": 0.6652699346961647
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 8.207867848763538e-06,
+                "weighted_tail_ratio": 0.8709104542795599
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.020620242462803973,
+                "weighted_tail_ratio": 0.8772412935728306
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.020620242462804257,
+                "weighted_tail_ratio": 0.8772412935728348
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.007224729068129673,
+                "weighted_tail_ratio": 0.14021463283072616
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 4.805740348623662e-07,
+                "weighted_tail_ratio": 0.0509921649238047
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0015690628761059451,
+                "weighted_tail_ratio": 0.06675220961223916
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0015690628761060885,
+                "weighted_tail_ratio": 0.06675220961224465
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.023505781834347973,
+          "twist_centered_l1_nu": 17.343512225963014,
+          "upper_triangular_defect_l1_nu": 0.10799306916000581
+        },
+        "nu_1.005000": {
+          "a21_l1_nu": 0.11225568469890454,
+          "embedding_residual_l1_nu_lift_aware": 2.0653695992273434e-05,
+          "nu": 1.005,
+          "scalar_residual_l1_nu": 2.0653695991846817e-05,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.10790050891006422,
+                "weighted_tail_ratio": 0.96120307135873
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 2.0617236983334858e-05,
+                "weighted_tail_ratio": 0.9982347465302892
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.051720523163367685,
+                "weighted_tail_ratio": 0.9991200159720746
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.05172052316336792,
+                "weighted_tail_ratio": 0.9991200159720685
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.07920740667729613,
+                "weighted_tail_ratio": 0.7055981787447873
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 1.8104899521319872e-05,
+                "weighted_tail_ratio": 0.8765936870798767
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.04570591598755549,
+                "weighted_tail_ratio": 0.8829318173612091
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.04570591598755624,
+                "weighted_tail_ratio": 0.8829318173612141
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.01897344111938633,
+                "weighted_tail_ratio": 0.1690198689739183
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 1.2531408704934517e-06,
+                "weighted_tail_ratio": 0.06067392833651358
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.00410480702120283,
+                "weighted_tail_ratio": 0.07929530882029488
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.004104807021203213,
+                "weighted_tail_ratio": 0.07929530882030143
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.0517660764838624,
+          "twist_centered_l1_nu": 25.56880220516678,
+          "upper_triangular_defect_l1_nu": 0.2509526280739687
+        }
+      }
+    },
+    "L1024_cut_0.900": {
+      "cutoff_frac": 0.9,
+      "cutoff_mode": 460,
+      "grid_size": 1024,
+      "oversample_factor": 1,
+      "scalar_metrics": {
+        "a11_minus_1_linf": 0.012358418732733245,
+        "a21_linf": 0.0009004872413275553,
+        "a22_minus_1_linf": 9.69323742012751e-05,
+        "embedding_residual_linf_max_lift_aware": 1.0361248115042798e-07,
+        "frame_det_defect_linf": 0.012256323745316267,
+        "frame_normal_norm_max": 1.869411734461605,
+        "frame_tangent_norm_max": 5.921165867871554,
+        "frame_tangent_norm_min": 0.5349276360929672,
+        "lift_residual_matches_scalar_linf": 4.163336342344337e-16,
+        "r_lift_residual_linf": 1.0361248115042798e-07,
+        "rprime_linf": 2.5849486586718875,
+        "scalar_residual_linf": 1.0361248123369471e-07,
+        "tangent_residual_linf_max": 0.00039799294193598733,
+        "tangent_residual_r_linf": 0.00039799294193598733,
+        "tangent_residual_x_linf": 0.0003979929419357653,
+        "twist_average": 1.3252203024245415,
+        "twist_centered_linf": 3.8507724057200576,
+        "twist_max": 5.175992708144599,
+        "twist_min": -0.1545505087183341,
+        "upper_triangular_defect_linf_max": 0.012358418732733245,
+        "x_lift_residual_linf": 1.0361248115042798e-07,
+        "xprime_max": 5.3271235828425745,
+        "xprime_min": 0.48127335696420426
+      },
+      "weighted_metrics": {
+        "nu_1.002000": {
+          "a21_l1_nu": 0.004432129405842162,
+          "embedding_residual_l1_nu_lift_aware": 5.230413031915937e-07,
+          "nu": 1.002,
+          "scalar_residual_l1_nu": 5.230413032815986e-07,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.004174636173391207,
+                "weighted_tail_ratio": 0.9419030427876173
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 5.220954959146922e-07,
+                "weighted_tail_ratio": 0.9981917157192514
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.0021285604975418517,
+                "weighted_tail_ratio": 0.9940596059487314
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.0021285604975414115,
+                "weighted_tail_ratio": 0.9940596059487948
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.0035131289729098724,
+                "weighted_tail_ratio": 0.7926503608579389
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 5.184014795040773e-07,
+                "weighted_tail_ratio": 0.9911291445849292
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.0019883418537273174,
+                "weighted_tail_ratio": 0.9285760596845263
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.0019883418537267727,
+                "weighted_tail_ratio": 0.9285760596845232
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0021156929666561134,
+                "weighted_tail_ratio": 0.4773536088245385
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 4.041373784515246e-07,
+                "weighted_tail_ratio": 0.7726681925804669
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0012936322617805843,
+                "weighted_tail_ratio": 0.6041395477710116
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0012936322617804117,
+                "weighted_tail_ratio": 0.6041395477710945
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.002141280547769921,
+          "twist_centered_l1_nu": 14.466898186892585,
+          "upper_triangular_defect_l1_nu": 0.040295126189808884
+        },
+        "nu_1.003000": {
+          "a21_l1_nu": 0.0068058815425646214,
+          "embedding_residual_l1_nu_lift_aware": 8.388575883927605e-07,
+          "nu": 1.003,
+          "scalar_residual_l1_nu": 8.38857588563797e-07,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.0064976818441969475,
+                "weighted_tail_ratio": 0.954715682834007
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 8.377109403670314e-07,
+                "weighted_tail_ratio": 0.9986330835979814
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.0033608457193336923,
+                "weighted_tail_ratio": 0.9952963792720674
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.003360845719332984,
+                "weighted_tail_ratio": 0.995296379272113
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.005576437732971544,
+                "weighted_tail_ratio": 0.8193556849463187
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 8.324896670597356e-07,
+                "weighted_tail_ratio": 0.992408816954301
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.00316501306481861,
+                "weighted_tail_ratio": 0.9373015921680817
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.003165013064817759,
+                "weighted_tail_ratio": 0.9373015921680702
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.00342791466530146,
+                "weighted_tail_ratio": 0.5036694576393903
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 6.525813253070794e-07,
+                "weighted_tail_ratio": 0.7779405398529683
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.002091501717562465,
+                "weighted_tail_ratio": 0.6193869819004765
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0020915017175621854,
+                "weighted_tail_ratio": 0.6193869819005526
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.0033767285698273345,
+          "twist_centered_l1_nu": 16.803878308192104,
+          "upper_triangular_defect_l1_nu": 0.062477142801528426
+        },
+        "nu_1.005000": {
+          "a21_l1_nu": 0.016310022546915368,
+          "embedding_residual_l1_nu_lift_aware": 2.158092081243832e-06,
+          "nu": 1.005,
+          "scalar_residual_l1_nu": 2.1580920816752234e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.01586400146050436,
+                "weighted_tail_ratio": 0.9726535579501475
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 2.156392854967809e-06,
+                "weighted_tail_ratio": 0.9992126254844069
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.008410583093656797,
+                "weighted_tail_ratio": 0.997057508970655
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.008410583093654982,
+                "weighted_tail_ratio": 0.9970575089706786
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.014071830573666497,
+                "weighted_tail_ratio": 0.8627719877878299
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 2.145938876976242e-06,
+                "weighted_tail_ratio": 0.9943685421015273
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.008027232601705563,
+                "weighted_tail_ratio": 0.9516120883248687
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.008027232601703484,
+                "weighted_tail_ratio": 0.9516120883248501
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.008992042663655915,
+                "weighted_tail_ratio": 0.5513200633408404
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 1.7003919088922627e-06,
+                "weighted_tail_ratio": 0.7879144376324897
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.005463333422120572,
+                "weighted_tail_ratio": 0.6476670584996592
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0054633334221198355,
+                "weighted_tail_ratio": 0.6476670584997269
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.00843540419482898,
+          "twist_centered_l1_nu": 24.326547690386775,
+          "upper_triangular_defect_l1_nu": 0.1526234833076285
+        }
+      }
+    },
+    "L1024_cut_0.950": {
+      "cutoff_frac": 0.95,
+      "cutoff_mode": 486,
+      "grid_size": 1024,
+      "oversample_factor": 1,
+      "scalar_metrics": {
+        "a11_minus_1_linf": 0.012912560874875023,
+        "a21_linf": 0.0007193202604340882,
+        "a22_minus_1_linf": 5.268131440627766e-05,
+        "embedding_residual_linf_max_lift_aware": 3.257065539497006e-08,
+        "frame_det_defect_linf": 0.012831116908376572,
+        "frame_normal_norm_max": 1.8655606464082242,
+        "frame_tangent_norm_max": 5.925173171153261,
+        "frame_tangent_norm_min": 0.5360318904267768,
+        "lift_residual_matches_scalar_linf": 3.7470027081099033e-16,
+        "r_lift_residual_linf": 3.257065539497006e-08,
+        "rprime_linf": 2.5866770029218085,
+        "scalar_residual_linf": 3.2570655492114575e-08,
+        "tangent_residual_linf_max": 0.00031782411337832883,
+        "tangent_residual_r_linf": 0.00031782411337799577,
+        "tangent_residual_x_linf": 0.00031782411337832883,
+        "twist_average": 1.3251004743562933,
+        "twist_centered_linf": 3.8303296430818343,
+        "twist_max": 5.155430117438128,
+        "twist_min": -0.1542878648488446,
+        "upper_triangular_defect_linf_max": 0.012912560874875023,
+        "x_lift_residual_linf": 3.257065539497006e-08,
+        "xprime_max": 5.330739084846476,
+        "xprime_min": 0.48225136864292906
+      },
+      "weighted_metrics": {
+        "nu_1.002000": {
+          "a21_l1_nu": 0.0032646052334468927,
+          "embedding_residual_l1_nu_lift_aware": 1.7666493534992948e-07,
+          "nu": 1.002,
+          "scalar_residual_l1_nu": 1.7666493530617613e-07,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.0030603890536058226,
+                "weighted_tail_ratio": 0.9374453677434527
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 1.7644664385537378e-07,
+                "weighted_tail_ratio": 0.9987643759050202
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.0014139618724782243,
+                "weighted_tail_ratio": 0.9903832250279586
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.0014139618724782518,
+                "weighted_tail_ratio": 0.9903832250282435
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.002482322530180997,
+                "weighted_tail_ratio": 0.7603744871658089
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 1.7500204237185867e-07,
+                "weighted_tail_ratio": 0.9905873062391498
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.0012689144530650203,
+                "weighted_tail_ratio": 0.888787465045651
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.001268914453065183,
+                "weighted_tail_ratio": 0.8887874650460034
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0014569371770979751,
+                "weighted_tail_ratio": 0.44628280386590147
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 1.7130176552393107e-07,
+                "weighted_tail_ratio": 0.9696421376831219
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0008180286700089698,
+                "weighted_tail_ratio": 0.5729729267373099
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.000818028670009084,
+                "weighted_tail_ratio": 0.5729729267375436
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.0014276916619203723,
+          "twist_centered_l1_nu": 14.414464972376418,
+          "upper_triangular_defect_l1_nu": 0.03982008796618953
+        },
+        "nu_1.003000": {
+          "a21_l1_nu": 0.004988970370619416,
+          "embedding_residual_l1_nu_lift_aware": 2.894620856169024e-07,
+          "nu": 1.003,
+          "scalar_residual_l1_nu": 2.8946208560810866e-07,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.004745631439555411,
+                "weighted_tail_ratio": 0.9512246189119394
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 2.8920293351745287e-07,
+                "weighted_tail_ratio": 0.9991047114508577
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.002225752647188569,
+                "weighted_tail_ratio": 0.9923731245790518
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.0022257526471886496,
+                "weighted_tail_ratio": 0.9923731245792674
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.003941155857219452,
+                "weighted_tail_ratio": 0.7899737950799113
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 2.871812018698089e-07,
+                "weighted_tail_ratio": 0.9921202677251909
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.002023173344054169,
+                "weighted_tail_ratio": 0.9020512030122213
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.002023173344054433,
+                "weighted_tail_ratio": 0.9020512030125023
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0023747262666391432,
+                "weighted_tail_ratio": 0.4759952635967057
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 2.8148219844468826e-07,
+                "weighted_tail_ratio": 0.9724320124804736
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0013350171119215239,
+                "weighted_tail_ratio": 0.5952301592890445
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0013350171119217076,
+                "weighted_tail_ratio": 0.5952301592892342
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.0022428586507042864,
+          "twist_centered_l1_nu": 16.72345369310894,
+          "upper_triangular_defect_l1_nu": 0.06183900900763345
+        },
+        "nu_1.005000": {
+          "a21_l1_nu": 0.011871542633157045,
+          "embedding_residual_l1_nu_lift_aware": 7.76913239177159e-07,
+          "nu": 1.005,
+          "scalar_residual_l1_nu": 7.769132393617952e-07,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.011522172644795128,
+                "weighted_tail_ratio": 0.9705708011875279
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 7.76545536365257e-07,
+                "weighted_tail_ratio": 0.9995267129224877
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.005551715565212891,
+                "weighted_tail_ratio": 0.9952279213723632
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.005551715565213244,
+                "weighted_tail_ratio": 0.9952279213724877
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.009959073283588029,
+                "weighted_tail_ratio": 0.8389030466666129
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 7.725709054554918e-07,
+                "weighted_tail_ratio": 0.9944107865765417
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.00515517307685838,
+                "weighted_tail_ratio": 0.9241417585844555
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.0051551730768590745,
+                "weighted_tail_ratio": 0.9241417585846369
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.006303311887419508,
+                "weighted_tail_ratio": 0.5309597987555931
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 7.590562097639009e-07,
+                "weighted_tail_ratio": 0.9770154134423515
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.00355245701580414,
+                "weighted_tail_ratio": 0.6368309705484428
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0035524570158046143,
+                "weighted_tail_ratio": 0.6368309705485671
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.005578335822368597,
+          "twist_centered_l1_nu": 24.133362573076802,
+          "upper_triangular_defect_l1_nu": 0.1514662466823177
+        }
+      }
+    },
+    "L1024_full": {
+      "cutoff_frac": 1.0,
+      "cutoff_mode": null,
+      "grid_size": 1024,
+      "oversample_factor": 1,
+      "scalar_metrics": {
+        "a11_minus_1_linf": 0.01246025399237316,
+        "a21_linf": 0.0006953145479654393,
+        "a22_minus_1_linf": 5.406347403080769e-05,
+        "embedding_residual_linf_max_lift_aware": 1.3322676295501878e-14,
+        "frame_det_defect_linf": 0.012381461841410868,
+        "frame_normal_norm_max": 1.8674331732633853,
+        "frame_tangent_norm_max": 5.923776982496183,
+        "frame_tangent_norm_min": 0.5354943964353356,
+        "lift_residual_matches_scalar_linf": 3.95516952522712e-16,
+        "r_lift_residual_linf": 1.3322676295501878e-14,
+        "rprime_linf": 2.5860827081432998,
+        "scalar_residual_linf": 1.3156142841808105e-14,
+        "tangent_residual_linf_max": 0.00030722418862394463,
+        "tangent_residual_r_linf": 0.0003072241886238336,
+        "tangent_residual_x_linf": 0.00030722418862394463,
+        "twist_average": 1.3250900814599538,
+        "twist_centered_linf": 3.840133608667089,
+        "twist_max": 5.165223690127043,
+        "twist_min": -0.15450962825199543,
+        "upper_triangular_defect_linf_max": 0.01246025399237316,
+        "x_lift_residual_linf": 1.3322676295501878e-14,
+        "xprime_max": 5.329475580673375,
+        "xprime_min": 0.4817687098149759
+      },
+      "weighted_metrics": {
+        "nu_1.002000": {
+          "a21_l1_nu": 0.0032539131636013176,
+          "embedding_residual_l1_nu_lift_aware": 5.995012434232721e-14,
+          "nu": 1.002,
+          "scalar_residual_l1_nu": 5.938302145482648e-14,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.0030581612901408673,
+                "weighted_tail_ratio": 0.9398410886774252
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 4.050760082938338e-14,
+                "weighted_tail_ratio": 0.6821411210980246
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.0015004889109337621,
+                "weighted_tail_ratio": 0.9910363210412806
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.0015004889109343977,
+                "weighted_tail_ratio": 0.9910363210415261
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.0024790848530180255,
+                "weighted_tail_ratio": 0.7618779999261753
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 1.484092637209137e-14,
+                "weighted_tail_ratio": 0.2499186806010044
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.001358164184172383,
+                "weighted_tail_ratio": 0.8970343110464003
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.0013581641841729003,
+                "weighted_tail_ratio": 0.8970343110465842
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0014785886852970896,
+                "weighted_tail_ratio": 0.45440324033129365
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 6.001566202164046e-15,
+                "weighted_tail_ratio": 0.10106535597434232
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0009108776873149594,
+                "weighted_tail_ratio": 0.601612491486821
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.000910877687315289,
+                "weighted_tail_ratio": 0.601612491486933
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.0015140604628470773,
+          "twist_centered_l1_nu": 14.404211948426893,
+          "upper_triangular_defect_l1_nu": 0.039632931787126464
+        },
+        "nu_1.003000": {
+          "a21_l1_nu": 0.004980271279344769,
+          "embedding_residual_l1_nu_lift_aware": 8.223876147653216e-14,
+          "nu": 1.003,
+          "scalar_residual_l1_nu": 8.144118106943222e-14,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.00474743301680176,
+                "weighted_tail_ratio": 0.9532478755708178
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 5.973553942246731e-14,
+                "weighted_tail_ratio": 0.7334807604464886
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.0023721703165391116,
+                "weighted_tail_ratio": 0.9929234782477281
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.0023721703165401073,
+                "weighted_tail_ratio": 0.9929234782478918
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.003942188212758667,
+                "weighted_tail_ratio": 0.791560939483064
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 2.3138116241082034e-14,
+                "weighted_tail_ratio": 0.28410830905504386
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.002173448946481537,
+                "weighted_tail_ratio": 0.9097443268250788
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.0021734489464823588,
+                "weighted_tail_ratio": 0.9097443268251909
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.0024141910360856427,
+                "weighted_tail_ratio": 0.4847509102763708
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 9.78250490100696e-15,
+                "weighted_tail_ratio": 0.12011742428768242
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.001490843957273373,
+                "weighted_tail_ratio": 0.6240251626367901
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.00149084395727391,
+                "weighted_tail_ratio": 0.6240251626368558
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.0023890766695597006,
+          "twist_centered_l1_nu": 16.7073180684986,
+          "upper_triangular_defect_l1_nu": 0.06146024978343403
+        },
+        "nu_1.005000": {
+          "a21_l1_nu": 0.011889843278529924,
+          "embedding_residual_l1_nu_lift_aware": 1.6185396842528388e-13,
+          "nu": 1.005,
+          "scalar_residual_l1_nu": 1.601677143582974e-13,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.011556759405910125,
+                "weighted_tail_ratio": 0.9719858483567008
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 1.310269504798943e-13,
+                "weighted_tail_ratio": 0.8180609369675165
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.005968334386700315,
+                "weighted_tail_ratio": 0.9956125028174504
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 256.0,
+                "weighted_tail_l1": 0.005968334386702771,
+                "weighted_tail_ratio": 0.9956125028175222
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.00999444047615787,
+                "weighted_tail_ratio": 0.8405863931112805
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 5.646986348100607e-14,
+                "weighted_tail_ratio": 0.3525670807456377
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.0055795632749907655,
+                "weighted_tail_ratio": 0.9307593370138062
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 384.0,
+                "weighted_tail_l1": 0.005579563274992851,
+                "weighted_tail_ratio": 0.9307593370138381
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.00643046781349504,
+                "weighted_tail_ratio": 0.5408370541861433
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 2.596769842542229e-14,
+                "weighted_tail_ratio": 0.1621281700214076
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.003990045412103863,
+                "weighted_tail_ratio": 0.6656026357960637
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 460.8,
+                "weighted_tail_l1": 0.00399004541210529,
+                "weighted_tail_ratio": 0.6656026357960758
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.005994635834536782,
+          "twist_centered_l1_nu": 24.092518332674537,
+          "upper_triangular_defect_l1_nu": 0.15014548574295153
+        }
+      }
+    },
+    "L2048_cut_0.500": {
+      "cutoff_frac": 0.5,
+      "cutoff_mode": 256,
+      "grid_size": 2048,
+      "oversample_factor": 2,
+      "scalar_metrics": {
+        "a11_minus_1_linf": 0.0028702794782100582,
+        "a21_linf": 0.007336668953775494,
+        "a22_minus_1_linf": 0.0012337074267013692,
+        "embedding_residual_linf_max_lift_aware": 1.8244772606035298e-06,
+        "frame_det_defect_linf": 1.8110400463844378e-05,
+        "frame_normal_norm_max": 1.9000311597058277,
+        "frame_tangent_norm_max": 5.541976496427168,
+        "frame_tangent_norm_min": 0.526307158117778,
+        "lift_residual_matches_scalar_linf": 4.163336342344337e-16,
+        "r_lift_residual_linf": 1.8244772604925075e-06,
+        "rprime_linf": 2.418842800519971,
+        "scalar_residual_linf": 1.824477260520263e-06,
+        "tangent_residual_linf_max": 0.0030037105725657653,
+        "tangent_residual_r_linf": 0.0030037105725657653,
+        "tangent_residual_x_linf": 0.0030037105725657653,
+        "twist_average": 1.3254510657608458,
+        "twist_centered_linf": 4.046450721102207,
+        "twist_max": 5.371901786863053,
+        "twist_min": -0.16617653080901507,
+        "upper_triangular_defect_linf_max": 0.007336668953775494,
+        "x_lift_residual_linf": 1.8244772606035298e-06,
+        "xprime_max": 4.9862513969237305,
+        "xprime_min": 0.5090259678611715
+      },
+      "weighted_metrics": {
+        "nu_1.002000": {
+          "a21_l1_nu": 0.025007927322949274,
+          "embedding_residual_l1_nu_lift_aware": 6.08423645179432e-06,
+          "nu": 1.002,
+          "scalar_residual_l1_nu": 6.084236450390403e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.0007904904311634453,
+                "weighted_tail_ratio": 0.03160959406811887
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 3.4140224035723165e-09,
+                "weighted_tail_ratio": 0.0005611258588336506
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 1.186113818231144e-05,
+                "weighted_tail_ratio": 0.0011334483914102324
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 1.1861138180966676e-05,
+                "weighted_tail_ratio": 0.0011334483912818767
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 2.548182313501789e-06,
+                "weighted_tail_ratio": 0.00010189498236278754
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 1.0984351151527556e-13,
+                "weighted_tail_ratio": 1.8053787424423208e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 5.610000501962683e-10,
+                "weighted_tail_ratio": 5.3609071465357956e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 5.60998983068429e-10,
+                "weighted_tail_ratio": 5.360896949080624e-08
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 7.283563073961889e-08,
+                "weighted_tail_ratio": 2.9125016959233997e-06
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 3.5933416507126804e-15,
+                "weighted_tail_ratio": 5.905986198945488e-10
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 2.240371642079446e-11,
+                "weighted_tail_ratio": 2.140895413951913e-09
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 2.2402691361563254e-11,
+                "weighted_tail_ratio": 2.1407974594625966e-09
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.010464647770644285,
+          "twist_centered_l1_nu": 14.218536007187398,
+          "upper_triangular_defect_l1_nu": 0.025007927322949274
+        },
+        "nu_1.003000": {
+          "a21_l1_nu": 0.0338858853400304,
+          "embedding_residual_l1_nu_lift_aware": 8.003701988672311e-06,
+          "nu": 1.003,
+          "scalar_residual_l1_nu": 8.00370198463956e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.0013920348260024807,
+                "weighted_tail_ratio": 0.04108007838762379
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 5.931992294949679e-09,
+                "weighted_tail_ratio": 0.0007411560683211547
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 2.0677568982537957e-05,
+                "weighted_tail_ratio": 0.0014894642275175892
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 2.0677568979211804e-05,
+                "weighted_tail_ratio": 0.0014894642272783576
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 5.7344551505380455e-06,
+                "weighted_tail_ratio": 0.00016922842927063098
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 2.4699159710464405e-13,
+                "weighted_tail_ratio": 3.085966938532471e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 1.2647490697271357e-09,
+                "weighted_tail_ratio": 9.110348018839016e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 1.2647462943378803e-09,
+                "weighted_tail_ratio": 9.110328026921394e-08
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.8609466230987744e-07,
+                "weighted_tail_ratio": 5.4918046390848855e-06
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 9.314970998436793e-15,
+                "weighted_tail_ratio": 1.163832813404819e-09
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 5.8137526162285184e-11,
+                "weighted_tail_ratio": 4.1878117088241605e-09
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 5.813480124802051e-11,
+                "weighted_tail_ratio": 4.187615425484337e-09
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.013882554948634222,
+          "twist_centered_l1_nu": 16.38323937464896,
+          "upper_triangular_defect_l1_nu": 0.0338858853400304
+        },
+        "nu_1.005000": {
+          "a21_l1_nu": 0.06423551367909816,
+          "embedding_residual_l1_nu_lift_aware": 1.3940021037253134e-05,
+          "nu": 1.005,
+          "scalar_residual_l1_nu": 1.3940021006521184e-05,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.0043493292133564305,
+                "weighted_tail_ratio": 0.06770910613534449
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 1.7983210128602442e-08,
+                "weighted_tail_ratio": 0.001290041824197384
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 6.314268905794606e-05,
+                "weighted_tail_ratio": 0.00256422961595827
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 6.314268903689223e-05,
+                "weighted_tail_ratio": 0.0025642296151054626
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 2.9125785906841375e-05,
+                "weighted_tail_ratio": 0.00045342185714191194
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 1.2534965466768614e-12,
+                "weighted_tail_ratio": 8.992070715607041e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 6.456187965175144e-09,
+                "weighted_tail_ratio": 2.62186305865162e-07
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 6.456169012456673e-09,
+                "weighted_tail_ratio": 2.621855361939841e-07
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.2121238716836082e-06,
+                "weighted_tail_ratio": 1.8869995774284994e-05
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 6.252319296567851e-14,
+                "weighted_tail_ratio": 4.4851577294202046e-09
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 3.910710249105894e-10,
+                "weighted_tail_ratio": 1.588142537133035e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 3.9105178313680736e-10,
+                "weighted_tail_ratio": 1.5880643961382895e-08
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.02462442858665339,
+          "twist_centered_l1_nu": 23.60286988918552,
+          "upper_triangular_defect_l1_nu": 0.06423551367909816
+        }
+      }
+    },
+    "L2048_cut_0.750": {
+      "cutoff_frac": 0.75,
+      "cutoff_mode": 384,
+      "grid_size": 2048,
+      "oversample_factor": 2,
+      "scalar_metrics": {
+        "a11_minus_1_linf": 0.005026041345581156,
+        "a21_linf": 0.009145383711079091,
+        "a22_minus_1_linf": 0.0022598587645733526,
+        "embedding_residual_linf_max_lift_aware": 1.610350761849233e-06,
+        "frame_det_defect_linf": 0.00031064359558696797,
+        "frame_normal_norm_max": 1.871517146979858,
+        "frame_tangent_norm_max": 5.861205855757606,
+        "frame_tangent_norm_min": 0.5343258551564649,
+        "lift_residual_matches_scalar_linf": 4.163336342344337e-16,
+        "r_lift_residual_linf": 1.6103507617382107e-06,
+        "rprime_linf": 2.5591178644296018,
+        "scalar_residual_linf": 1.6103507617937218e-06,
+        "tangent_residual_linf_max": 0.003863897246894371,
+        "tangent_residual_r_linf": 0.003863897246894371,
+        "tangent_residual_x_linf": 0.003863897246894288,
+        "twist_average": 1.325862687274348,
+        "twist_centered_linf": 3.861580001852588,
+        "twist_max": 5.187442689126936,
+        "twist_min": -0.171660024705934,
+        "upper_triangular_defect_linf_max": 0.009145383711079091,
+        "x_lift_residual_linf": 1.610350761849233e-06,
+        "xprime_max": 5.273011458315307,
+        "xprime_min": 0.4812546864430527
+      },
+      "weighted_metrics": {
+        "nu_1.002000": {
+          "a21_l1_nu": 0.04113069422886949,
+          "embedding_residual_l1_nu_lift_aware": 6.557584143152238e-06,
+          "nu": 1.002,
+          "scalar_residual_l1_nu": 6.5575841432668775e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.008294480040794427,
+                "weighted_tail_ratio": 0.201661561913841
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 2.3900470656614685e-07,
+                "weighted_tail_ratio": 0.036447066685610034
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.0008682747895721982,
+                "weighted_tail_ratio": 0.05294270853773292
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.0008682747895715228,
+                "weighted_tail_ratio": 0.05294270853769503
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.0006926169399662019,
+                "weighted_tail_ratio": 0.016839417689187862
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 1.292694055503578e-09,
+                "weighted_tail_ratio": 0.00019712961774663248
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 6.746104225818906e-06,
+                "weighted_tail_ratio": 0.00041134101102793867
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 6.746104225419851e-06,
+                "weighted_tail_ratio": 0.000411341011003632
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 6.400849008566536e-05,
+                "weighted_tail_ratio": 0.0015562219720750064
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 6.377615812942968e-11,
+                "weighted_tail_ratio": 9.72555696367435e-06
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 5.082122970251186e-07,
+                "weighted_tail_ratio": 3.098804185014901e-05
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 5.082122968406347e-07,
+                "weighted_tail_ratio": 3.09880418389021e-05
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.016400271417042596,
+          "twist_centered_l1_nu": 15.697376182952427,
+          "upper_triangular_defect_l1_nu": 0.04113069422886949
+        },
+        "nu_1.003000": {
+          "a21_l1_nu": 0.06358154628255813,
+          "embedding_residual_l1_nu_lift_aware": 9.764246620968391e-06,
+          "nu": 1.003,
+          "scalar_residual_l1_nu": 9.764246621142467e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.01568917914384155,
+                "weighted_tail_ratio": 0.2467568038392525
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 4.263798049130929e-07,
+                "weighted_tail_ratio": 0.04366745550955822
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.0015610385312762138,
+                "weighted_tail_ratio": 0.06357583071531417
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.00156103853127481,
+                "weighted_tail_ratio": 0.06357583071526197
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.0015808788440207049,
+                "weighted_tail_ratio": 0.024863799898719608
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 2.9141737001385896e-09,
+                "weighted_tail_ratio": 0.00029845351241216566
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 1.531077543627633e-05,
+                "weighted_tail_ratio": 0.0006235562080976331
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 1.5310775435362772e-05,
+                "weighted_tail_ratio": 0.0006235562080604759
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 0.0001687635017858998,
+                "weighted_tail_ratio": 0.0026542843270264327
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.662373747346257e-10,
+                "weighted_tail_ratio": 1.702511019894488e-05
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.3338655225960619e-06,
+                "weighted_tail_ratio": 5.432384080374522e-05
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.3338655221410642e-06,
+                "weighted_tail_ratio": 5.4323840785218955e-05
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.024553961996444513,
+          "twist_centered_l1_nu": 19.156103776015094,
+          "upper_triangular_defect_l1_nu": 0.06358154628255813
+        },
+        "nu_1.005000": {
+          "a21_l1_nu": 0.16095308862573376,
+          "embedding_residual_l1_nu_lift_aware": 2.1784855375128523e-05,
+          "nu": 1.005,
+          "scalar_residual_l1_nu": 2.1784855375423155e-05,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.057748636920949836,
+                "weighted_tail_ratio": 0.3587917287827478
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 1.3741184130631655e-06,
+                "weighted_tail_ratio": 0.06307677463920158
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.005119356599386091,
+                "weighted_tail_ratio": 0.09216104322818751
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.00511935659937989,
+                "weighted_tail_ratio": 0.09216104322808821
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.00831960702181514,
+                "weighted_tail_ratio": 0.05168963884353177
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 1.4896129694618785e-08,
+                "weighted_tail_ratio": 0.0006837837313083121
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 7.951838477393393e-05,
+                "weighted_tail_ratio": 0.0014315270199120333
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 7.951838476923933e-05,
+                "weighted_tail_ratio": 0.0014315270198277108
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 0.0011724473217845088,
+                "weighted_tail_ratio": 0.007284403994947964
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.1282461906010138e-09,
+                "weighted_tail_ratio": 5.179039158891356e-05
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 9.183310700586671e-06,
+                "weighted_tail_ratio": 0.0001653222388446505
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 9.183310697867435e-06,
+                "weighted_tail_ratio": 0.0001653222387957197
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.05554794542321688,
+          "twist_centered_l1_nu": 33.52524961504109,
+          "upper_triangular_defect_l1_nu": 0.17575453263372032
+        }
+      }
+    },
+    "L2048_cut_0.900": {
+      "cutoff_frac": 0.9,
+      "cutoff_mode": 460,
+      "grid_size": 2048,
+      "oversample_factor": 2,
+      "scalar_metrics": {
+        "a11_minus_1_linf": 0.00043014468364543923,
+        "a21_linf": 0.0009004872413021971,
+        "a22_minus_1_linf": 9.810083483374754e-05,
+        "embedding_residual_linf_max_lift_aware": 1.2984854014241876e-07,
+        "frame_det_defect_linf": 0.0002730870422511522,
+        "frame_normal_norm_max": 1.8694117344615662,
+        "frame_tangent_norm_max": 5.921165867871549,
+        "frame_tangent_norm_min": 0.5349276360929783,
+        "lift_residual_matches_scalar_linf": 3.885780586188048e-16,
+        "r_lift_residual_linf": 1.2984854003139645e-07,
+        "rprime_linf": 2.5849486586718995,
+        "scalar_residual_linf": 1.2984854005915203e-07,
+        "tangent_residual_linf_max": 0.0003979929419247741,
+        "tangent_residual_r_linf": 0.0003979929419247741,
+        "tangent_residual_x_linf": 0.00039799294192466306,
+        "twist_average": 1.325224844622905,
+        "twist_centered_linf": 3.8545816448906316,
+        "twist_max": 5.1798064895135365,
+        "twist_min": -0.16883320523956336,
+        "upper_triangular_defect_linf_max": 0.0009004872413021971,
+        "x_lift_residual_linf": 1.2984854014241876e-07,
+        "xprime_max": 5.327123582842563,
+        "xprime_min": 0.48127335696421447
+      },
+      "weighted_metrics": {
+        "nu_1.002000": {
+          "a21_l1_nu": 0.00663097165992261,
+          "embedding_residual_l1_nu_lift_aware": 8.305936637851325e-07,
+          "nu": 1.002,
+          "scalar_residual_l1_nu": 8.305936640527506e-07,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.0036115910814268778,
+                "weighted_tail_ratio": 0.5446548811624734
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 3.032209014188557e-07,
+                "weighted_tail_ratio": 0.36506527143409356
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.001112364967063317,
+                "weighted_tail_ratio": 0.4227369538707126
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.0011123649670632752,
+                "weighted_tail_ratio": 0.42273695387068627
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.000614012345572538,
+                "weighted_tail_ratio": 0.09259764285883015
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 6.7924314816928155e-09,
+                "weighted_tail_ratio": 0.00817780314931638
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 3.4645398162663136e-05,
+                "weighted_tail_ratio": 0.01316644313564447
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 3.464539816226068e-05,
+                "weighted_tail_ratio": 0.0131664431354912
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 0.00011434206571625191,
+                "weighted_tail_ratio": 0.017243636616234067
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.226001389555244e-10,
+                "weighted_tail_ratio": 0.0001476054348371939
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.087069426693675e-06,
+                "weighted_tail_ratio": 0.0004131237783401968
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.087069426458421e-06,
+                "weighted_tail_ratio": 0.000413123778250782
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.002631340735363163,
+          "twist_centered_l1_nu": 15.118942423426418,
+          "upper_triangular_defect_l1_nu": 0.00663097165992261
+        },
+        "nu_1.003000": {
+          "a21_l1_nu": 0.011634114667686825,
+          "embedding_residual_l1_nu_lift_aware": 1.377853906378332e-06,
+          "nu": 1.003,
+          "scalar_residual_l1_nu": 1.3778539068405881e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.006958770858183154,
+                "weighted_tail_ratio": 0.59813497261728
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 5.441247550942241e-07,
+                "weighted_tail_ratio": 0.39490743713308424
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.002014066814864764,
+                "weighted_tail_ratio": 0.4553615377881465
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.0020140668148645327,
+                "weighted_tail_ratio": 0.45536153778810706
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.0014536178309550985,
+                "weighted_tail_ratio": 0.12494443045094353
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 1.5129687368992265e-08,
+                "weighted_tail_ratio": 0.010980617969639872
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 7.746742847411042e-05,
+                "weighted_tail_ratio": 0.017514655967772737
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 7.7467428473173e-05,
+                "weighted_tail_ratio": 0.01751465596756129
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 0.0003013525119528208,
+                "weighted_tail_ratio": 0.02590248768905574
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 3.189301464370121e-10,
+                "weighted_tail_ratio": 0.00023146876809916465
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 2.8580828879617586e-06,
+                "weighted_tail_ratio": 0.0006461856227325014
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 2.8580828873409592e-06,
+                "weighted_tail_ratio": 0.0006461856225921628
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.00442300600232467,
+          "twist_centered_l1_nu": 18.16055595847375,
+          "upper_triangular_defect_l1_nu": 0.011634114667686825
+        },
+        "nu_1.005000": {
+          "a21_l1_nu": 0.03843134702343423,
+          "embedding_residual_l1_nu_lift_aware": 3.867491359866356e-06,
+          "nu": 1.005,
+          "scalar_residual_l1_nu": 3.8674913605641975e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.027075352735400963,
+                "weighted_tail_ratio": 0.7045121972667588
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 1.7783990779471498e-06,
+                "weighted_tail_ratio": 0.4598327215623601
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.006718583873833754,
+                "weighted_tail_ratio": 0.5254259189019179
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.006718583873831245,
+                "weighted_tail_ratio": 0.5254259189018224
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.00823865608733867,
+                "weighted_tail_ratio": 0.21437333649312357
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 7.520113504714252e-08,
+                "weighted_tail_ratio": 0.01944442224589017
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.0003886833066434296,
+                "weighted_tail_ratio": 0.030396924022982483
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.000388683306638151,
+                "weighted_tail_ratio": 0.030396924022575492
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 0.0020926649420246143,
+                "weighted_tail_ratio": 0.05445203210672196
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 2.1563282532864845e-09,
+                "weighted_tail_ratio": 0.0005575521836387283
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.9751808526847278e-05,
+                "weighted_tail_ratio": 0.0015446874430804
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.9751808522511936e-05,
+                "weighted_tail_ratio": 0.0015446874427416512
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.012786928912595044,
+          "twist_centered_l1_nu": 30.283072388434952,
+          "upper_triangular_defect_l1_nu": 0.04422751338375125
+        }
+      }
+    },
+    "L2048_cut_0.950": {
+      "cutoff_frac": 0.95,
+      "cutoff_mode": 486,
+      "grid_size": 2048,
+      "oversample_factor": 2,
+      "scalar_metrics": {
+        "a11_minus_1_linf": 0.00036762284957525537,
+        "a21_linf": 0.0007193202603182659,
+        "a22_minus_1_linf": 5.2681314423042025e-05,
+        "embedding_residual_linf_max_lift_aware": 9.512510956710685e-08,
+        "frame_det_defect_linf": 0.00026545338167938137,
+        "frame_normal_norm_max": 1.8655606464082266,
+        "frame_tangent_norm_max": 5.925173171153261,
+        "frame_tangent_norm_min": 0.536031890426776,
+        "lift_residual_matches_scalar_linf": 3.95516952522712e-16,
+        "r_lift_residual_linf": 9.512510934506224e-08,
+        "rprime_linf": 2.5866770029217863,
+        "scalar_residual_linf": 9.512510940057339e-08,
+        "tangent_residual_linf_max": 0.0003178241133268145,
+        "tangent_residual_r_linf": 0.0003178241133268145,
+        "tangent_residual_x_linf": 0.0003178241133268145,
+        "twist_average": 1.325107755549253,
+        "twist_centered_linf": 3.833577041739893,
+        "twist_max": 5.158684797289146,
+        "twist_min": -0.1680834475042553,
+        "upper_triangular_defect_linf_max": 0.0007193202603182659,
+        "x_lift_residual_linf": 9.512510956710685e-08,
+        "xprime_max": 5.330739084846487,
+        "xprime_min": 0.4822513686429142
+      },
+      "weighted_metrics": {
+        "nu_1.002000": {
+          "a21_l1_nu": 0.004639894935413193,
+          "embedding_residual_l1_nu_lift_aware": 5.487178381174335e-07,
+          "nu": 1.002,
+          "scalar_residual_l1_nu": 5.487178383038501e-07,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.003147123240056602,
+                "weighted_tail_ratio": 0.6782746773071799
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 3.16037815669083e-07,
+                "weighted_tail_ratio": 0.5759568827687326
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.0011598481015015981,
+                "weighted_tail_ratio": 0.6368126288730878
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.001159848101501984,
+                "weighted_tail_ratio": 0.6368126288733141
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.0005380175857324009,
+                "weighted_tail_ratio": 0.11595469147934255
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 7.420842517925864e-09,
+                "weighted_tail_ratio": 0.013523968057726245
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 3.799614852320969e-05,
+                "weighted_tail_ratio": 0.020861720769117555
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 3.799614852393986e-05,
+                "weighted_tail_ratio": 0.020861720769518928
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 0.00012331958285806259,
+                "weighted_tail_ratio": 0.026578098119603367
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.3700823533578675e-10,
+                "weighted_tail_ratio": 0.00024968795576118857
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.2112090278589109e-06,
+                "weighted_tail_ratio": 0.0006650122581974906
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.211209028151578e-06,
+                "weighted_tail_ratio": 0.0006650122583581941
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.0018213333858564974,
+          "twist_centered_l1_nu": 15.05240796791028,
+          "upper_triangular_defect_l1_nu": 0.004639894935413193
+        },
+        "nu_1.003000": {
+          "a21_l1_nu": 0.008366100990655424,
+          "embedding_residual_l1_nu_lift_aware": 9.332561360915476e-07,
+          "nu": 1.003,
+          "scalar_residual_l1_nu": 9.332561365199784e-07,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.006068614932093987,
+                "weighted_tail_ratio": 0.7253815055391238
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 5.672756858386903e-07,
+                "weighted_tail_ratio": 0.6078456531279893
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.002100949044544298,
+                "weighted_tail_ratio": 0.6672693457715739
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.002100949044545463,
+                "weighted_tail_ratio": 0.6672693457718064
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.0012812379116638674,
+                "weighted_tail_ratio": 0.15314635970746174
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 1.6580691582521984e-08,
+                "weighted_tail_ratio": 0.01776649617794079
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 8.523024663314714e-05,
+                "weighted_tail_ratio": 0.02706944799948044
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 8.523024663495388e-05,
+                "weighted_tail_ratio": 0.027069448000048686
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 0.0003250065775199027,
+                "weighted_tail_ratio": 0.038848034213658324
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 3.561269097933313e-10,
+                "weighted_tail_ratio": 0.00038159610835380515
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 3.1818411289936665e-06,
+                "weighted_tail_ratio": 0.001010564751204238
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 3.181841129762914e-06,
+                "weighted_tail_ratio": 0.0010105647514483454
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.003148577194289318,
+          "twist_centered_l1_nu": 18.047293041566206,
+          "upper_triangular_defect_l1_nu": 0.008366100990655424
+        },
+        "nu_1.005000": {
+          "a21_l1_nu": 0.0292484217265222,
+          "embedding_residual_l1_nu_lift_aware": 2.7677290546911708e-06,
+          "nu": 1.005,
+          "scalar_residual_l1_nu": 2.7677290566200977e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.02371228438946817,
+                "weighted_tail_ratio": 0.810720134275351
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 1.8556852492360683e-06,
+                "weighted_tail_ratio": 0.6704721492869676
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.007017748898525785,
+                "weighted_tail_ratio": 0.7265073286352068
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.007017748898534641,
+                "weighted_tail_ratio": 0.7265073286355117
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.007360442027107107,
+                "weighted_tail_ratio": 0.2516526223509943
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 8.294838994178607e-08,
+                "weighted_tail_ratio": 0.02996983745333844
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.00043044434201349195,
+                "weighted_tail_ratio": 0.04456143609071771
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.00043044434202465045,
+                "weighted_tail_ratio": 0.04456143609183535
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 0.002256784104130173,
+                "weighted_tail_ratio": 0.0771591754670216
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 2.403949018378491e-09,
+                "weighted_tail_ratio": 0.0008685637102477623
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 2.195292161756206e-05,
+                "weighted_tail_ratio": 0.0022726601750403873
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 2.1952921622877206e-05,
+                "weighted_tail_ratio": 0.00227266017558872
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.0096595706910693,
+          "twist_centered_l1_nu": 29.915853671973675,
+          "upper_triangular_defect_l1_nu": 0.037882876011933214
+        }
+      }
+    },
+    "L2048_full": {
+      "cutoff_frac": 1.0,
+      "cutoff_mode": null,
+      "grid_size": 2048,
+      "oversample_factor": 2,
+      "scalar_metrics": {
+        "a11_minus_1_linf": 0.0003557788426353792,
+        "a21_linf": 0.0006953145478986195,
+        "a22_minus_1_linf": 5.406347402270306e-05,
+        "embedding_residual_linf_max_lift_aware": 9.261427080797802e-08,
+        "frame_det_defect_linf": 0.0002594281805143872,
+        "frame_normal_norm_max": 1.867433173263166,
+        "frame_tangent_norm_max": 5.92377698249621,
+        "frame_tangent_norm_min": 0.5354943964353984,
+        "lift_residual_matches_scalar_linf": 4.440892098500626e-16,
+        "r_lift_residual_linf": 9.261427080797802e-08,
+        "rprime_linf": 2.5860827081434046,
+        "scalar_residual_linf": 9.261427086348917e-08,
+        "tangent_residual_linf_max": 0.00030722418859430167,
+        "tangent_residual_r_linf": 0.00030722418859430167,
+        "tangent_residual_x_linf": 0.00030722418859419065,
+        "twist_average": 1.3250997376190425,
+        "twist_centered_linf": 3.843888246255848,
+        "twist_max": 5.1689879838748904,
+        "twist_min": -0.16831175557057343,
+        "upper_triangular_defect_linf_max": 0.0006953145478986195,
+        "x_lift_residual_linf": 9.261427080797802e-08,
+        "xprime_max": 5.329475580673353,
+        "xprime_min": 0.481768709814985
+      },
+      "weighted_metrics": {
+        "nu_1.002000": {
+          "a21_l1_nu": 0.004301909293675758,
+          "embedding_residual_l1_nu_lift_aware": 5.394941696910405e-07,
+          "nu": 1.002,
+          "scalar_residual_l1_nu": 5.394941696784772e-07,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.0028538389939349266,
+                "weighted_tail_ratio": 0.6633889278256887
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 3.062662552693491e-07,
+                "weighted_tail_ratio": 0.5676915015631677
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.001125474915108496,
+                "weighted_tail_ratio": 0.6279222188147254
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.0011254749151097055,
+                "weighted_tail_ratio": 0.6279222188149312
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.0004872984370643431,
+                "weighted_tail_ratio": 0.11327492138914252
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 7.303287556396936e-09,
+                "weighted_tail_ratio": 0.01353728727179662
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 3.7379572829484336e-05,
+                "weighted_tail_ratio": 0.020854720078033705
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 3.73795728301542e-05,
+                "weighted_tail_ratio": 0.02085472007839185
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 0.00011635026350279513,
+                "weighted_tail_ratio": 0.027046191716278582
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.2707851258875188e-10,
+                "weighted_tail_ratio": 0.00023555122507530892
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.1323398089876871e-06,
+                "weighted_tail_ratio": 0.0006317522636595133
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 1.1323398093079524e-06,
+                "weighted_tail_ratio": 0.0006317522638377229
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.0017923795039993945,
+          "twist_centered_l1_nu": 15.042093164773393,
+          "upper_triangular_defect_l1_nu": 0.004301909293675758
+        },
+        "nu_1.003000": {
+          "a21_l1_nu": 0.007733242390317125,
+          "embedding_residual_l1_nu_lift_aware": 9.180092419203535e-07,
+          "nu": 1.003,
+          "scalar_residual_l1_nu": 9.180092419182566e-07,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.005506994709304707,
+                "weighted_tail_ratio": 0.7121197592616615
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 5.501718055948206e-07,
+                "weighted_tail_ratio": 0.5993096588496112
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.0020403684582607677,
+                "weighted_tail_ratio": 0.6582313725739862
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.002040368458263468,
+                "weighted_tail_ratio": 0.6582313725742501
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.0011616484561524864,
+                "weighted_tail_ratio": 0.150214928941966
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 1.6319193524263893e-08,
+                "weighted_tail_ratio": 0.017776720297677594
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 8.384465038835937e-05,
+                "weighted_tail_ratio": 0.027048633831146193
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 8.384465039000516e-05,
+                "weighted_tail_ratio": 0.02704863383165218
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 0.000306880425313959,
+                "weighted_tail_ratio": 0.03968328028851226
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 3.3031349609571056e-10,
+                "weighted_tail_ratio": 0.0003598150007787428
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 2.975485620087266e-06,
+                "weighted_tail_ratio": 0.0009599040682356439
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 2.975485620908762e-06,
+                "weighted_tail_ratio": 0.0009599040684997765
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.003099773944660028,
+          "twist_centered_l1_nu": 18.03231708383216,
+          "upper_triangular_defect_l1_nu": 0.007733242390317125
+        },
+        "nu_1.005000": {
+          "a21_l1_nu": 0.02691015617149135,
+          "embedding_residual_l1_nu_lift_aware": 2.7247995853692465e-06,
+          "nu": 1.005,
+          "scalar_residual_l1_nu": 2.7247995856518573e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.02155450694200022,
+                "weighted_tail_ratio": 0.8009803735303137
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 1.8027282583356202e-06,
+                "weighted_tail_ratio": 0.661600312855432
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.006826974822984136,
+                "weighted_tail_ratio": 0.7174372550238693
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 512.0,
+                "weighted_tail_l1": 0.006826974822998152,
+                "weighted_tail_ratio": 0.7174372550242668
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.006690052845526317,
+                "weighted_tail_ratio": 0.2486069870012039
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 8.164561487945437e-08,
+                "weighted_tail_ratio": 0.029963897275007177
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.00042336495696184274,
+                "weighted_tail_ratio": 0.04449083239232401
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 768.0,
+                "weighted_tail_l1": 0.00042336495697181854,
+                "weighted_tail_ratio": 0.04449083239330565
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 0.002134190117302543,
+                "weighted_tail_ratio": 0.07930797962308024
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 2.2297838786098163e-09,
+                "weighted_tail_ratio": 0.0008183294985625089
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 2.0541484321216113e-05,
+                "weighted_tail_ratio": 0.0021586759154162746
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 921.6,
+                "weighted_tail_l1": 2.0541484326591655e-05,
+                "weighted_tail_ratio": 0.002158675915977947
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.00951577963813328,
+          "twist_centered_l1_nu": 29.887785585375834,
+          "upper_triangular_defect_l1_nu": 0.03964562086693926
+        }
+      }
+    },
+    "L4096_cut_0.500": {
+      "cutoff_frac": 0.5,
+      "cutoff_mode": 256,
+      "grid_size": 4096,
+      "oversample_factor": 4,
+      "scalar_metrics": {
+        "a11_minus_1_linf": 0.0028703010898996073,
+        "a21_linf": 0.007336668953249692,
+        "a22_minus_1_linf": 0.0012459233312459572,
+        "embedding_residual_linf_max_lift_aware": 1.8816448315028822e-06,
+        "frame_det_defect_linf": 4.060487501789112e-10,
+        "frame_normal_norm_max": 1.9086472506567262,
+        "frame_tangent_norm_max": 5.541976496427321,
+        "frame_tangent_norm_min": 0.52393128151675,
+        "lift_residual_matches_scalar_linf": 4.440892098500626e-16,
+        "r_lift_residual_linf": 1.8816448315028822e-06,
+        "rprime_linf": 2.4188428005200864,
+        "scalar_residual_linf": 1.8816448313779821e-06,
+        "tangent_residual_linf_max": 0.0031355663411738455,
+        "tangent_residual_r_linf": 0.0031355663411738455,
+        "tangent_residual_x_linf": 0.0031355663411734014,
+        "twist_average": 1.3254510657540415,
+        "twist_centered_linf": 4.097483064329473,
+        "twist_max": 5.422934130083514,
+        "twist_min": -0.1661767611961965,
+        "upper_triangular_defect_linf_max": 0.007336668953249692,
+        "x_lift_residual_linf": 1.8816448315028822e-06,
+        "xprime_max": 4.986251396923844,
+        "xprime_min": 0.5090259678611391
+      },
+      "weighted_metrics": {
+        "nu_1.002000": {
+          "a21_l1_nu": 0.02500792745667519,
+          "embedding_residual_l1_nu_lift_aware": 6.084236538813957e-06,
+          "nu": 1.002,
+          "scalar_residual_l1_nu": 6.084236472021807e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 2.289491149786499e-10,
+                "weighted_tail_ratio": 9.15506154499573e-09
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 2.1611738639795377e-14,
+                "weighted_tail_ratio": 3.5520872239559325e-09
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 1.1715286978927072e-10,
+                "weighted_tail_ratio": 1.1195108622102705e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 1.171529293579218e-10,
+                "weighted_tail_ratio": 1.1195114314473203e-08
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 1.0118123184879593e-10,
+                "weighted_tail_ratio": 4.0459663050481355e-09
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 1.579172555739833e-14,
+                "weighted_tail_ratio": 2.5955147585101505e-09
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 9.550337852314146e-11,
+                "weighted_tail_ratio": 9.126286861495883e-09
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 9.550193395825046e-11,
+                "weighted_tail_ratio": 9.126148819116903e-09
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 6.352019572892968e-11,
+                "weighted_tail_ratio": 2.540002398798333e-09
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 8.325665839142377e-15,
+                "weighted_tail_ratio": 1.3683994495328578e-09
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 5.6649813940373734e-11,
+                "weighted_tail_ratio": 5.413446735237162e-09
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 5.664914965804718e-11,
+                "weighted_tail_ratio": 5.413383256529342e-09
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.010464647887200817,
+          "twist_centered_l1_nu": 14.2223117808667,
+          "upper_triangular_defect_l1_nu": 0.02500792745667519
+        },
+        "nu_1.003000": {
+          "a21_l1_nu": 0.033885886136737875,
+          "embedding_residual_l1_nu_lift_aware": 8.003702480564363e-06,
+          "nu": 1.003,
+          "scalar_residual_l1_nu": 8.00370210609207e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 1.0514240636071373e-09,
+                "weighted_tail_ratio": 3.102837740067894e-08
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 1.2142731603337507e-13,
+                "weighted_tail_ratio": 1.5171393740522885e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 7.004443118091765e-10,
+                "weighted_tail_ratio": 5.0454997596039416e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 7.004405574706874e-10,
+                "weighted_tail_ratio": 5.045472716036731e-08
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 6.618856231488603e-10,
+                "weighted_tail_ratio": 1.9532781892673226e-08
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 9.942967836589293e-14,
+                "weighted_tail_ratio": 1.2422960905830238e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 6.178024281979223e-10,
+                "weighted_tail_ratio": 4.4502067479199574e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 6.17793169874141e-10,
+                "weighted_tail_ratio": 4.450140057579789e-08
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 4.538485566734711e-10,
+                "weighted_tail_ratio": 1.339343922841742e-08
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 5.86429476050325e-14,
+                "weighted_tail_ratio": 7.326977794487883e-09
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 4.0294609353387677e-10,
+                "weighted_tail_ratio": 2.9025354104273098e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 4.0294180364032816e-10,
+                "weighted_tail_ratio": 2.9025045091038805e-08
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.013882555647255834,
+          "twist_centered_l1_nu": 16.395711527300772,
+          "upper_triangular_defect_l1_nu": 0.033885886136737875
+        },
+        "nu_1.005000": {
+          "a21_l1_nu": 0.06423554541762454,
+          "embedding_residual_l1_nu_lift_aware": 1.3940039344697937e-05,
+          "nu": 1.005,
+          "scalar_residual_l1_nu": 1.3940025501105973e-05,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 3.3561244772435236e-08,
+                "weighted_tail_ratio": 5.224715467773847e-07
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 4.494658529481925e-12,
+                "weighted_tail_ratio": 3.224282860261144e-07
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 2.8448989274924993e-08,
+                "weighted_tail_ratio": 1.1553143791629663e-06
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 2.844869454458227e-08,
+                "weighted_tail_ratio": 1.1553024101682214e-06
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 2.9736512345608726e-08,
+                "weighted_tail_ratio": 4.629292419372812e-07
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 4.163055315526791e-12,
+                "weighted_tail_ratio": 2.986404375800104e-07
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 2.7183210255448865e-08,
+                "weighted_tail_ratio": 1.1039110520390567e-06
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 2.7182837502161243e-08,
+                "weighted_tail_ratio": 1.1038959145293578e-06
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 2.3282855780986653e-08,
+                "weighted_tail_ratio": 3.624606225356102e-07
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 2.923868919140079e-12,
+                "weighted_tail_ratio": 2.097463106439874e-07
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 2.050206154436532e-08,
+                "weighted_tail_ratio": 8.325893857173525e-07
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 2.050187811603187e-08,
+                "weighted_tail_ratio": 8.325819366968962e-07
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.0246244570205527,
+          "twist_centered_l1_nu": 23.74442982528842,
+          "upper_triangular_defect_l1_nu": 0.06423554541762454
+        }
+      }
+    },
+    "L4096_cut_0.750": {
+      "cutoff_frac": 0.75,
+      "cutoff_mode": 384,
+      "grid_size": 4096,
+      "oversample_factor": 4,
+      "scalar_metrics": {
+        "a11_minus_1_linf": 0.0049595667431210355,
+        "a21_linf": 0.010162517864845455,
+        "a22_minus_1_linf": 0.00244782534807797,
+        "embedding_residual_linf_max_lift_aware": 1.610350761849233e-06,
+        "frame_det_defect_linf": 8.720319966126766e-08,
+        "frame_normal_norm_max": 1.8715171469798941,
+        "frame_tangent_norm_max": 5.861205855757676,
+        "frame_tangent_norm_min": 0.5343258551564546,
+        "lift_residual_matches_scalar_linf": 4.510281037539698e-16,
+        "r_lift_residual_linf": 1.6103507617382107e-06,
+        "rprime_linf": 2.5591178644296684,
+        "scalar_residual_linf": 1.6103507618075996e-06,
+        "tangent_residual_linf_max": 0.0038805396512611168,
+        "tangent_residual_r_linf": 0.0038805396512611168,
+        "tangent_residual_x_linf": 0.0038805396512611168,
+        "twist_average": 1.3258626941147762,
+        "twist_centered_linf": 3.8623436766645503,
+        "twist_max": 5.1882063707793264,
+        "twist_min": -0.1717099918795062,
+        "upper_triangular_defect_linf_max": 0.010162517864845455,
+        "x_lift_residual_linf": 1.610350761849233e-06,
+        "xprime_max": 5.273011458315353,
+        "xprime_min": 0.481254686443062
+      },
+      "weighted_metrics": {
+        "nu_1.002000": {
+          "a21_l1_nu": 0.04113945949927479,
+          "embedding_residual_l1_nu_lift_aware": 6.557607881098875e-06,
+          "nu": 1.002,
+          "scalar_residual_l1_nu": 6.557607821007426e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 1.6692323248130562e-05,
+                "weighted_tail_ratio": 0.0004057496975239749
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 1.3159234042630624e-11,
+                "weighted_tail_ratio": 2.0067125698604236e-06
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 8.873794460407503e-08,
+                "weighted_tail_ratio": 5.410755568937473e-06
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 8.873794147273484e-08,
+                "weighted_tail_ratio": 5.410755378006705e-06
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 1.0926314787859858e-10,
+                "weighted_tail_ratio": 2.6559208411701343e-09
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 1.662014842657721e-14,
+                "weighted_tail_ratio": 2.534483439728469e-09
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 9.390991518391172e-11,
+                "weighted_tail_ratio": 5.726114108535054e-09
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 9.390892229805128e-11,
+                "weighted_tail_ratio": 5.7260535677753636e-09
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 5.5360091721728724e-11,
+                "weighted_tail_ratio": 1.3456689124149677e-09
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 8.958907570797825e-15,
+                "weighted_tail_ratio": 1.366185324791426e-09
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 5.50809478029883e-11,
+                "weighted_tail_ratio": 3.3585355892239936e-09
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 5.507937205658346e-11,
+                "weighted_tail_ratio": 3.35843950880875e-09
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.016400287071459924,
+          "twist_centered_l1_nu": 15.75134791626271,
+          "upper_triangular_defect_l1_nu": 0.04113945949927479
+        },
+        "nu_1.003000": {
+          "a21_l1_nu": 0.06361028173897182,
+          "embedding_residual_l1_nu_lift_aware": 9.764313388641132e-06,
+          "nu": 1.003,
+          "scalar_residual_l1_nu": 9.76431303363599e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 4.9686663864994605e-05,
+                "weighted_tail_ratio": 0.0007811105768857695
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 3.848491935514959e-11,
+                "weighted_tail_ratio": 3.941385248770415e-06
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 2.597769299319713e-07,
+                "weighted_tail_ratio": 1.0579809268311084e-05
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 2.5977691436457636e-07,
+                "weighted_tail_ratio": 1.057980863431265e-05
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 6.791537152190588e-10,
+                "weighted_tail_ratio": 1.0676791497418646e-08
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 1.0533239581055392e-13,
+                "weighted_tail_ratio": 1.078748657972211e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 6.051019391716473e-10,
+                "weighted_tail_ratio": 2.464369374908574e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 6.050953547690076e-10,
+                "weighted_tail_ratio": 2.4643425589323975e-08
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 3.9156863588883477e-10,
+                "weighted_tail_ratio": 6.155744404586314e-09
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 6.33224122645661e-14,
+                "weighted_tail_ratio": 6.485086257111361e-09
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 3.9027669923549895e-10,
+                "weighted_tail_ratio": 1.5894610198291587e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 3.902672395369548e-10,
+                "weighted_tail_ratio": 1.5894224937739385e-08
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.024554027709182035,
+          "twist_centered_l1_nu": 19.34287730091322,
+          "upper_triangular_defect_l1_nu": 0.06361028173897182
+        },
+        "nu_1.005000": {
+          "a21_l1_nu": 0.1612493334711973,
+          "embedding_residual_l1_nu_lift_aware": 2.178539819218968e-05,
+          "nu": 1.005,
+          "scalar_residual_l1_nu": 2.1785384448104586e-05,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 0.00044300507956267655,
+                "weighted_tail_ratio": 0.0027473296789893836
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 3.3208308655989125e-10,
+                "weighted_tail_ratio": 1.5243388857835088e-05
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 2.244014611143202e-06,
+                "weighted_tail_ratio": 4.039716062567229e-05
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 2.2440142197548546e-06,
+                "weighted_tail_ratio": 4.0397153580118146e-05
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 2.8104393629832816e-08,
+                "weighted_tail_ratio": 1.7429153364440346e-07
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 4.46715698675116e-12,
+                "weighted_tail_ratio": 2.0505293341930537e-07
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 2.6396564266082938e-08,
+                "weighted_tail_ratio": 4.7519576803449994e-07
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 2.6396332629272155e-08,
+                "weighted_tail_ratio": 4.751915980697672e-07
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 1.970942821875623e-08,
+                "weighted_tail_ratio": 1.2222951744651254e-07
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 3.1811068737098912e-12,
+                "weighted_tail_ratio": 1.4602023119158956e-07
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 1.9702152941939385e-08,
+                "weighted_tail_ratio": 3.5468175345864357e-07
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 1.970184738842032e-08,
+                "weighted_tail_ratio": 3.5467625283097024e-07
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.05554882017418662,
+          "twist_centered_l1_nu": 36.01211425151573,
+          "upper_triangular_defect_l1_nu": 0.1612493334711973
+        }
+      }
+    },
+    "L4096_cut_0.900": {
+      "cutoff_frac": 0.9,
+      "cutoff_mode": 460,
+      "grid_size": 4096,
+      "oversample_factor": 4,
+      "scalar_metrics": {
+        "a11_minus_1_linf": 0.0002453506121464777,
+        "a21_linf": 0.0009756034828001248,
+        "a22_minus_1_linf": 9.958843440194265e-05,
+        "embedding_residual_linf_max_lift_aware": 1.3796881337402311e-07,
+        "frame_det_defect_linf": 6.963054288711135e-08,
+        "frame_normal_norm_max": 1.8694117344617442,
+        "frame_tangent_norm_max": 5.921165867871592,
+        "frame_tangent_norm_min": 0.5349276360929274,
+        "lift_residual_matches_scalar_linf": 4.440892098500626e-16,
+        "r_lift_residual_linf": 1.3796881337402311e-07,
+        "rprime_linf": 2.584948658671886,
+        "scalar_residual_linf": 1.3796881331851196e-07,
+        "tangent_residual_linf_max": 0.0004371334405233185,
+        "tangent_residual_r_linf": 0.0004371334405228744,
+        "tangent_residual_x_linf": 0.0004371334405233185,
+        "twist_average": 1.3252248503582085,
+        "twist_centered_linf": 3.855232718319127,
+        "twist_max": 5.180457568677335,
+        "twist_min": -0.16885957343779756,
+        "upper_triangular_defect_linf_max": 0.0009756034828001248,
+        "x_lift_residual_linf": 1.3796881337402311e-07,
+        "xprime_max": 5.327123582842617,
+        "xprime_min": 0.4812733569641934
+      },
+      "weighted_metrics": {
+        "nu_1.002000": {
+          "a21_l1_nu": 0.006647831515978707,
+          "embedding_residual_l1_nu_lift_aware": 8.306650112350053e-07,
+          "nu": 1.002,
+          "scalar_residual_l1_nu": 8.306649571088477e-07,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 3.7538147448611174e-05,
+                "weighted_tail_ratio": 0.005646675514923115
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 3.9834463292749647e-11,
+                "weighted_tail_ratio": 4.7954910041461956e-05
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 2.70533219789025e-07,
+                "weighted_tail_ratio": 0.00010280980218668875
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 2.705332154833517e-07,
+                "weighted_tail_ratio": 0.00010280980055056369
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 7.185111286737799e-09,
+                "weighted_tail_ratio": 1.0808203050073831e-06
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 1.6365283456876304e-14,
+                "weighted_tail_ratio": 1.970142512552368e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 9.09258194367125e-11,
+                "weighted_tail_ratio": 3.455422412538123e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 9.092559052228472e-11,
+                "weighted_tail_ratio": 3.4554137131873124e-08
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 5.385719606068623e-11,
+                "weighted_tail_ratio": 8.101468265438925e-09
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 8.985152866205634e-15,
+                "weighted_tail_ratio": 1.0816819452067301e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 5.277388418512272e-11,
+                "weighted_tail_ratio": 2.0055476358603547e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 5.277431469850014e-11,
+                "weighted_tail_ratio": 2.0055639965139044e-08
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.0026313951980743346,
+          "twist_centered_l1_nu": 15.152810266557687,
+          "upper_triangular_defect_l1_nu": 0.006647831515978707
+        },
+        "nu_1.003000": {
+          "a21_l1_nu": 0.011691532514309717,
+          "embedding_residual_l1_nu_lift_aware": 1.3780548219317008e-06,
+          "nu": 1.003,
+          "scalar_residual_l1_nu": 1.3780544988729791e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 0.00011211942464935232,
+                "weighted_tail_ratio": 0.009589797104196994
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 1.17297297121678e-10,
+                "weighted_tail_ratio": 8.511803939365809e-05
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 7.982794127528032e-07,
+                "weighted_tail_ratio": 0.00018047421096483758
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 7.982793970117615e-07,
+                "weighted_tail_ratio": 0.00018047420740672208
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 3.446357688257221e-08,
+                "weighted_tail_ratio": 2.9477381891887063e-06
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 1.0426163163810816e-13,
+                "weighted_tail_ratio": 7.565856918095543e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 5.836228108863486e-10,
+                "weighted_tail_ratio": 1.3194486117658496e-07
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 5.836224906353173e-10,
+                "weighted_tail_ratio": 1.319447887749934e-07
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 3.8111107601914423e-10,
+                "weighted_tail_ratio": 3.259718737066229e-08
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 6.362579473054297e-14,
+                "weighted_tail_ratio": 4.6170739098183966e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 3.733922723097639e-10,
+                "weighted_tail_ratio": 8.441615134867547e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 3.733950511446223e-10,
+                "weighted_tail_ratio": 8.441677958516232e-08
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.004423232596419744,
+          "twist_centered_l1_nu": 18.279324978001704,
+          "upper_triangular_defect_l1_nu": 0.011691532514309717
+        },
+        "nu_1.005000": {
+          "a21_l1_nu": 0.03905774891142037,
+          "embedding_residual_l1_nu_lift_aware": 3.869113024981695e-06,
+          "nu": 1.005,
+          "scalar_residual_l1_nu": 3.869100396586115e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 0.0010105672148899912,
+                "weighted_tail_ratio": 0.025873667660209272
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 1.02382821479041e-09,
+                "weighted_tail_ratio": 0.00026461660588951913
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 6.995692220451165e-06,
+                "weighted_tail_ratio": 0.0005469694930569406
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 6.995692055900311e-06,
+                "weighted_tail_ratio": 0.0005469694801982115
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 7.963477783651849e-07,
+                "weighted_tail_ratio": 2.0388982994673692e-05
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 4.464023876044726e-12,
+                "weighted_tail_ratio": 1.1537627402957907e-06
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 2.5318281405293985e-08,
+                "weighted_tail_ratio": 1.979550716202536e-06
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 2.531834548109325e-08,
+                "weighted_tail_ratio": 1.9795557260975085e-06
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 1.9214191448564678e-08,
+                "weighted_tail_ratio": 4.919431350777747e-07
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 3.209258068068493e-12,
+                "weighted_tail_ratio": 8.294584629802238e-07
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 1.8820234058923057e-08,
+                "weighted_tail_ratio": 1.4714903912336822e-06
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 1.8820354228637664e-08,
+                "weighted_tail_ratio": 1.4714997869155559e-06
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.012789912982812188,
+          "twist_centered_l1_nu": 31.86766486870259,
+          "upper_triangular_defect_l1_nu": 0.03905774891142037
+        }
+      }
+    },
+    "L4096_cut_0.950": {
+      "cutoff_frac": 0.95,
+      "cutoff_mode": 486,
+      "grid_size": 4096,
+      "oversample_factor": 4,
+      "scalar_metrics": {
+        "a11_minus_1_linf": 0.0001754378691976033,
+        "a21_linf": 0.0007193202605458859,
+        "a22_minus_1_linf": 5.368880315381741e-05,
+        "embedding_residual_linf_max_lift_aware": 9.512510956710685e-08,
+        "frame_det_defect_linf": 6.277292441403404e-08,
+        "frame_normal_norm_max": 1.8655606464083867,
+        "frame_tangent_norm_max": 5.9251731711532925,
+        "frame_tangent_norm_min": 0.53603189042673,
+        "lift_residual_matches_scalar_linf": 4.163336342344337e-16,
+        "r_lift_residual_linf": 9.512510934506224e-08,
+        "rprime_linf": 2.586677002921797,
+        "scalar_residual_linf": 9.512510940057339e-08,
+        "tangent_residual_linf_max": 0.0003178241134274007,
+        "tangent_residual_r_linf": 0.0003178241134274007,
+        "tangent_residual_x_linf": 0.00031782411342717864,
+        "twist_average": 1.325107760137077,
+        "twist_centered_linf": 3.834142319193159,
+        "twist_max": 5.159250079330236,
+        "twist_min": -0.16810533314525622,
+        "upper_triangular_defect_linf_max": 0.0007193202605458859,
+        "x_lift_residual_linf": 9.512510956710685e-08,
+        "xprime_max": 5.330739084846516,
+        "xprime_min": 0.48225136864293705
+      },
+      "weighted_metrics": {
+        "nu_1.002000": {
+          "a21_l1_nu": 0.004658018287090372,
+          "embedding_residual_l1_nu_lift_aware": 5.487970739573899e-07,
+          "nu": 1.002,
+          "scalar_residual_l1_nu": 5.487970187122132e-07,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 4.147852347243814e-05,
+                "weighted_tail_ratio": 0.008904757541934784
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 4.4555725785646174e-11,
+                "weighted_tail_ratio": 8.118798802916057e-05
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 3.03124861190924e-07,
+                "weighted_tail_ratio": 0.00016642420427632538
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 3.031248553606269e-07,
+                "weighted_tail_ratio": 0.00016642420107583955
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 9.659041718245641e-09,
+                "weighted_tail_ratio": 2.073637569224563e-06
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 1.7458760700580486e-14,
+                "weighted_tail_ratio": 3.1812783425005785e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 8.920413742080445e-11,
+                "weighted_tail_ratio": 4.897561859521228e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 8.9200778303949e-11,
+                "weighted_tail_ratio": 4.897377434429299e-08
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 5.7574564548439564e-11,
+                "weighted_tail_ratio": 1.2360313120282632e-08
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 8.821802260138186e-15,
+                "weighted_tail_ratio": 1.6074799897490517e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 5.225712957211893e-11,
+                "weighted_tail_ratio": 2.8690656294691012e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 5.225391368554499e-11,
+                "weighted_tail_ratio": 2.8688890681223476e-08
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.001821398891519561,
+          "twist_centered_l1_nu": 15.082889529618448,
+          "upper_triangular_defect_l1_nu": 0.004658018287090372
+        },
+        "nu_1.003000": {
+          "a21_l1_nu": 0.00842863194176194,
+          "embedding_residual_l1_nu_lift_aware": 9.334796118366467e-07,
+          "nu": 1.003,
+          "scalar_residual_l1_nu": 9.334792782518377e-07,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 0.0001240584133501695,
+                "weighted_tail_ratio": 0.01471868913097136
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 1.3145653930865363e-10,
+                "weighted_tail_ratio": 0.0001408242714876728
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 8.963559126354295e-07,
+                "weighted_tail_ratio": 0.0002846618284773706
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 8.963558805820862e-07,
+                "weighted_tail_ratio": 0.000284661818300805
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 4.65675022804575e-08,
+                "weighted_tail_ratio": 5.5249182313592555e-06
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 1.0966931544489764e-13,
+                "weighted_tail_ratio": 1.1748446698279105e-07
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 5.713155540238647e-10,
+                "weighted_tail_ratio": 1.8143655656583118e-07
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 5.712923582669778e-10,
+                "weighted_tail_ratio": 1.814291901337507e-07
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 4.092008511329448e-10,
+                "weighted_tail_ratio": 4.8548904965875696e-08
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 6.221762616058329e-14,
+                "weighted_tail_ratio": 6.665132007761395e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 3.6915645834774327e-10,
+                "weighted_tail_ratio": 1.1723552100920822e-07
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 3.691348674618694e-10,
+                "weighted_tail_ratio": 1.172286642462648e-07
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.0031488447798918217,
+          "twist_centered_l1_nu": 18.154037767053936,
+          "upper_triangular_defect_l1_nu": 0.00842863194176194
+        },
+        "nu_1.005000": {
+          "a21_l1_nu": 0.029941265771565327,
+          "embedding_residual_l1_nu_lift_aware": 2.7695388104108553e-06,
+          "nu": 1.005,
+          "scalar_residual_l1_nu": 2.7695255851541992e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 0.0011218047867036162,
+                "weighted_tail_ratio": 0.037466845766052206
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 1.152388980432751e-09,
+                "weighted_tail_ratio": 0.00041609616701504103
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 7.892437575599168e-06,
+                "weighted_tail_ratio": 0.0008167645743547823
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 7.89243638787905e-06,
+                "weighted_tail_ratio": 0.0008167644515411511
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 1.0865534150791141e-06,
+                "weighted_tail_ratio": 3.628949501897792e-05
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 4.569750791002049e-12,
+                "weighted_tail_ratio": 1.6500121231946006e-06
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 2.469626057707652e-08,
+                "weighted_tail_ratio": 2.5557415646533482e-06
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 2.469519078409392e-08,
+                "weighted_tail_ratio": 2.5556308553149992e-06
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 2.078237255017536e-08,
+                "weighted_tail_ratio": 6.941046750906571e-07
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 3.110539968180039e-12,
+                "weighted_tail_ratio": 1.123130974075061e-06
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 1.8539282800904283e-08,
+                "weighted_tail_ratio": 1.918574493707538e-06
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 1.85383135612239e-08,
+                "weighted_tail_ratio": 1.91847419024937e-06
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.009663050802410155,
+          "twist_centered_l1_nu": 31.332936190018472,
+          "upper_triangular_defect_l1_nu": 0.029941265771565327
+        }
+      }
+    },
+    "L4096_full": {
+      "cutoff_frac": 1.0,
+      "cutoff_mode": null,
+      "grid_size": 4096,
+      "oversample_factor": 4,
+      "scalar_metrics": {
+        "a11_minus_1_linf": 0.00017836072303034634,
+        "a21_linf": 0.0006953145475915665,
+        "a22_minus_1_linf": 5.4063474115961796e-05,
+        "embedding_residual_linf_max_lift_aware": 9.261427080797802e-08,
+        "frame_det_defect_linf": 6.571038224656434e-08,
+        "frame_normal_norm_max": 1.8674331732634342,
+        "frame_tangent_norm_max": 5.923776982496184,
+        "frame_tangent_norm_min": 0.5354943964353215,
+        "lift_residual_matches_scalar_linf": 4.440892098500626e-16,
+        "r_lift_residual_linf": 9.261427080797802e-08,
+        "rprime_linf": 2.5860827081432953,
+        "scalar_residual_linf": 9.261427089124474e-08,
+        "tangent_residual_linf_max": 0.00030722418845874344,
+        "tangent_residual_r_linf": 0.0003072241884586324,
+        "tangent_residual_x_linf": 0.00030722418845874344,
+        "twist_average": 1.325099741603868,
+        "twist_centered_linf": 3.844505812741491,
+        "twist_max": 5.169605554345359,
+        "twist_min": -0.16833514218085122,
+        "upper_triangular_defect_linf_max": 0.0006953145475915665,
+        "x_lift_residual_linf": 9.261427080797802e-08,
+        "xprime_max": 5.329475580673378,
+        "xprime_min": 0.4817687098149901
+      },
+      "weighted_metrics": {
+        "nu_1.002000": {
+          "a21_l1_nu": 0.004320112311595126,
+          "embedding_residual_l1_nu_lift_aware": 5.395690421502232e-07,
+          "nu": 1.002,
+          "scalar_residual_l1_nu": 5.395689829770286e-07,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 3.9551963227008776e-05,
+                "weighted_tail_ratio": 0.009155309023066788
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 4.215463633357479e-11,
+                "weighted_tail_ratio": 7.812650034290326e-05
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 2.8651512316825753e-07,
+                "weighted_tail_ratio": 0.00015984623357302106
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 2.8651512721571405e-07,
+                "weighted_tail_ratio": 0.00015984623583070265
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 8.195362435843228e-09,
+                "weighted_tail_ratio": 1.897025318959181e-06
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 1.6902228299524496e-14,
+                "weighted_tail_ratio": 3.132542609522847e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 8.252565377102502e-11,
+                "weighted_tail_ratio": 4.604090277183311e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 8.252621245604011e-11,
+                "weighted_tail_ratio": 4.604121446101211e-08
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 4.776685704279151e-11,
+                "weighted_tail_ratio": 1.1056855377251624e-08
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 9.242463806146689e-15,
+                "weighted_tail_ratio": 1.712934601086989e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 4.53124709504918e-11,
+                "weighted_tail_ratio": 2.5279739984508732e-08
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 4.5315663303705574e-11,
+                "weighted_tail_ratio": 2.5281520992136865e-08
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.0017924421286915368,
+          "twist_centered_l1_nu": 15.071791474294118,
+          "upper_triangular_defect_l1_nu": 0.004320112311595126
+        },
+        "nu_1.003000": {
+          "a21_l1_nu": 0.007794961697304781,
+          "embedding_residual_l1_nu_lift_aware": 9.182204130704428e-07,
+          "nu": 1.003,
+          "scalar_residual_l1_nu": 9.182200569939198e-07,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 0.00011823820318201402,
+                "weighted_tail_ratio": 0.015168541908666025
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 1.2424082767895468e-10,
+                "weighted_tail_ratio": 0.00013530615753014135
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 8.462164593223298e-07,
+                "weighted_tail_ratio": 0.00027297067141489496
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 8.462164824140082e-07,
+                "weighted_tail_ratio": 0.00027297067886167747
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 3.9365191411002515e-08,
+                "weighted_tail_ratio": 5.050081442300556e-06
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 1.0748852009780032e-13,
+                "weighted_tail_ratio": 1.1706182987300187e-07
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 5.282672349699974e-10,
+                "weighted_tail_ratio": 1.7040729972533295e-07
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 5.282768814221565e-10,
+                "weighted_tail_ratio": 1.704104114556642e-07
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 3.4119448899922843e-10,
+                "weighted_tail_ratio": 4.377115658146226e-08
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 6.539259761456487e-14,
+                "weighted_tail_ratio": 7.12166948614126e-08
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 3.234913201606597e-10,
+                "weighted_tail_ratio": 1.0435112894384218e-07
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 3.235154037387222e-10,
+                "weighted_tail_ratio": 1.0435889777146083e-07
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.0031000270283344676,
+          "twist_centered_l1_nu": 18.13695258179692,
+          "upper_triangular_defect_l1_nu": 0.007794961697304781
+        },
+        "nu_1.005000": {
+          "a21_l1_nu": 0.027580534739138178,
+          "embedding_residual_l1_nu_lift_aware": 2.7265095775005016e-06,
+          "nu": 1.005,
+          "scalar_residual_l1_nu": 2.7264955551974613e-06,
+          "tail_ratios": {
+            "frac_0.500": {
+              "a21_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 0.001067773017726885,
+                "weighted_tail_ratio": 0.03871473224961302
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 1.0865507040009886e-09,
+                "weighted_tail_ratio": 0.00039851548700665213
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 7.429160879435031e-06,
+                "weighted_tail_ratio": 0.0007804529128234573
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1024.0,
+                "weighted_tail_l1": 7.429162010963798e-06,
+                "weighted_tail_ratio": 0.000780453031600529
+              }
+            },
+            "frac_0.750": {
+              "a21_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 9.1114709766859e-07,
+                "weighted_tail_ratio": 3.303587498525277e-05
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 4.581845830030915e-12,
+                "weighted_tail_ratio": 1.6804890150276015e-06
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 2.288437871693996e-08,
+                "weighted_tail_ratio": 2.4040642432754996e-06
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1536.0,
+                "weighted_tail_l1": 2.2885292312151947e-08,
+                "weighted_tail_ratio": 2.404160218571696e-06
+              }
+            },
+            "frac_0.900": {
+              "a21_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 1.74943897833166e-08,
+                "weighted_tail_ratio": 6.343020521096415e-07
+              },
+              "scalar_residual_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 3.28699009055784e-12,
+                "weighted_tail_ratio": 1.2055732437531099e-06
+              },
+              "tangent_residual_r_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 1.65670569245202e-08,
+                "weighted_tail_ratio": 1.740412954233547e-06
+              },
+              "tangent_residual_x_tail": {
+                "tail_start_mode": 1843.2,
+                "weighted_tail_l1": 1.6568409496081132e-08,
+                "weighted_tail_ratio": 1.7405550452301914e-06
+              }
+            }
+          },
+          "tangent_residual_l1_nu": 0.00951903793073659,
+          "twist_centered_l1_nu": 31.289971445873935,
+          "upper_triangular_defect_l1_nu": 0.027580534739138178
+        }
+      }
+    }
+  },
+  "compact_cases": [
+    {
+      "a21_linf": 0.0006953145479654393,
+      "case": "L1024_full",
+      "cutoff_frac": 1.0,
+      "cutoff_mode": null,
+      "embedding_residual_linf_max_lift_aware": 1.3322676295501878e-14,
+      "frame_det_defect_linf": 0.012381461841410868,
+      "grid_size": 1024,
+      "lift_residual_matches_scalar_linf": 3.95516952522712e-16,
+      "oversample_factor": 1,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 8.144118106943222e-14,
+      "rep_tangent_residual_l1_nu": 0.0023890766695597006,
+      "rep_upper_triangular_defect_l1_nu": 0.06146024978343403,
+      "scalar_residual_linf": 1.3156142841808105e-14,
+      "tangent_residual_linf_max": 0.00030722418862394463,
+      "twist_average": 1.3250900814599538,
+      "upper_triangular_defect_linf_max": 0.01246025399237316
+    },
+    {
+      "a21_linf": 0.0007193202604340882,
+      "case": "L1024_cut_0.950",
+      "cutoff_frac": 0.95,
+      "cutoff_mode": 486,
+      "embedding_residual_linf_max_lift_aware": 3.257065539497006e-08,
+      "frame_det_defect_linf": 0.012831116908376572,
+      "grid_size": 1024,
+      "lift_residual_matches_scalar_linf": 3.7470027081099033e-16,
+      "oversample_factor": 1,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 2.8946208560810866e-07,
+      "rep_tangent_residual_l1_nu": 0.0022428586507042864,
+      "rep_upper_triangular_defect_l1_nu": 0.06183900900763345,
+      "scalar_residual_linf": 3.2570655492114575e-08,
+      "tangent_residual_linf_max": 0.00031782411337832883,
+      "twist_average": 1.3251004743562933,
+      "upper_triangular_defect_linf_max": 0.012912560874875023
+    },
+    {
+      "a21_linf": 0.0009004872413275553,
+      "case": "L1024_cut_0.900",
+      "cutoff_frac": 0.9,
+      "cutoff_mode": 460,
+      "embedding_residual_linf_max_lift_aware": 1.0361248115042798e-07,
+      "frame_det_defect_linf": 0.012256323745316267,
+      "grid_size": 1024,
+      "lift_residual_matches_scalar_linf": 4.163336342344337e-16,
+      "oversample_factor": 1,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 8.38857588563797e-07,
+      "rep_tangent_residual_l1_nu": 0.0033767285698273345,
+      "rep_upper_triangular_defect_l1_nu": 0.062477142801528426,
+      "scalar_residual_linf": 1.0361248123369471e-07,
+      "tangent_residual_linf_max": 0.00039799294193598733,
+      "twist_average": 1.3252203024245415,
+      "upper_triangular_defect_linf_max": 0.012358418732733245
+    },
+    {
+      "a21_linf": 0.008613221894771428,
+      "case": "L1024_cut_0.750",
+      "cutoff_frac": 0.75,
+      "cutoff_mode": 384,
+      "embedding_residual_linf_max_lift_aware": 1.610350761849233e-06,
+      "frame_det_defect_linf": 0.011749534249263838,
+      "grid_size": 1024,
+      "lift_residual_matches_scalar_linf": 4.163336342344337e-16,
+      "oversample_factor": 1,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 9.424468162519995e-06,
+      "rep_tangent_residual_l1_nu": 0.023505781834347973,
+      "rep_upper_triangular_defect_l1_nu": 0.10799306916000581,
+      "scalar_residual_linf": 1.610350761779844e-06,
+      "tangent_residual_linf_max": 0.0038638972467641974,
+      "twist_average": 1.3258517613896035,
+      "upper_triangular_defect_linf_max": 0.014021121287415061
+    },
+    {
+      "a21_linf": 0.007336668953627168,
+      "case": "L1024_cut_0.500",
+      "cutoff_frac": 0.5,
+      "cutoff_mode": 256,
+      "embedding_residual_linf_max_lift_aware": 1.8244772604925075e-06,
+      "frame_det_defect_linf": 0.0046142609090793485,
+      "grid_size": 1024,
+      "lift_residual_matches_scalar_linf": 4.163336342344337e-16,
+      "oversample_factor": 1,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 7.995089202113515e-06,
+      "rep_tangent_residual_l1_nu": 0.013872429672507715,
+      "rep_upper_triangular_defect_l1_nu": 0.0393355925232927,
+      "scalar_residual_linf": 1.8244772605063853e-06,
+      "tangent_residual_linf_max": 0.003003710572310858,
+      "twist_average": 1.3254494431633062,
+      "upper_triangular_defect_linf_max": 0.007336668953627168
+    },
+    {
+      "a21_linf": 0.0006953145478986195,
+      "case": "L2048_full",
+      "cutoff_frac": 1.0,
+      "cutoff_mode": null,
+      "embedding_residual_linf_max_lift_aware": 9.261427080797802e-08,
+      "frame_det_defect_linf": 0.0002594281805143872,
+      "grid_size": 2048,
+      "lift_residual_matches_scalar_linf": 4.440892098500626e-16,
+      "oversample_factor": 2,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 9.180092419182566e-07,
+      "rep_tangent_residual_l1_nu": 0.003099773944660028,
+      "rep_upper_triangular_defect_l1_nu": 0.007733242390317125,
+      "scalar_residual_linf": 9.261427086348917e-08,
+      "tangent_residual_linf_max": 0.00030722418859430167,
+      "twist_average": 1.3250997376190425,
+      "upper_triangular_defect_linf_max": 0.0006953145478986195
+    },
+    {
+      "a21_linf": 0.0007193202603182659,
+      "case": "L2048_cut_0.950",
+      "cutoff_frac": 0.95,
+      "cutoff_mode": 486,
+      "embedding_residual_linf_max_lift_aware": 9.512510956710685e-08,
+      "frame_det_defect_linf": 0.00026545338167938137,
+      "grid_size": 2048,
+      "lift_residual_matches_scalar_linf": 3.95516952522712e-16,
+      "oversample_factor": 2,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 9.332561365199784e-07,
+      "rep_tangent_residual_l1_nu": 0.003148577194289318,
+      "rep_upper_triangular_defect_l1_nu": 0.008366100990655424,
+      "scalar_residual_linf": 9.512510940057339e-08,
+      "tangent_residual_linf_max": 0.0003178241133268145,
+      "twist_average": 1.325107755549253,
+      "upper_triangular_defect_linf_max": 0.0007193202603182659
+    },
+    {
+      "a21_linf": 0.0009004872413021971,
+      "case": "L2048_cut_0.900",
+      "cutoff_frac": 0.9,
+      "cutoff_mode": 460,
+      "embedding_residual_linf_max_lift_aware": 1.2984854014241876e-07,
+      "frame_det_defect_linf": 0.0002730870422511522,
+      "grid_size": 2048,
+      "lift_residual_matches_scalar_linf": 3.885780586188048e-16,
+      "oversample_factor": 2,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 1.3778539068405881e-06,
+      "rep_tangent_residual_l1_nu": 0.00442300600232467,
+      "rep_upper_triangular_defect_l1_nu": 0.011634114667686825,
+      "scalar_residual_linf": 1.2984854005915203e-07,
+      "tangent_residual_linf_max": 0.0003979929419247741,
+      "twist_average": 1.325224844622905,
+      "upper_triangular_defect_linf_max": 0.0009004872413021971
+    },
+    {
+      "a21_linf": 0.009145383711079091,
+      "case": "L2048_cut_0.750",
+      "cutoff_frac": 0.75,
+      "cutoff_mode": 384,
+      "embedding_residual_linf_max_lift_aware": 1.610350761849233e-06,
+      "frame_det_defect_linf": 0.00031064359558696797,
+      "grid_size": 2048,
+      "lift_residual_matches_scalar_linf": 4.163336342344337e-16,
+      "oversample_factor": 2,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 9.764246621142467e-06,
+      "rep_tangent_residual_l1_nu": 0.024553961996444513,
+      "rep_upper_triangular_defect_l1_nu": 0.06358154628255813,
+      "scalar_residual_linf": 1.6103507617937218e-06,
+      "tangent_residual_linf_max": 0.003863897246894371,
+      "twist_average": 1.325862687274348,
+      "upper_triangular_defect_linf_max": 0.009145383711079091
+    },
+    {
+      "a21_linf": 0.007336668953775494,
+      "case": "L2048_cut_0.500",
+      "cutoff_frac": 0.5,
+      "cutoff_mode": 256,
+      "embedding_residual_linf_max_lift_aware": 1.8244772606035298e-06,
+      "frame_det_defect_linf": 1.8110400463844378e-05,
+      "grid_size": 2048,
+      "lift_residual_matches_scalar_linf": 4.163336342344337e-16,
+      "oversample_factor": 2,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 8.00370198463956e-06,
+      "rep_tangent_residual_l1_nu": 0.013882554948634222,
+      "rep_upper_triangular_defect_l1_nu": 0.0338858853400304,
+      "scalar_residual_linf": 1.824477260520263e-06,
+      "tangent_residual_linf_max": 0.0030037105725657653,
+      "twist_average": 1.3254510657608458,
+      "upper_triangular_defect_linf_max": 0.007336668953775494
+    },
+    {
+      "a21_linf": 0.0006953145475915665,
+      "case": "L4096_full",
+      "cutoff_frac": 1.0,
+      "cutoff_mode": null,
+      "embedding_residual_linf_max_lift_aware": 9.261427080797802e-08,
+      "frame_det_defect_linf": 6.571038224656434e-08,
+      "grid_size": 4096,
+      "lift_residual_matches_scalar_linf": 4.440892098500626e-16,
+      "oversample_factor": 4,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 9.182200569939198e-07,
+      "rep_tangent_residual_l1_nu": 0.0031000270283344676,
+      "rep_upper_triangular_defect_l1_nu": 0.007794961697304781,
+      "scalar_residual_linf": 9.261427089124474e-08,
+      "tangent_residual_linf_max": 0.00030722418845874344,
+      "twist_average": 1.325099741603868,
+      "upper_triangular_defect_linf_max": 0.0006953145475915665
+    },
+    {
+      "a21_linf": 0.0007193202605458859,
+      "case": "L4096_cut_0.950",
+      "cutoff_frac": 0.95,
+      "cutoff_mode": 486,
+      "embedding_residual_linf_max_lift_aware": 9.512510956710685e-08,
+      "frame_det_defect_linf": 6.277292441403404e-08,
+      "grid_size": 4096,
+      "lift_residual_matches_scalar_linf": 4.163336342344337e-16,
+      "oversample_factor": 4,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 9.334792782518377e-07,
+      "rep_tangent_residual_l1_nu": 0.0031488447798918217,
+      "rep_upper_triangular_defect_l1_nu": 0.00842863194176194,
+      "scalar_residual_linf": 9.512510940057339e-08,
+      "tangent_residual_linf_max": 0.0003178241134274007,
+      "twist_average": 1.325107760137077,
+      "upper_triangular_defect_linf_max": 0.0007193202605458859
+    },
+    {
+      "a21_linf": 0.0009756034828001248,
+      "case": "L4096_cut_0.900",
+      "cutoff_frac": 0.9,
+      "cutoff_mode": 460,
+      "embedding_residual_linf_max_lift_aware": 1.3796881337402311e-07,
+      "frame_det_defect_linf": 6.963054288711135e-08,
+      "grid_size": 4096,
+      "lift_residual_matches_scalar_linf": 4.440892098500626e-16,
+      "oversample_factor": 4,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 1.3780544988729791e-06,
+      "rep_tangent_residual_l1_nu": 0.004423232596419744,
+      "rep_upper_triangular_defect_l1_nu": 0.011691532514309717,
+      "scalar_residual_linf": 1.3796881331851196e-07,
+      "tangent_residual_linf_max": 0.0004371334405233185,
+      "twist_average": 1.3252248503582085,
+      "upper_triangular_defect_linf_max": 0.0009756034828001248
+    },
+    {
+      "a21_linf": 0.010162517864845455,
+      "case": "L4096_cut_0.750",
+      "cutoff_frac": 0.75,
+      "cutoff_mode": 384,
+      "embedding_residual_linf_max_lift_aware": 1.610350761849233e-06,
+      "frame_det_defect_linf": 8.720319966126766e-08,
+      "grid_size": 4096,
+      "lift_residual_matches_scalar_linf": 4.510281037539698e-16,
+      "oversample_factor": 4,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 9.76431303363599e-06,
+      "rep_tangent_residual_l1_nu": 0.024554027709182035,
+      "rep_upper_triangular_defect_l1_nu": 0.06361028173897182,
+      "scalar_residual_linf": 1.6103507618075996e-06,
+      "tangent_residual_linf_max": 0.0038805396512611168,
+      "twist_average": 1.3258626941147762,
+      "upper_triangular_defect_linf_max": 0.010162517864845455
+    },
+    {
+      "a21_linf": 0.007336668953249692,
+      "case": "L4096_cut_0.500",
+      "cutoff_frac": 0.5,
+      "cutoff_mode": 256,
+      "embedding_residual_linf_max_lift_aware": 1.8816448315028822e-06,
+      "frame_det_defect_linf": 4.060487501789112e-10,
+      "grid_size": 4096,
+      "lift_residual_matches_scalar_linf": 4.440892098500626e-16,
+      "oversample_factor": 4,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 8.00370210609207e-06,
+      "rep_tangent_residual_l1_nu": 0.013882555647255834,
+      "rep_upper_triangular_defect_l1_nu": 0.033885886136737875,
+      "scalar_residual_linf": 1.8816448313779821e-06,
+      "tangent_residual_linf_max": 0.0031355663411738455,
+      "twist_average": 1.3254510657540415,
+      "upper_triangular_defect_linf_max": 0.007336668953249692
+    }
+  ],
+  "cutoff_fracs": [
+    1.0,
+    0.95,
+    0.9,
+    0.75,
+    0.5
+  ],
+  "diagnostic_only": true,
+  "elapsed_seconds": 0.1885080337524414,
+  "important_warning": "Double-precision diagnostic only. Corrects the lift residual audit and diagnoses aliasing/derivative defects; it does not prove Theorem III.",
+  "npz_path": "artifacts/proof_audit/theorem_iii_trackb/phase1_seed/embeddings/K0p9705000000_M1024_steps44.npz",
+  "nu_grid": [
+    1.002,
+    1.003,
+    1.005
+  ],
+  "omega": 0.6180339887498949,
+  "oversample_factors": [
+    1,
+    2,
+    4
+  ],
+  "phase": "TrackB-Phase4b-lift-aware-aliasing-and-derivative-residual-audit",
+  "promotion_allowed": false,
+  "recommendation": {
+    "base_case": {
+      "a21_linf": 0.0006953145479654393,
+      "case": "L1024_full",
+      "cutoff_frac": 1.0,
+      "cutoff_mode": null,
+      "embedding_residual_linf_max_lift_aware": 1.3322676295501878e-14,
+      "frame_det_defect_linf": 0.012381461841410868,
+      "grid_size": 1024,
+      "lift_residual_matches_scalar_linf": 3.95516952522712e-16,
+      "oversample_factor": 1,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 8.144118106943222e-14,
+      "rep_tangent_residual_l1_nu": 0.0023890766695597006,
+      "rep_upper_triangular_defect_l1_nu": 0.06146024978343403,
+      "scalar_residual_linf": 1.3156142841808105e-14,
+      "tangent_residual_linf_max": 0.00030722418862394463,
+      "twist_average": 1.3250900814599538,
+      "upper_triangular_defect_linf_max": 0.01246025399237316
+    },
+    "best_any_case": {
+      "a21_linf": 0.0006953145475915665,
+      "case": "L4096_full",
+      "cutoff_frac": 1.0,
+      "cutoff_mode": null,
+      "embedding_residual_linf_max_lift_aware": 9.261427080797802e-08,
+      "frame_det_defect_linf": 6.571038224656434e-08,
+      "grid_size": 4096,
+      "lift_residual_matches_scalar_linf": 4.440892098500626e-16,
+      "oversample_factor": 4,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 9.182200569939198e-07,
+      "rep_tangent_residual_l1_nu": 0.0031000270283344676,
+      "rep_upper_triangular_defect_l1_nu": 0.007794961697304781,
+      "scalar_residual_linf": 9.261427089124474e-08,
+      "tangent_residual_linf_max": 0.00030722418845874344,
+      "twist_average": 1.325099741603868,
+      "upper_triangular_defect_linf_max": 0.0006953145475915665
+    },
+    "best_full_case": {
+      "a21_linf": 0.0006953145475915665,
+      "case": "L4096_full",
+      "cutoff_frac": 1.0,
+      "cutoff_mode": null,
+      "embedding_residual_linf_max_lift_aware": 9.261427080797802e-08,
+      "frame_det_defect_linf": 6.571038224656434e-08,
+      "grid_size": 4096,
+      "lift_residual_matches_scalar_linf": 4.440892098500626e-16,
+      "oversample_factor": 4,
+      "rep_nu": 1.003,
+      "rep_scalar_residual_l1_nu": 9.182200569939198e-07,
+      "rep_tangent_residual_l1_nu": 0.0031000270283344676,
+      "rep_upper_triangular_defect_l1_nu": 0.007794961697304781,
+      "scalar_residual_linf": 9.261427089124474e-08,
+      "tangent_residual_linf_max": 0.00030722418845874344,
+      "twist_average": 1.325099741603868,
+      "upper_triangular_defect_linf_max": 0.0006953145475915665
+    },
+    "label": "needs_high_resolution_refinement",
+    "next_phase_hint": "If tangent defects remain ~1e-3 to 1e-2 under full oversampling, refine the seed at higher M/dealiased resolution before theorem-facing intervalization.",
+    "reasons": [
+      "lift-aware embedding residual fixes old nonperiodic-x residual"
+    ],
+    "score": 1
+  },
+  "record_path": "artifacts/proof_audit/theorem_iii_trackb/phase4b_lift_alias/records/K0p9705000000_M1024_steps44.phase4b_lift_alias_audit.json",
+  "schema": "theorem_iii_trackb_phase4b_lift_alias_audit_v1",
+  "source_npz_schema": "theorem_iii_trackb_phase1_embedding_npz_v1",
+  "tail_start_fracs": [
+    0.5,
+    0.75,
+    0.9
+  ],
+  "theorem_facing": false
+}

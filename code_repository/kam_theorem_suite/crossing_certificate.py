@@ -30,7 +30,10 @@ honestly about a rational residue crossing.
 from dataclasses import asdict, dataclass
 from typing import Any
 
-import mpmath as mp
+try:
+    import mpmath as mp
+except ModuleNotFoundError:  # pragma: no cover - minimal environments
+    from . import _mpmath_fallback as mp
 import numpy as np
 
 from .branch_tube import build_branch_tube

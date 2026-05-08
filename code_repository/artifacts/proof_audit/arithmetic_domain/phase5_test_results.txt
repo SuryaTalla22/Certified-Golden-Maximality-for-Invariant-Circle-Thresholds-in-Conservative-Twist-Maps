@@ -1,0 +1,19 @@
+Phase 5 test run
+
+Commands run:
+
+1. python -m py_compile kam_theorem_suite/audit/arithmetic_domain_grammar.py kam_theorem_suite/audit/artifact_shell_builder.py kam_theorem_suite/theorem_vii_global_exhaustion_support.py scripts/audit/audit_arithmetic_domain.py scripts/audit_arithmetic_domain.py scripts/study_nonvacuous_omitted_tail_control.py
+Result: py_compile_ok
+
+2. python -m unittest tests.test_upper_obstruction_audit tests.test_transport_budget_audit tests.test_arithmetic_domain_grammar_audit -v
+Result: 25 tests passed
+
+3. python scripts/audit/audit_arithmetic_domain.py
+Result: status passed; route counts screened=2, ranked=2, pruned=1, lifecycle=1, termination=2, omitted=0, generated_record_count=8, uncontrolled_count=0; validator_failures=[]
+
+4. python scripts/study_nonvacuous_omitted_tail_control.py
+Result: status passed; theorem_facing=False; margin=1.0000000000287557e-06
+
+Notes:
+- The attempted old Phase-0/1 and Phase-2 test module names are not present in this stripped Phase-4 input bundle, so the persistent tests run here were the available Phase-3, Phase-4, and Phase-5 proof-audit tests.
+- The full legacy repository test suite was not run because older exploratory tests are broader/heavier than this phase-specific audit.

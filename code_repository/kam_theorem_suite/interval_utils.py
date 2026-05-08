@@ -16,7 +16,10 @@ failure modes explicit instead of silently returning over-optimistic intervals.
 from dataclasses import dataclass
 from typing import Any, Iterable
 
-import mpmath as mp
+try:
+    import mpmath as mp
+except ModuleNotFoundError:  # pragma: no cover - minimal environments
+    from . import _mpmath_fallback as mp
 import numpy as np
 
 Interval = Any

@@ -5,7 +5,13 @@ from dataclasses import asdict, dataclass
 from typing import Any, Dict, Sequence
 
 import numpy as np
-import mpmath as mp
+try:
+    try:
+        import mpmath as mp
+    except ModuleNotFoundError:
+        from . import _mpmath_fallback as mp
+except ModuleNotFoundError:  # pragma: no cover - minimal environments
+    from . import _mpmath_fallback as mp
 
 
 from .standard_map import (
@@ -124,7 +130,10 @@ def get_residue_and_derivative_iv(p, q, K_iv, family, x_guess, dps=100):
     pass
 
 def deep_refine_and_certify(p, q, K_center, target_residue=0.25, dps=150):
-    import mpmath as mp
+    try:
+        import mpmath as mp
+    except ModuleNotFoundError:
+        from . import _mpmath_fallback as mp
     from .standard_map import HarmonicFamily, solve_periodic_orbit, greene_residue
     
     mp.mp.dps = dps

@@ -1,0 +1,747 @@
+{
+  "analytic_incompatibility_certified": true,
+  "analytic_incompatibility_margin": 0.06484372223911994,
+  "failure_fields": [],
+  "gap_minus_upper_width": 0.06333454072056499,
+  "gap_to_localization_ratio": 42.9661518126781,
+  "ledger": {
+    "barrier_hi": 1.0367050853686908,
+    "barrier_lo": 1.0366258097576748,
+    "barrier_width": 7.927561101594982e-05,
+    "barrier_window_ordered": true,
+    "candidate_count": 1,
+    "candidate_count_holds": true,
+    "coherence_source_status": "golden-adaptive-tail-coherence-strong",
+    "coherence_status_is_strong": true,
+    "entry_coverage_floor": 1.0,
+    "exported_gap": 0.06484372223911994,
+    "exported_gap_matches": true,
+    "exported_gap_to_localization_ratio": 42.9661518126781,
+    "exported_widths_match": true,
+    "family_label": "standard-sine",
+    "gap_dominates_width": true,
+    "gap_minus_upper_width": 0.06333454072056499,
+    "gap_to_localization_ratio": 42.9661518126781,
+    "missing_hypotheses": [],
+    "no_missing_hypotheses": true,
+    "obstruction_separation_holds": true,
+    "promoted_entry_count": 5,
+    "ratio_matches": true,
+    "recomputed_gap": 0.06484372223911994,
+    "rho": 0.6180339887498949,
+    "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+    "status_is_strong": true,
+    "strongest_supporting_entry_count": 5,
+    "support_fraction_floor": 1.0,
+    "support_geometry_holds": true,
+    "supporting_entry_count": 5,
+    "tail_coherence_holds": true,
+    "tail_denominators_strict": true,
+    "tail_is_suffix": true,
+    "tail_qs": [
+      144,
+      233
+    ],
+    "tail_start_q": 144,
+    "theorem_status": "golden-incompatibility-theorem-bridge-strong",
+    "upper_audit_certified": true,
+    "upper_hi": 0.9717820875185549,
+    "upper_lo": 0.9702729059999999,
+    "upper_width": 0.0015091815185549473,
+    "upper_window_ordered": true
+  },
+  "phase": "3",
+  "status": "passed",
+  "supercritical_obstruction_locked": true,
+  "support_fraction_floor": 1.0,
+  "support_geometry_certified": true,
+  "tail_coherence_certified": true,
+  "tail_qs": [
+    144,
+    233
+  ],
+  "tail_stability_certified": true,
+  "upper_audit": {
+    "active_assumptions": [],
+    "audit_metadata": {
+      "audit_type": "upper-obstruction-margin-ledger",
+      "heavy_regeneration": false,
+      "ledger": {
+        "barrier_hi": 1.0367050853686908,
+        "barrier_lo": 1.0366258097576748,
+        "barrier_width": 7.927561101594982e-05,
+        "barrier_window_ordered": true,
+        "candidate_count": 1,
+        "candidate_count_holds": true,
+        "coherence_source_status": "golden-adaptive-tail-coherence-strong",
+        "coherence_status_is_strong": true,
+        "entry_coverage_floor": 1.0,
+        "exported_gap": 0.06484372223911994,
+        "exported_gap_matches": true,
+        "exported_gap_to_localization_ratio": 42.9661518126781,
+        "exported_widths_match": true,
+        "family_label": "standard-sine",
+        "gap_dominates_width": true,
+        "gap_minus_upper_width": 0.06333454072056499,
+        "gap_to_localization_ratio": 42.9661518126781,
+        "missing_hypotheses": [],
+        "no_missing_hypotheses": true,
+        "obstruction_separation_holds": true,
+        "promoted_entry_count": 5,
+        "ratio_matches": true,
+        "recomputed_gap": 0.06484372223911994,
+        "rho": 0.6180339887498949,
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "status_is_strong": true,
+        "strongest_supporting_entry_count": 5,
+        "support_fraction_floor": 1.0,
+        "support_geometry_holds": true,
+        "supporting_entry_count": 5,
+        "tail_coherence_holds": true,
+        "tail_denominators_strict": true,
+        "tail_is_suffix": true,
+        "tail_qs": [
+          144,
+          233
+        ],
+        "tail_start_q": 144,
+        "theorem_status": "golden-incompatibility-theorem-bridge-strong",
+        "upper_audit_certified": true,
+        "upper_hi": 0.9717820875185549,
+        "upper_lo": 0.9702729059999999,
+        "upper_width": 0.0015091815185549473,
+        "upper_window_ordered": true
+      },
+      "phase": "3"
+    },
+    "claim": "upper obstruction and analytic-incompatibility margin are derived from bridge-promotion interval/symbolic payloads",
+    "derived_booleans": {
+      "analytic_incompatibility_certified": {
+        "certified": true,
+        "derived_from": [
+          "upper_obstruction_margin_ledger_complete",
+          "supercritical_obstruction_locked",
+          "support_geometry_certified",
+          "tail_coherence_certified",
+          "tail_stability_certified",
+          "family_label_witness",
+          "rho_matches_golden_witness",
+          "exported_gap_matches_recomputed",
+          "width_exports_match_recomputed",
+          "ratio_export_matches_recomputed"
+        ],
+        "diagnostic_only": false,
+        "margin": 1e-12,
+        "name": "analytic_incompatibility_certified",
+        "notes": "",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "theorem_facing": true,
+        "trusted_as_input": false,
+        "value": true
+      },
+      "supercritical_obstruction_locked": {
+        "certified": true,
+        "derived_from": [
+          "obstruction_separation",
+          "gap_dominates_upper_width",
+          "strong_status_witness",
+          "no_missing_hypotheses_witness"
+        ],
+        "diagnostic_only": false,
+        "margin": 0.06333454072056499,
+        "name": "supercritical_obstruction_locked",
+        "notes": "",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "theorem_facing": true,
+        "trusted_as_input": false,
+        "value": true
+      },
+      "support_geometry_certified": {
+        "certified": true,
+        "derived_from": [
+          "support_fraction_positive",
+          "entry_coverage_positive",
+          "supporting_entry_count_positive",
+          "promoted_entry_count_positive",
+          "strongest_support_count_positive"
+        ],
+        "diagnostic_only": false,
+        "margin": 1.0,
+        "name": "support_geometry_certified",
+        "notes": "",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "theorem_facing": true,
+        "trusted_as_input": false,
+        "value": true
+      },
+      "tail_coherence_certified": {
+        "certified": true,
+        "derived_from": [
+          "tail_denominator_gap_positive",
+          "tail_suffix_witness",
+          "strong_coherence_status_witness"
+        ],
+        "diagnostic_only": false,
+        "margin": 1.0,
+        "name": "tail_coherence_certified",
+        "notes": "",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "theorem_facing": true,
+        "trusted_as_input": false,
+        "value": true
+      },
+      "tail_stability_certified": {
+        "certified": true,
+        "derived_from": [
+          "tail_denominator_gap_positive",
+          "gap_dominates_upper_width",
+          "tail_suffix_witness"
+        ],
+        "diagnostic_only": false,
+        "margin": 0.06333454072056499,
+        "name": "tail_stability_certified",
+        "notes": "Phase-3 artifact-derived stability witness: strict tail suffix plus positive tail denominator gap and a gap wider than the upper localization window.",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "theorem_facing": true,
+        "trusted_as_input": false,
+        "value": true
+      },
+      "upper_obstruction_margin_ledger_complete": {
+        "certified": true,
+        "derived_from": [
+          "upper_window_ordered",
+          "barrier_window_ordered",
+          "obstruction_separation",
+          "exported_gap_matches_recomputed",
+          "width_exports_match_recomputed",
+          "gap_dominates_upper_width",
+          "gap_ratio_exceeds_one",
+          "support_fraction_positive",
+          "entry_coverage_positive",
+          "supporting_entry_count_positive",
+          "candidate_count_positive",
+          "promoted_entry_count_positive",
+          "strongest_support_count_positive",
+          "tail_denominator_gap_positive",
+          "strong_status_witness",
+          "strong_coherence_status_witness",
+          "no_missing_hypotheses_witness",
+          "tail_suffix_witness",
+          "family_label_witness",
+          "rho_matches_golden_witness",
+          "ratio_export_matches_recomputed"
+        ],
+        "diagnostic_only": false,
+        "margin": 1e-12,
+        "name": "upper_obstruction_margin_ledger_complete",
+        "notes": "All exported upper-obstruction scalar claims are recomputed from raw interval/symbolic fields.",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "theorem_facing": true,
+        "trusted_as_input": false,
+        "value": true
+      }
+    },
+    "derived_inequalities": {
+      "barrier_window_ordered": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "barrier_lo",
+        "lhs_value": 1.0366258097576748,
+        "margin": 7.927561101594982e-05,
+        "name": "barrier_window_ordered",
+        "recomputed_margin": 7.927561101594982e-05,
+        "rhs_label": "barrier_hi",
+        "rhs_value": 1.0367050853686908,
+        "sense": "<",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "certified_barrier_interval"
+        ],
+        "theorem_facing": true
+      },
+      "candidate_count_positive": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "candidate_count",
+        "lhs_value": 1.0,
+        "margin": 1.0,
+        "name": "candidate_count_positive",
+        "recomputed_margin": 1.0,
+        "rhs_label": "zero",
+        "rhs_value": 0.0,
+        "sense": ">",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "candidate_count"
+        ],
+        "theorem_facing": true
+      },
+      "entry_coverage_positive": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "entry_coverage_floor",
+        "lhs_value": 1.0,
+        "margin": 1.0,
+        "name": "entry_coverage_positive",
+        "recomputed_margin": 1.0,
+        "rhs_label": "zero",
+        "rhs_value": 0.0,
+        "sense": ">",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "entry_coverage_floor"
+        ],
+        "theorem_facing": true
+      },
+      "exported_gap_matches_recomputed": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "gap_mismatch_abs",
+        "lhs_value": 0.0,
+        "margin": 6.484372223911994e-12,
+        "name": "exported_gap_matches_recomputed",
+        "recomputed_margin": 6.484372223911994e-12,
+        "rhs_label": "tolerance",
+        "rhs_value": 6.484372223911994e-12,
+        "sense": "<",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "exported_gap_interval",
+          "recomputed_gap"
+        ],
+        "theorem_facing": true
+      },
+      "family_label_witness": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "family_standard_sine_margin",
+        "lhs_value": 1.0,
+        "margin": 1.0,
+        "name": "family_label_witness",
+        "recomputed_margin": 1.0,
+        "rhs_label": "zero",
+        "rhs_value": 0.0,
+        "sense": ">",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "family_label"
+        ],
+        "theorem_facing": true
+      },
+      "gap_dominates_upper_width": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "upper_width",
+        "lhs_value": 0.0015091815185549473,
+        "margin": 0.06333454072056499,
+        "name": "gap_dominates_upper_width",
+        "recomputed_margin": 0.06333454072056499,
+        "rhs_label": "incompatibility_gap",
+        "rhs_value": 0.06484372223911994,
+        "sense": "<",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "upper_width_exported",
+          "recomputed_gap"
+        ],
+        "theorem_facing": true
+      },
+      "gap_ratio_exceeds_one": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "gap_to_localization_ratio",
+        "lhs_value": 42.9661518126781,
+        "margin": 41.9661518126781,
+        "name": "gap_ratio_exceeds_one",
+        "recomputed_margin": 41.9661518126781,
+        "rhs_label": "one",
+        "rhs_value": 1.0,
+        "sense": ">",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "gap_to_localization_ratio"
+        ],
+        "theorem_facing": true
+      },
+      "no_missing_hypotheses_witness": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "no_missing_hypotheses_margin",
+        "lhs_value": 1.0,
+        "margin": 1.0,
+        "name": "no_missing_hypotheses_witness",
+        "recomputed_margin": 1.0,
+        "rhs_label": "zero",
+        "rhs_value": 0.0,
+        "sense": ">",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "missing_hypotheses"
+        ],
+        "theorem_facing": true
+      },
+      "obstruction_separation": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "upper_hi",
+        "lhs_value": 0.9717820875185549,
+        "margin": 0.06484372223911994,
+        "name": "obstruction_separation",
+        "recomputed_margin": 0.06484372223911994,
+        "rhs_label": "barrier_lo",
+        "rhs_value": 1.0366258097576748,
+        "sense": "<",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "certified_upper_interval",
+          "certified_barrier_interval"
+        ],
+        "theorem_facing": true
+      },
+      "promoted_entry_count_positive": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "promoted_entry_count",
+        "lhs_value": 5.0,
+        "margin": 5.0,
+        "name": "promoted_entry_count_positive",
+        "recomputed_margin": 5.0,
+        "rhs_label": "zero",
+        "rhs_value": 0.0,
+        "sense": ">",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "promoted_entry_count"
+        ],
+        "theorem_facing": true
+      },
+      "ratio_export_matches_recomputed": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "ratio_mismatch_abs",
+        "lhs_value": 0.0,
+        "margin": 4.29661518126781e-08,
+        "name": "ratio_export_matches_recomputed",
+        "recomputed_margin": 4.29661518126781e-08,
+        "rhs_label": "tolerance",
+        "rhs_value": 4.29661518126781e-08,
+        "sense": "<",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "gap_to_localization_ratio",
+          "exported_gap_to_localization_ratio"
+        ],
+        "theorem_facing": true
+      },
+      "rho_matches_golden_witness": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "rho_match_margin",
+        "lhs_value": 1.0,
+        "margin": 1.0,
+        "name": "rho_matches_golden_witness",
+        "recomputed_margin": 1.0,
+        "rhs_label": "zero",
+        "rhs_value": 0.0,
+        "sense": ">",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "rho"
+        ],
+        "theorem_facing": true
+      },
+      "strong_coherence_status_witness": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "coherence_status_margin",
+        "lhs_value": 1.0,
+        "margin": 1.0,
+        "name": "strong_coherence_status_witness",
+        "recomputed_margin": 1.0,
+        "rhs_label": "zero",
+        "rhs_value": 0.0,
+        "sense": ">",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "coherence_source_status"
+        ],
+        "theorem_facing": true
+      },
+      "strong_status_witness": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "status_margin",
+        "lhs_value": 1.0,
+        "margin": 1.0,
+        "name": "strong_status_witness",
+        "recomputed_margin": 1.0,
+        "rhs_label": "zero",
+        "rhs_value": 0.0,
+        "sense": ">",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "theorem_status"
+        ],
+        "theorem_facing": true
+      },
+      "strongest_support_count_positive": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "strongest_supporting_entry_count",
+        "lhs_value": 5.0,
+        "margin": 5.0,
+        "name": "strongest_support_count_positive",
+        "recomputed_margin": 5.0,
+        "rhs_label": "zero",
+        "rhs_value": 0.0,
+        "sense": ">",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "strongest_supporting_entry_count"
+        ],
+        "theorem_facing": true
+      },
+      "support_fraction_positive": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "support_fraction_floor",
+        "lhs_value": 1.0,
+        "margin": 1.0,
+        "name": "support_fraction_positive",
+        "recomputed_margin": 1.0,
+        "rhs_label": "zero",
+        "rhs_value": 0.0,
+        "sense": ">",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "support_fraction_floor"
+        ],
+        "theorem_facing": true
+      },
+      "supporting_entry_count_positive": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "supporting_entry_count",
+        "lhs_value": 5.0,
+        "margin": 5.0,
+        "name": "supporting_entry_count_positive",
+        "recomputed_margin": 5.0,
+        "rhs_label": "zero",
+        "rhs_value": 0.0,
+        "sense": ">",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "supporting_entry_count"
+        ],
+        "theorem_facing": true
+      },
+      "tail_denominator_gap_positive": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "tail_denominator_gap",
+        "lhs_value": 89.0,
+        "margin": 89.0,
+        "name": "tail_denominator_gap_positive",
+        "recomputed_margin": 89.0,
+        "rhs_label": "zero",
+        "rhs_value": 0.0,
+        "sense": ">",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "tail_qs"
+        ],
+        "theorem_facing": true
+      },
+      "tail_suffix_witness": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "tail_suffix_margin",
+        "lhs_value": 1.0,
+        "margin": 1.0,
+        "name": "tail_suffix_witness",
+        "recomputed_margin": 1.0,
+        "rhs_label": "zero",
+        "rhs_value": 0.0,
+        "sense": ">",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "tail_is_suffix"
+        ],
+        "theorem_facing": true
+      },
+      "upper_window_ordered": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "upper_lo",
+        "lhs_value": 0.9702729059999999,
+        "margin": 0.0015091815185549473,
+        "name": "upper_window_ordered",
+        "recomputed_margin": 0.0015091815185549473,
+        "rhs_label": "upper_hi",
+        "rhs_value": 0.9717820875185549,
+        "sense": "<",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "certified_upper_interval"
+        ],
+        "theorem_facing": true
+      },
+      "width_exports_match_recomputed": {
+        "certified": true,
+        "diagnostic_only": false,
+        "lhs_label": "width_mismatch_abs",
+        "lhs_value": 0.0,
+        "margin": 1e-12,
+        "name": "width_exports_match_recomputed",
+        "recomputed_margin": 1e-12,
+        "rhs_label": "tolerance",
+        "rhs_value": 1e-12,
+        "sense": "<",
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_fields": [
+          "certified_upper_interval",
+          "certified_barrier_interval",
+          "upper_width_exported",
+          "barrier_width_exported"
+        ],
+        "theorem_facing": true
+      }
+    },
+    "failure_fields": [],
+    "open_hypotheses": [],
+    "proof_payload_version": "v2",
+    "raw_interval_fields": {
+      "certified_barrier_interval": {
+        "diagnostic_only": false,
+        "hi": 1.0367050853686908,
+        "label": "certified_barrier_interval",
+        "lo": 1.0366258097576748,
+        "ordered": true,
+        "outward_rounded": true,
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_json_pointer": "/certified_barrier_lo,/certified_barrier_hi",
+        "theorem_facing": true,
+        "width": 7.927561101594982e-05
+      },
+      "certified_upper_interval": {
+        "diagnostic_only": false,
+        "hi": 0.9717820875185549,
+        "label": "certified_upper_interval",
+        "lo": 0.9702729059999999,
+        "ordered": true,
+        "outward_rounded": true,
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_json_pointer": "/certified_upper_lo,/certified_upper_hi",
+        "theorem_facing": true,
+        "width": 0.0015091815185549473
+      },
+      "exported_gap_interval": {
+        "diagnostic_only": false,
+        "hi": 0.06484372223912094,
+        "label": "exported_gap_interval",
+        "lo": 0.06484372223911894,
+        "ordered": true,
+        "outward_rounded": true,
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "source_json_pointer": "/certified_gap",
+        "theorem_facing": true,
+        "width": 1.9984014443252818e-15
+      }
+    },
+    "raw_symbolic_fields": {
+      "barrier_width_exported": 7.927561101594982e-05,
+      "candidate_count": 1,
+      "coherence_source_status": "golden-adaptive-tail-coherence-strong",
+      "entry_coverage_floor": 1.0,
+      "exported_gap_to_localization_ratio": 42.9661518126781,
+      "family_label": "standard-sine",
+      "gap_minus_upper_width": 0.06333454072056499,
+      "gap_to_localization_ratio": 42.9661518126781,
+      "ledger": {
+        "barrier_hi": 1.0367050853686908,
+        "barrier_lo": 1.0366258097576748,
+        "barrier_width": 7.927561101594982e-05,
+        "barrier_window_ordered": true,
+        "candidate_count": 1,
+        "candidate_count_holds": true,
+        "coherence_source_status": "golden-adaptive-tail-coherence-strong",
+        "coherence_status_is_strong": true,
+        "entry_coverage_floor": 1.0,
+        "exported_gap": 0.06484372223911994,
+        "exported_gap_matches": true,
+        "exported_gap_to_localization_ratio": 42.9661518126781,
+        "exported_widths_match": true,
+        "family_label": "standard-sine",
+        "gap_dominates_width": true,
+        "gap_minus_upper_width": 0.06333454072056499,
+        "gap_to_localization_ratio": 42.9661518126781,
+        "missing_hypotheses": [],
+        "no_missing_hypotheses": true,
+        "obstruction_separation_holds": true,
+        "promoted_entry_count": 5,
+        "ratio_matches": true,
+        "recomputed_gap": 0.06484372223911994,
+        "rho": 0.6180339887498949,
+        "source_artifact": "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json",
+        "status_is_strong": true,
+        "strongest_supporting_entry_count": 5,
+        "support_fraction_floor": 1.0,
+        "support_geometry_holds": true,
+        "supporting_entry_count": 5,
+        "tail_coherence_holds": true,
+        "tail_denominators_strict": true,
+        "tail_is_suffix": true,
+        "tail_qs": [
+          144,
+          233
+        ],
+        "tail_start_q": 144,
+        "theorem_status": "golden-incompatibility-theorem-bridge-strong",
+        "upper_audit_certified": true,
+        "upper_hi": 0.9717820875185549,
+        "upper_lo": 0.9702729059999999,
+        "upper_width": 0.0015091815185549473,
+        "upper_window_ordered": true
+      },
+      "missing_hypotheses": [],
+      "promoted_entry_count": 5,
+      "recomputed_gap": 0.06484372223911994,
+      "rho": 0.6180339887498949,
+      "strongest_supporting_entry_count": 5,
+      "support_fraction_floor": 1.0,
+      "supporting_entry_count": 5,
+      "tail_is_suffix": true,
+      "tail_qs": [
+        144,
+        233
+      ],
+      "tail_start_q": 144,
+      "theorem_status": "golden-incompatibility-theorem-bridge-strong",
+      "upper_width_exported": 0.0015091815185549473
+    },
+    "shell_payload": {
+      "analytic_barrier_interval": [
+        1.0366258097576748,
+        1.0367050853686908
+      ],
+      "analytic_incompatibility_margin": 0.06484372223911994,
+      "gap_minus_upper_width": 0.06333454072056499,
+      "support_fraction_floor": 1.0,
+      "tail_qs": [
+        144,
+        233
+      ],
+      "upper_obstruction_interval": [
+        0.9702729059999999,
+        0.9717820875185549
+      ]
+    },
+    "source_artifacts": [
+      "artifacts/final_discharge/stage_cache/theorem_iv_upper_bridge_promotion.json"
+    ],
+    "theorem_layer": "IV",
+    "validator_recomputed": true
+  },
+  "upper_audit_certified": true,
+  "validator_failures": []
+}

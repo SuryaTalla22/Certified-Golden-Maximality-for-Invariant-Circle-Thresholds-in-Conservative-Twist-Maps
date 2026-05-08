@@ -15,9 +15,11 @@ This version hardens the original bridge-suite implementation in three ways:
 from dataclasses import dataclass, field
 from typing import Any, List, Sequence, Tuple
 
-import mpmath as mp
+try:
+    import mpmath as mp
+except ModuleNotFoundError:  # pragma: no cover - minimal environments
+    from . import _mpmath_fallback as mp
 import numpy as np
-from scipy.optimize import root
 
 from .interval_utils import (
     IntervalLinearSolveResult,
@@ -549,7 +551,11 @@ def solve_periodic_orbit(
     def jac(x):
         return periodic_orbit_jacobian(x, p, K, family)
 
-    sol = root(fun, x0, jac=jac, method="hybr", options={"maxfev": maxfev, "xtol": tol})
+    try:
+        from scipy.optimize import root as _scipy_root
+    except Exception as exc:
+        raise RuntimeError("scipy.optimize.root is required for solve_periodic_orbit") from exc
+    sol = _scipy_root(fun, x0, jac=jac, method="hybr", options={"maxfev": maxfev, "xtol": tol})
     x = np.asarray(sol.x, dtype=float)
     res = fun(x)
     return {

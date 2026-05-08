@@ -1,0 +1,170 @@
+{
+  "K": 0.971635,
+  "M": 4096,
+  "best_native_scalar_residual_linf": 1.438617600046932e-08,
+  "best_sign": 1,
+  "diagnostic_only": true,
+  "grid_rows": [
+    {
+      "derivative_residual_linf": 0.00019586738932031444,
+      "derivative_vs_tangent_x_linf": 1.3322676295501878e-15,
+      "du_linf": 7.5361064404242795,
+      "grid_size": 4096,
+      "scalar_residual_linf": 1.438617600046932e-08,
+      "scalar_residual_rms": 2.2494054728154187e-09,
+      "sign": 1,
+      "tangent_combined_linf": 0.00019586738932031444,
+      "tangent_x_residual_linf": 0.0001958673893200924,
+      "tangent_y_residual_linf": 0.00019586738932031444,
+      "u_linf": 0.05063284173478187,
+      "x_tangent_max_abs": 8.53610644042428,
+      "x_tangent_min_abs": 0.40855080476686734
+    },
+    {
+      "derivative_residual_linf": 0.00020509984799965686,
+      "derivative_vs_tangent_x_linf": 1.3322676295501878e-15,
+      "du_linf": 7.5361064404242795,
+      "grid_size": 8192,
+      "scalar_residual_linf": 1.438617600046932e-08,
+      "scalar_residual_rms": 2.285343316265927e-09,
+      "sign": 1,
+      "tangent_combined_linf": 0.000205099848000323,
+      "tangent_x_residual_linf": 0.000205099848000323,
+      "tangent_y_residual_linf": 0.00020509984799965686,
+      "u_linf": 0.050636636192654405,
+      "x_tangent_max_abs": 8.53610644042428,
+      "x_tangent_min_abs": 0.40855080476686734
+    },
+    {
+      "derivative_residual_linf": 16.587937453211765,
+      "derivative_vs_tangent_x_linf": 1.7763568394002505e-15,
+      "du_linf": 7.5361064404242795,
+      "grid_size": 4096,
+      "scalar_residual_linf": 0.30928101163341504,
+      "scalar_residual_rms": 0.22500622450617716,
+      "sign": -1,
+      "tangent_combined_linf": 16.587937453211765,
+      "tangent_x_residual_linf": 16.587937453211765,
+      "tangent_y_residual_linf": 16.587937453211765,
+      "u_linf": 0.05063284173478187,
+      "x_tangent_max_abs": 8.53610644042428,
+      "x_tangent_min_abs": 0.40855080476686734
+    },
+    {
+      "derivative_residual_linf": 16.587937453211765,
+      "derivative_vs_tangent_x_linf": 1.7763568394002505e-15,
+      "du_linf": 7.5361064404242795,
+      "grid_size": 8192,
+      "scalar_residual_linf": 0.30928102168853094,
+      "scalar_residual_rms": 0.22500622450617905,
+      "sign": -1,
+      "tangent_combined_linf": 16.587937453211765,
+      "tangent_x_residual_linf": 16.587937453211765,
+      "tangent_y_residual_linf": 16.587937453211765,
+      "u_linf": 0.050636636192654405,
+      "x_tangent_max_abs": 8.53610644042428,
+      "x_tangent_min_abs": 0.40855080476686734
+    }
+  ],
+  "max_derivative_vs_tangent_x_linf_best_sign": 1.3322676295501878e-15,
+  "max_scalar_residual_linf_over_grids_best_sign": 1.438617600046932e-08,
+  "max_tangent_residual_linf_over_grids_best_sign": 0.000205099848000323,
+  "metadata": {
+    "K": 0.971635,
+    "npz_keys": [
+      "u",
+      "K",
+      "omega",
+      "M",
+      "theta",
+      "x",
+      "r",
+      "source_path",
+      "metadata_json"
+    ],
+    "omega": 0.6180339887498949,
+    "u_source": "direct_u_key"
+  },
+  "npz_path": "artifacts/proof_audit/theorem_iii_trackb/phase4i_h1_pilot_combined_audit_inputs/003_K0p9716350000_M4096_lsqdealias2_full_fromM1024_M4096_os2_cut1945_h12p0_eta1em08.npz",
+  "omega": 0.6180339887498949,
+  "promotion_allowed": false,
+  "recommendation_label": "seed_residual_too_large_for_interval_prep",
+  "schema": "theorem_iii_trackb_phase4g_tangent_consistency_v1",
+  "spectrum_metrics_native_best_sign": {
+    "derivative_residual_linf": 0.00019586738932031444,
+    "derivative_vs_tangent_x_linf": 1.3322676295501878e-15,
+    "du_linf": 7.5361064404242795,
+    "grid_size": 4096,
+    "scalar_residual_l1_coeff": 3.0725633227864885e-08,
+    "scalar_residual_linf": 1.438617600046932e-08,
+    "scalar_residual_rms": 2.2494054728154187e-09,
+    "scalar_residual_tail_l1_frac_0.25": 3.0643104614909185e-08,
+    "scalar_residual_tail_l1_frac_0.50": 3.0171101399692635e-08,
+    "scalar_residual_tail_l1_frac_0.75": 2.6718495814756436e-08,
+    "scalar_residual_tail_l1_frac_0.90": 2.155500751138135e-08,
+    "scalar_residual_tail_l1_frac_0.95": 1.5206817845754645e-08,
+    "scalar_residual_tail_ratio_frac_0.25": 0.9973140142517598,
+    "scalar_residual_tail_ratio_frac_0.50": 0.9819521432134604,
+    "scalar_residual_tail_ratio_frac_0.75": 0.8695832439516853,
+    "scalar_residual_tail_ratio_frac_0.90": 0.7015317585654589,
+    "scalar_residual_tail_ratio_frac_0.95": 0.4949228461128566,
+    "scalar_residual_top_modes": [
+      {
+        "abs_coeff": 8.785550575272618e-10,
+        "mode": 1946
+      },
+      {
+        "abs_coeff": 8.785550575272618e-10,
+        "mode": -1946
+      },
+      {
+        "abs_coeff": 6.296503489430287e-10,
+        "mode": -1973
+      },
+      {
+        "abs_coeff": 6.296503489430287e-10,
+        "mode": 1973
+      },
+      {
+        "abs_coeff": 5.855733947325111e-10,
+        "mode": 1975
+      },
+      {
+        "abs_coeff": 5.855733947325111e-10,
+        "mode": -1975
+      },
+      {
+        "abs_coeff": 3.5223068977315084e-10,
+        "mode": -1945
+      },
+      {
+        "abs_coeff": 3.5223068977315084e-10,
+        "mode": 1945
+      },
+      {
+        "abs_coeff": 2.770343663183766e-10,
+        "mode": 1888
+      },
+      {
+        "abs_coeff": 2.770343663183766e-10,
+        "mode": -1888
+      },
+      {
+        "abs_coeff": 2.7614715452826574e-10,
+        "mode": -1890
+      },
+      {
+        "abs_coeff": 2.7614715452826574e-10,
+        "mode": 1890
+      }
+    ],
+    "sign": 1,
+    "tangent_combined_linf": 0.00019586738932031444,
+    "tangent_x_residual_linf": 0.0001958673893200924,
+    "tangent_y_residual_linf": 0.00019586738932031444,
+    "u_linf": 0.05063284173478187,
+    "x_tangent_max_abs": 8.53610644042428,
+    "x_tangent_min_abs": 0.40855080476686734
+  },
+  "theorem_facing": false
+}

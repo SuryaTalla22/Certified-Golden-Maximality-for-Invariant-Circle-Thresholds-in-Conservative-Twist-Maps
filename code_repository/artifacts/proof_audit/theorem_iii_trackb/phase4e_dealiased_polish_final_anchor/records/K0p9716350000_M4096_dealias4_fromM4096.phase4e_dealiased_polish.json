@@ -1,0 +1,71 @@
+{
+  "K": 0.971635,
+  "M_in": 4096,
+  "M_out": 4096,
+  "config": {
+    "M_out": 4096,
+    "accept_core_linf": 1e-08,
+    "accept_projected_linf": 1e-10,
+    "cutoff_mode": null,
+    "damping_min": 1e-07,
+    "gmres_atol": 1e-14,
+    "gmres_maxiter": 2600,
+    "gmres_restart": 260,
+    "gmres_rtol": 1e-12,
+    "input_npz": "artifacts/proof_audit/theorem_iii_trackb/phase4c_refined_seeds/embeddings/K0p9716350000_M4096_fromM1024.npz",
+    "max_newton": 18,
+    "newton_tol": 1e-12,
+    "nu": 1.003,
+    "omega_override": null,
+    "oversample": 4,
+    "pin_index": 0
+  },
+  "converged_projected": false,
+  "core_residual_linf": 3.3254856590669846e-08,
+  "diagnostic_only": true,
+  "elapsed_seconds": 334.43300127983093,
+  "omega": 0.6180339887498949,
+  "output_npz": "artifacts/proof_audit/theorem_iii_trackb/phase4e_dealiased_polish_final_anchor/embeddings/K0p9716350000_M4096_dealias4_fromM4096.npz",
+  "oversampled_residual_linf": 3.312245405728831e-08,
+  "projected_residual_linf": 5.684778804140261e-13,
+  "promotion_allowed": false,
+  "record_path": "artifacts/proof_audit/theorem_iii_trackb/phase4e_dealiased_polish_final_anchor/records/K0p9716350000_M4096_dealias4_fromM4096.phase4e_dealiased_polish.json",
+  "schema": "theorem_iii_trackb_phase4e_dealiased_polish_v1",
+  "solve_status": "converged-projected",
+  "steps": [
+    {
+      "accepted": true,
+      "core_linf": 1.055676692220083e-13,
+      "correction_linf": 4.1898969257091164e-05,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 0,
+      "oversampled_linf": 1.620914483191349e-08,
+      "projected_linf": 8.849362110578244e-09
+    },
+    {
+      "accepted": true,
+      "core_linf": 3.219344360538834e-08,
+      "correction_linf": 4.778147952257626e-07,
+      "damping": 1.0,
+      "gmres_info": 0,
+      "iteration": 1,
+      "oversampled_linf": 3.230517117702725e-08,
+      "projected_linf": 1.1551721288974096e-09
+    },
+    {
+      "accepted": true,
+      "core_linf": 3.3254856590669846e-08,
+      "correction_linf": 0.0,
+      "damping": 0.0,
+      "gmres_info": null,
+      "iteration": 2,
+      "oversampled_linf": 3.312245405728831e-08,
+      "projected_linf": 9.971742628179598e-14
+    }
+  ],
+  "theorem_facing": false,
+  "warning": "Double-precision dealiased seed polish only; not interval/theorem-facing.",
+  "weighted_projected_residual_l1_nu": 4.8155644904290464e-11,
+  "weighted_u_l1_nu": 0.11368498742018858
+}

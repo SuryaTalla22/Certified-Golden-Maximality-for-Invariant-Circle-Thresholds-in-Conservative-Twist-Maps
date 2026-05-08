@@ -23,7 +23,10 @@ from fractions import Fraction
 from math import isfinite
 from typing import Iterable, Sequence
 
-import mpmath as mp
+try:
+    import mpmath as mp
+except ModuleNotFoundError:  # pragma: no cover - minimal environments
+    from . import _mpmath_fallback as mp
 import numpy as np
 
 

@@ -1,0 +1,406 @@
+{
+  "certificate_path": "artifacts/proof_audit/theorem_iii_trackb/phase5d_certificate_scaffold_selected_seed/theorem_iii_trackb_phase5d_certificate_scaffold.json",
+  "certificate_sha256": "848e75a6e1b036696fd6444f0ae49dc4c76a1e9d2cb0ee06afe44138265c9d0d",
+  "decision": "REJECT_FAIL_CLOSED",
+  "diagnostic_only_input": true,
+  "fail_closed_passed": true,
+  "formal_attachment_checks": [
+    {
+      "detail": "theorem_iii_trackb_phase5e_formal_interval_attachment_v1",
+      "name": "formal_attachment_schema",
+      "ok": true
+    },
+    {
+      "detail": {
+        "attached": "",
+        "certificate_sha256": "848e75a6e1b036696fd6444f0ae49dc4c76a1e9d2cb0ee06afe44138265c9d0d"
+      },
+      "name": "formal_attachment_references_certificate_hash",
+      "ok": false
+    },
+    {
+      "detail": null,
+      "name": "formal_evidence_formal_interval_backend",
+      "ok": false
+    },
+    {
+      "detail": null,
+      "name": "formal_evidence_independent_replay_passed",
+      "ok": false
+    },
+    {
+      "detail": null,
+      "name": "formal_evidence_outward_rounded_residual_proof",
+      "ok": false
+    },
+    {
+      "detail": null,
+      "name": "formal_evidence_small_divisor_proof",
+      "ok": false
+    },
+    {
+      "detail": null,
+      "name": "formal_evidence_cohomology_inverse_proof",
+      "ok": false
+    },
+    {
+      "detail": null,
+      "name": "formal_evidence_frame_reducibility_proof",
+      "ok": false
+    },
+    {
+      "detail": null,
+      "name": "formal_evidence_nonlinear_bound_proof",
+      "ok": false
+    },
+    {
+      "detail": null,
+      "name": "formal_evidence_tail_bound_proof",
+      "ok": false
+    },
+    {
+      "detail": null,
+      "name": "formal_evidence_branch_chart_compatibility_proof",
+      "ok": false
+    },
+    {
+      "detail": null,
+      "name": "formal_evidence_final_graph_consumption_proof",
+      "ok": false
+    },
+    {
+      "detail": 7.06239340228929e-08,
+      "name": "formal_Y_finite",
+      "ok": true
+    },
+    {
+      "detail": 0.22895403677540946,
+      "name": "formal_Z_finite",
+      "ok": true
+    },
+    {
+      "detail": 551.0006605725524,
+      "name": "formal_Q_finite",
+      "ok": true
+    },
+    {
+      "detail": 3e-05,
+      "name": "formal_radius_positive",
+      "ok": true
+    },
+    {
+      "detail": 2.2564834368199524e-05,
+      "name": "formal_margin_positive",
+      "ok": true
+    },
+    {
+      "detail": 0.7521611456066508,
+      "name": "formal_relative_margin_threshold",
+      "ok": true
+    },
+    {
+      "detail": 0.22895403677540946,
+      "name": "formal_Z_below_threshold",
+      "ok": true
+    },
+    {
+      "detail": 551.0006605725524,
+      "name": "formal_Q_below_threshold",
+      "ok": true
+    },
+    {
+      "detail": 7.06239340228929e-08,
+      "name": "formal_Y_below_threshold",
+      "ok": true
+    },
+    {
+      "detail": {
+        "nu": 1.001,
+        "required": 1.001
+      },
+      "name": "formal_nu_matches_requested",
+      "ok": true
+    },
+    {
+      "detail": {
+        "radius": 3e-05,
+        "required": 3e-05
+      },
+      "name": "formal_radius_matches_requested",
+      "ok": true
+    },
+    {
+      "detail": {
+        "required": 0.9,
+        "tail_start_frac": 0.9
+      },
+      "name": "formal_tail_start_matches_requested",
+      "ok": true
+    },
+    {
+      "detail": {
+        "formal": 7.06239340228929e-08,
+        "formal_over_scaffold": 1.0,
+        "scaffold": 7.06239340228929e-08
+      },
+      "name": "formal_Y_comparison_record_only",
+      "ok": true
+    },
+    {
+      "detail": {
+        "formal": 0.22895403677540946,
+        "formal_over_scaffold": 1.0,
+        "scaffold": 0.22895403677540946
+      },
+      "name": "formal_Z_comparison_record_only",
+      "ok": true
+    },
+    {
+      "detail": {
+        "formal": 551.0006605725524,
+        "formal_over_scaffold": 1.0,
+        "scaffold": 551.0006605725524
+      },
+      "name": "formal_Q_comparison_record_only",
+      "ok": true
+    }
+  ],
+  "formal_attachment_ok": false,
+  "formal_attachment_path": "artifacts/proof_audit/theorem_iii_trackb/phase5f_formal_attachment_candidate/phase5f_formal_interval_attachment_CANDIDATE.json",
+  "formal_attachment_template_path": "artifacts/proof_audit/theorem_iii_trackb/phase5f_candidate_phase5e_expected_rejection/phase5e_formal_interval_attachment_TEMPLATE.json",
+  "negative_controls": [
+    {
+      "checks_all_ok": false,
+      "expected_rejected": true,
+      "failed_checks": [
+        "scaffold_theorem_facing_false",
+        "scaffold_promotion_allowed_false"
+      ],
+      "name": "illicit_flags_without_formal_attachment",
+      "rejected": true
+    },
+    {
+      "checks_all_ok": false,
+      "expected_rejected": true,
+      "failed_checks": [
+        "reported_margin_above_threshold",
+        "relative_margin_above_threshold"
+      ],
+      "name": "negative_margin",
+      "rejected": true
+    },
+    {
+      "checks_all_ok": false,
+      "expected_rejected": true,
+      "failed_checks": [
+        "Z_below_threshold"
+      ],
+      "name": "excessive_Z",
+      "rejected": true
+    },
+    {
+      "checks_all_ok": false,
+      "expected_rejected": true,
+      "failed_checks": [
+        "active_assumptions_nonempty",
+        "open_hypotheses_nonempty"
+      ],
+      "name": "missing_assumptions",
+      "rejected": true
+    }
+  ],
+  "negative_controls_passed": true,
+  "open_requirements_for_promotion": [
+    "Attach an independent formal interval backend record using schema theorem_iii_trackb_phase5e_formal_interval_attachment_v1.",
+    "Set every required formal evidence flag to true only after an independent proof/replay exists.",
+    "Ensure formal Y/Z/Q/radius/margin bounds satisfy gate thresholds under outward-rounded arithmetic.",
+    "Validate branch/chart compatibility and final threshold-graph consumption."
+  ],
+  "promotion_allowed": false,
+  "recommendation": "Correct fail-closed outcome: scaffold is replayable but not theorem-facing without formal interval evidence.",
+  "required_formal_evidence_keys": [
+    "formal_interval_backend",
+    "independent_replay_passed",
+    "outward_rounded_residual_proof",
+    "small_divisor_proof",
+    "cohomology_inverse_proof",
+    "frame_reducibility_proof",
+    "nonlinear_bound_proof",
+    "tail_bound_proof",
+    "branch_chart_compatibility_proof",
+    "final_graph_consumption_proof"
+  ],
+  "scaffold_checks": [
+    {
+      "detail": true,
+      "name": "scaffold_diagnostic_only_true",
+      "ok": true
+    },
+    {
+      "detail": false,
+      "name": "scaffold_theorem_facing_false",
+      "ok": true
+    },
+    {
+      "detail": false,
+      "name": "scaffold_promotion_allowed_false",
+      "ok": true
+    },
+    {
+      "detail": {
+        "anchor": 0.971635,
+        "required": 0.971635
+      },
+      "name": "lower_anchor_meets_required_minimum",
+      "ok": true
+    },
+    {
+      "detail": 7.06239340228929e-08,
+      "name": "finite_Y",
+      "ok": true
+    },
+    {
+      "detail": 0.22895403677540946,
+      "name": "finite_Z",
+      "ok": true
+    },
+    {
+      "detail": 551.0006605725524,
+      "name": "finite_Q",
+      "ok": true
+    },
+    {
+      "detail": 3e-05,
+      "name": "finite_positive_radius",
+      "ok": true
+    },
+    {
+      "detail": 2.2564834368199524e-05,
+      "name": "reported_margin_above_threshold",
+      "ok": true
+    },
+    {
+      "detail": {
+        "relative_margin": 0.7521611456066508,
+        "threshold": 0.25
+      },
+      "name": "relative_margin_above_threshold",
+      "ok": true
+    },
+    {
+      "detail": {
+        "Z": 0.22895403677540946,
+        "threshold": 0.5
+      },
+      "name": "Z_below_threshold",
+      "ok": true
+    },
+    {
+      "detail": {
+        "Q": 551.0006605725524,
+        "threshold": Infinity
+      },
+      "name": "Q_below_threshold",
+      "ok": true
+    },
+    {
+      "detail": {
+        "Y": 7.06239340228929e-08,
+        "threshold": Infinity
+      },
+      "name": "Y_below_threshold",
+      "ok": true
+    },
+    {
+      "detail": 0.001087432533666174,
+      "name": "small_divisor_positive",
+      "ok": true
+    },
+    {
+      "detail": 919.5972798685693,
+      "name": "cohomology_inverse_finite",
+      "ok": true
+    },
+    {
+      "detail": [
+        "Phase 5C uses nextafter outward rounding and conservative inflations but is not an independently verified formal interval proof.",
+        "Fourier residual, frame, reducibility, and nonlinear constants still need a formal outward-rounded implementation/replay in Phase 5E or later.",
+        "Branch/chart compatibility and final theorem graph consumption remain to be validated by the final replay gate.",
+        "The scaffold certifies only a direct lower anchor candidate, not a full parameter interval or mesh corridor."
+      ],
+      "name": "active_assumptions_nonempty",
+      "ok": true
+    },
+    {
+      "detail": [
+        "Independent formal interval arithmetic backend reproduces or improves the Phase 5C bounds.",
+        "Final replay rejects this scaffold unless promoted by a theorem-facing Phase 5E certificate.",
+        "The lower anchor is consumed by the threshold-identification layer with matching branch/chart labels."
+      ],
+      "name": "open_hypotheses_nonempty",
+      "ok": true
+    },
+    {
+      "detail": {
+        "nu": 1.001,
+        "required": 1.001
+      },
+      "name": "nu_matches_requested",
+      "ok": true
+    },
+    {
+      "detail": {
+        "radius": 3e-05,
+        "required": 3e-05
+      },
+      "name": "radius_matches_requested",
+      "ok": true
+    },
+    {
+      "detail": {
+        "cutoff_spec": "full",
+        "required": "full"
+      },
+      "name": "cutoff_matches_requested",
+      "ok": true
+    },
+    {
+      "detail": {
+        "required": 0.9,
+        "tail_start_frac": 0.9
+      },
+      "name": "tail_start_matches_requested",
+      "ok": true
+    }
+  ],
+  "scaffold_replay_ok_for_gate": true,
+  "schema": "theorem_iii_trackb_phase5e_promotion_gate_summary_v1",
+  "selected_constants": {
+    "Q": 551.0006605725524,
+    "Y": 7.06239340228929e-08,
+    "Z": 0.22895403677540946,
+    "cohomology_inverse_upper": 919.5972798685693,
+    "cutoff_mode_native_units": 4095.0,
+    "margin": 2.2564834368199524e-05,
+    "nu": 1.001,
+    "radius": 3e-05,
+    "relative_margin": 0.7521611456066508,
+    "small_divisor_lower": 0.001087432533666174,
+    "tail_start_frac": 0.9
+  },
+  "status": "phase5e-fail-closed-rejected",
+  "theorem_facing": false,
+  "theorem_replay_accepted": false,
+  "thresholds": {
+    "max_q": Infinity,
+    "max_y": Infinity,
+    "max_z": 0.5,
+    "min_margin": 0.0,
+    "min_relative_margin": 0.25,
+    "require_cutoff": "full",
+    "require_nu": 1.001,
+    "require_radius": 3e-05,
+    "require_tail_start": 0.9,
+    "required_min_lower_anchor_K": 0.971635
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "counts": {
+    "completed_records": 2,
+    "converged": 2,
+    "not_converged": 0,
+    "tasks": 2
+  },
+  "diagnostic_only": true,
+  "elapsed_seconds": 1176.2113244533539,
+  "parameters": {
+    "M_outs": [
+      2048,
+      4096
+    ],
+    "accept_linf": 1e-10,
+    "damping_min": 1e-05,
+    "gmres_atol": 1e-14,
+    "gmres_maxiter": 2200,
+    "gmres_restart": 220,
+    "gmres_rtol": 1e-12,
+    "max_newton": 28,
+    "newton_tol": 1e-12,
+    "nu": 1.003,
+    "seed_count": 1,
+    "workers_requested": 2,
+    "workers_used": 2
+  },
+  "phase": "TrackB-Phase4c-refine-high-resolution-seed-from-existing-embedding",
+  "promotion_allowed": false,
+  "records": [
+    {
+      "K": 0.971635,
+      "M_in": 1024,
+      "M_out": 2048,
+      "converged": true,
+      "estimated_strip_width": 0.007827759939561479,
+      "output_npz": "artifacts/proof_audit/theorem_iii_trackb/phase4c_refined_seeds/embeddings/K0p9716350000_M2048_fromM1024.npz",
+      "record_path": "artifacts/proof_audit/theorem_iii_trackb/phase4c_refined_seeds/records/K0p9716350000_M2048_fromM1024.phase4c_refine_from_seed.json",
+      "residual_l1_nu": 1.7115220971138887e-13,
+      "residual_linf": 1.195614292850383e-14,
+      "tail_ratio_top_10pct": 3.5397536809249247e-05
+    },
+    {
+      "K": 0.971635,
+      "M_in": 1024,
+      "M_out": 4096,
+      "converged": true,
+      "estimated_strip_width": 0.004483410422622631,
+      "output_npz": "artifacts/proof_audit/theorem_iii_trackb/phase4c_refined_seeds/embeddings/K0p9716350000_M4096_fromM1024.npz",
+      "record_path": "artifacts/proof_audit/theorem_iii_trackb/phase4c_refined_seeds/records/K0p9716350000_M4096_fromM1024.phase4c_refine_from_seed.json",
+      "residual_l1_nu": 7.948785055329806e-12,
+      "residual_linf": 1.0556766922197051e-13,
+      "tail_ratio_top_10pct": 1.3281832729621478e-05
+    }
+  ],
+  "schema": "theorem_iii_trackb_phase4c_refinement_summary_v1",
+  "status": "phase4c-refinement-complete",
+  "theorem_facing": false
+}

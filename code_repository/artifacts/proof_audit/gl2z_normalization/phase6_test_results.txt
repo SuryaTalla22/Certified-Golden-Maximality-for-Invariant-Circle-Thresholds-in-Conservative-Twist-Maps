@@ -1,0 +1,12 @@
+Phase 6 GL(2,Z) normalization audit test summary
+
+Commands run:
+1. python -S -m unittest tests.test_gl2z_normalization_audit -v
+   Result: 7 tests passed.
+
+2. python -S scripts/audit/audit_gl2z_normalization.py --strict
+   Result: status=passed; validator_failure_count=0; analytic_conjugacy_claimed=false; accepted_distinct_representative_count=1.
+
+Notes:
+- The audit is representative-selection only, not an analytic conjugacy claim.
+- The returned repository does not store cached Theorem V/VI/VII/VIII stage artifacts.

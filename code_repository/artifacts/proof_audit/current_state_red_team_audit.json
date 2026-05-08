@@ -1,0 +1,188 @@
+{
+  "bundle": {
+    "active_assumptions": [],
+    "audit_metadata": {
+      "audit_kind": "phase1-current-state-red-team",
+      "compact_lower_hi": 0.971636,
+      "expected_current_snapshot_result": "fail-until-near-critical-lower-chain-is-regenerated",
+      "margin": -0.706636,
+      "supported_lower_hi": 0.265
+    },
+    "claim": "lower corridor reaches the compact final golden lower anchor",
+    "derived_booleans": {
+      "lower_anchor_derivable_from_cached_artifact": {
+        "certified": false,
+        "derived_from": [
+          "cached_lower_reaches_compact_lower_anchor"
+        ],
+        "diagnostic_only": false,
+        "margin": -0.706636,
+        "name": "lower_anchor_derivable_from_cached_artifact",
+        "notes": "True only when the cached lower artifact supports the compact near-critical lower anchor used by the paper-facing replay.",
+        "source_artifact": "",
+        "theorem_facing": true,
+        "trusted_as_input": false,
+        "value": false
+      }
+    },
+    "derived_inequalities": {
+      "cached_lower_reaches_compact_lower_anchor": {
+        "certified": false,
+        "diagnostic_only": false,
+        "lhs_label": "compact_replay_claimed_lower_anchor_hi",
+        "lhs_value": 0.971636,
+        "margin": -0.706636,
+        "name": "cached_lower_reaches_compact_lower_anchor",
+        "recomputed_margin": -0.706636,
+        "rhs_label": "cached_theorem_iii_supported_lower_hi",
+        "rhs_value": 0.265,
+        "sense": "<=",
+        "source_artifact": "/mnt/data/kam_work/code_repository/artifacts/final_discharge/stage_cache/theorem_iii.json",
+        "source_fields": [
+          "cached_theorem_iii_supported_lower_interval",
+          "compact_replay_claimed_lower_anchor_interval"
+        ],
+        "theorem_facing": true
+      }
+    },
+    "failure_fields": [
+      "cached_lower_artifact_does_not_reach_compact_near_critical_anchor"
+    ],
+    "open_hypotheses": [],
+    "proof_payload_version": "v2",
+    "raw_interval_fields": {
+      "cached_theorem_iii_supported_lower_interval": {
+        "diagnostic_only": false,
+        "hi": 0.265,
+        "label": "cached_theorem_iii_supported_lower_interval",
+        "lo": 0.21500000000000002,
+        "ordered": true,
+        "outward_rounded": true,
+        "source_artifact": "/mnt/data/kam_work/code_repository/artifacts/final_discharge/stage_cache/theorem_iii.json",
+        "source_json_pointer": "/lower_neighborhood_closure/stable_lower_interval",
+        "theorem_facing": true,
+        "width": 0.04999999999999999
+      },
+      "compact_replay_claimed_lower_anchor_interval": {
+        "diagnostic_only": false,
+        "hi": 0.971636,
+        "label": "compact_replay_claimed_lower_anchor_interval",
+        "lo": 0.971635,
+        "ordered": true,
+        "outward_rounded": true,
+        "source_artifact": "kam_theorem_suite/paper_replay_inputs.py",
+        "source_json_pointer": "build_minimal_theorem_shells/theorem_iii/certified_below_threshold_interval",
+        "theorem_facing": true,
+        "width": 1.0000000000287557e-06
+      }
+    },
+    "raw_symbolic_fields": {
+      "cached_residual_burden": [],
+      "cached_theorem_iii_status": "golden-theorem-iii-final-strong"
+    },
+    "shell_payload": {},
+    "source_artifacts": [
+      "/mnt/data/kam_work/code_repository/artifacts/final_discharge/stage_cache/theorem_iii.json",
+      "kam_theorem_suite/paper_replay_inputs.py"
+    ],
+    "theorem_layer": "III",
+    "validator_recomputed": true
+  },
+  "lower_audit": {
+    "active_assumptions": [],
+    "audit_metadata": {
+      "audit_kind": "phase1-current-state-red-team",
+      "compact_lower_hi": 0.971636,
+      "expected_current_snapshot_result": "fail-until-near-critical-lower-chain-is-regenerated",
+      "margin": -0.706636,
+      "supported_lower_hi": 0.265
+    },
+    "claim": "lower corridor reaches the compact final golden lower anchor",
+    "derived_booleans": {
+      "lower_anchor_derivable_from_cached_artifact": {
+        "certified": false,
+        "derived_from": [
+          "cached_lower_reaches_compact_lower_anchor"
+        ],
+        "diagnostic_only": false,
+        "margin": -0.706636,
+        "name": "lower_anchor_derivable_from_cached_artifact",
+        "notes": "True only when the cached lower artifact supports the compact near-critical lower anchor used by the paper-facing replay.",
+        "source_artifact": "",
+        "theorem_facing": true,
+        "trusted_as_input": false,
+        "value": false
+      }
+    },
+    "derived_inequalities": {
+      "cached_lower_reaches_compact_lower_anchor": {
+        "certified": false,
+        "diagnostic_only": false,
+        "lhs_label": "compact_replay_claimed_lower_anchor_hi",
+        "lhs_value": 0.971636,
+        "margin": -0.706636,
+        "name": "cached_lower_reaches_compact_lower_anchor",
+        "recomputed_margin": -0.706636,
+        "rhs_label": "cached_theorem_iii_supported_lower_hi",
+        "rhs_value": 0.265,
+        "sense": "<=",
+        "source_artifact": "/mnt/data/kam_work/code_repository/artifacts/final_discharge/stage_cache/theorem_iii.json",
+        "source_fields": [
+          "cached_theorem_iii_supported_lower_interval",
+          "compact_replay_claimed_lower_anchor_interval"
+        ],
+        "theorem_facing": true
+      }
+    },
+    "failure_fields": [
+      "cached_lower_artifact_does_not_reach_compact_near_critical_anchor"
+    ],
+    "open_hypotheses": [],
+    "proof_payload_version": "v2",
+    "raw_interval_fields": {
+      "cached_theorem_iii_supported_lower_interval": {
+        "diagnostic_only": false,
+        "hi": 0.265,
+        "label": "cached_theorem_iii_supported_lower_interval",
+        "lo": 0.21500000000000002,
+        "ordered": true,
+        "outward_rounded": true,
+        "source_artifact": "/mnt/data/kam_work/code_repository/artifacts/final_discharge/stage_cache/theorem_iii.json",
+        "source_json_pointer": "/lower_neighborhood_closure/stable_lower_interval",
+        "theorem_facing": true,
+        "width": 0.04999999999999999
+      },
+      "compact_replay_claimed_lower_anchor_interval": {
+        "diagnostic_only": false,
+        "hi": 0.971636,
+        "label": "compact_replay_claimed_lower_anchor_interval",
+        "lo": 0.971635,
+        "ordered": true,
+        "outward_rounded": true,
+        "source_artifact": "kam_theorem_suite/paper_replay_inputs.py",
+        "source_json_pointer": "build_minimal_theorem_shells/theorem_iii/certified_below_threshold_interval",
+        "theorem_facing": true,
+        "width": 1.0000000000287557e-06
+      }
+    },
+    "raw_symbolic_fields": {
+      "cached_residual_burden": [],
+      "cached_theorem_iii_status": "golden-theorem-iii-final-strong"
+    },
+    "shell_payload": {},
+    "source_artifacts": [
+      "/mnt/data/kam_work/code_repository/artifacts/final_discharge/stage_cache/theorem_iii.json",
+      "kam_theorem_suite/paper_replay_inputs.py"
+    ],
+    "theorem_layer": "III",
+    "validator_recomputed": true
+  },
+  "status": "failed",
+  "summary": {
+    "failure_fields": [
+      "cached_lower_artifact_does_not_reach_compact_near_critical_anchor"
+    ],
+    "lower_anchor_derivable_from_cached_artifact": false,
+    "margin": -0.706636
+  }
+}

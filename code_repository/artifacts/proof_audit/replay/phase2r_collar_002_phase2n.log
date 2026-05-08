@@ -1,0 +1,34 @@
+
+$ /pscratch/sd/s/suryact/phase2k_venv/bin/python scripts/audit/run_lower_anchor_phase2n_batch.py --segment-id phase2n_collar_002 --K-lo 0.9610001 --K-hi 0.9615002 --K-mid 0.96125015 --N-values 1024 --oversample-factors 16 --sigma-caps 0.0001 --timeout-seconds 1200.0 --skip-existing --seed-json artifacts/proof_audit/lower_corridor/phase2n_probes/phase2n_collar_001_N1024_os16_sg0p0001.json
+[dry-run] command not executed
+
+$ /pscratch/sd/s/suryact/phase2k_venv/bin/python scripts/audit/run_lower_anchor_phase2n_batch.py --segment-id phase2n_collar_002 --K-lo 0.9610001 --K-hi 0.9615002 --K-mid 0.96125015 --N-values 1024 --oversample-factors 16 --sigma-caps 0.0001 --timeout-seconds 1200.0 --skip-existing --seed-json artifacts/proof_audit/lower_corridor/phase2n_probes/phase2n_collar_001_N1024_os16_sg0p0001.json
+{
+  "attempt_count": 1,
+  "best": {
+    "K_mid": 0.96125015,
+    "N": 1024,
+    "elapsed_seconds": 13.600118398666382,
+    "failure_reasons": [
+      "analytic_radii_margin_not_safely_positive"
+    ],
+    "finite_radii_margin": 6.424383036570661e-07,
+    "linear_Z": 0.3025387346401668,
+    "oversample_factor": 16,
+    "path": "artifacts/proof_audit/lower_corridor/phase2n_probes/phase2n_collar_002_N1024_os16_sg0p0001.json",
+    "radii_margin": -3.221413022122197e-06,
+    "radius_r": 9.211109730037737e-07,
+    "residual_Y": 1.7401591848857644e-09,
+    "segment_id": "phase2n_collar_002",
+    "sigma_cap": 0.0001,
+    "sigma_used": 0.0001,
+    "source_theorem_margin": -3.2572982435695096e-06,
+    "status": "phase2n-diagnostic-single-N",
+    "tail_T": 3.8621110877053505e-06,
+    "theorem_ready": false
+  },
+  "best_candidate_path": "artifacts/proof_audit/lower_corridor/phase2n_probes/phase2n_collar_002_best_single_segment_candidate.json",
+  "csv_path": "tables/proof_audit/lower_corridor/phase2n_probes/phase2n_collar_002_phase2n_batch_summary.csv",
+  "summary_path": "artifacts/proof_audit/lower_corridor/phase2n_probes/phase2n_collar_002_phase2n_batch_summary.json",
+  "theorem_ready_count": 0
+}

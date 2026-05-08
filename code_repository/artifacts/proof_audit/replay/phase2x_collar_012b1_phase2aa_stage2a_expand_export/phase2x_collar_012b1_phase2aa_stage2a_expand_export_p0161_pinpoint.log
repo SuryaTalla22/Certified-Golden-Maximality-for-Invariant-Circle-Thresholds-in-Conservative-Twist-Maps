@@ -1,0 +1,114 @@
+
+$ /pscratch/sd/s/suryact/code_runs/phase2k_repo/code_repository/.venv_phase2/bin/python scripts/audit/run_lower_anchor_phase2n_batch.py --segment-id phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint --K-lo 0.966328676172 --K-hi 0.966329364844 --K-mid 0.966329020508 --N-values 1024 --oversample-factors 16 --sigma-caps 0.0001 --timeout-seconds 1200.0 --skip-existing --seed-json artifacts/proof_audit/lower_corridor/phase2n_probes/phase2n_collar_012a_N1024_os16_sg0p0001.json
+{
+  "attempt_count": 1,
+  "best": {
+    "K_mid": 0.966329020508,
+    "N": 1024,
+    "elapsed_seconds": 11.245409965515137,
+    "failure_reasons": [
+      "analytic_radii_margin_not_safely_positive"
+    ],
+    "finite_radii_margin": 4.7454740431824995e-07,
+    "linear_Z": 0.47924630987511824,
+    "oversample_factor": 16,
+    "path": "artifacts/proof_audit/lower_corridor/phase2n_probes/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_N1024_os16_sg0p0001.json",
+    "radii_margin": -2.5150378393322286e-05,
+    "radius_r": 9.112821854092446e-07,
+    "residual_Y": 3.287789547032922e-08,
+    "segment_id": "phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint",
+    "sigma_cap": 0.0001,
+    "sigma_used": 0.0001,
+    "source_theorem_margin": -2.8704836668057056e-05,
+    "status": "phase2n-diagnostic-single-N",
+    "tail_T": 2.5592053058648886e-05,
+    "theorem_ready": false
+  },
+  "best_candidate_path": "artifacts/proof_audit/lower_corridor/phase2n_probes/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_best_single_segment_candidate.json",
+  "csv_path": "tables/proof_audit/lower_corridor/phase2n_probes/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_phase2n_batch_summary.csv",
+  "summary_path": "artifacts/proof_audit/lower_corridor/phase2n_probes/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_phase2n_batch_summary.json",
+  "theorem_ready_count": 0
+}
+
+$ /pscratch/sd/s/suryact/code_runs/phase2k_repo/code_repository/.venv_phase2/bin/python scripts/audit/run_lower_anchor_phase2o_radius_tail_scan.py --input artifacts/proof_audit/lower_corridor/phase2n_probes/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_phase2n_batch_summary.json --out artifacts/proof_audit/lower_corridor/phase2x_weighted/collar_012b1_phase2aa_stage2a_expand_export/phase2o/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_tail_radius_scan.json --csv tables/proof_audit/lower_corridor/phase2x_weighted/collar_012b1_phase2aa_stage2a_expand_export/phase2o/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_tail_radius_scan.csv --candidate-out artifacts/proof_audit/lower_corridor/phase2x_weighted/collar_012b1_phase2aa_stage2a_expand_export/phase2o/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_tail_radius_candidate.json --radius-multipliers 1.0,1.04,1.06,1.08,1.1,1.12,1.14,1.16,1.18,1.2,1.22,1.25 --sigma-values 0.0000001 --tail-band-fractions 0.65 --tail-safety-factors 2
+{
+  "status": "phase2o-diagnostic-tail-radius-not-closed",
+  "theorem_ready_count": 0,
+  "theorem_eligible_count": 13,
+  "diagnostic_ready_count": 0,
+  "best_theorem_eligible": {
+    "model_name": "strict_sigma_override_sg1.000e-07",
+    "tail_model": "strict_cauchy_tail_sigma_override",
+    "radii_margin": -1.7966102015911496e-05,
+    "sigma": 1e-07,
+    "radius_multiplier": 1.0,
+    "tail_T": 1.8416490549158295e-05,
+    "allowable_tail_max": 4.503895332467977e-07,
+    "finite_contraction_q": 0.9584926197502365,
+    "failure_reasons": [
+      "analytic_radii_margin_not_safely_positive"
+    ]
+  },
+  "best_diagnostic": {
+    "model_name": "diag_highmode_sg1.000e-07_b0.65_sf2",
+    "tail_model": "diagnostic_high_mode_envelope_tail",
+    "radii_margin": -2699.5523801764043,
+    "sigma": 1e-07,
+    "tail_T": 2699.552380626793,
+    "allowable_tail_max": 4.503895332467977e-07,
+    "failure_reasons": [
+      "diagnostic_margin_not_positive"
+    ]
+  },
+  "conclusion": {
+    "closed": false,
+    "recommended_next_step": "inspect_best_diagnostic_tail_rows_then_implement_a_sharper_tail_lemma_or_change_the_lower_norm",
+    "message": "No theorem-eligible tail/radius row closed.  The report identifies whether radius inflation is blocked by finite contraction and whether diagnostic tail models would close.",
+    "best_eligible_margin": -1.7966102015911496e-05,
+    "best_eligible_tail_T": 1.8416490549158295e-05,
+    "best_eligible_allowable_tail_max": 4.503895332467977e-07,
+    "radius_inflation_blocked_by_finite_contraction": true,
+    "source_samples": {
+      "source_validation_present": true,
+      "has_u": true,
+      "N_from_u": 1024,
+      "lambda_value": 1.67453785150876e-18
+    }
+  }
+}
+wrote report: artifacts/proof_audit/lower_corridor/phase2x_weighted/collar_012b1_phase2aa_stage2a_expand_export/phase2o/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_tail_radius_scan.json
+wrote csv: tables/proof_audit/lower_corridor/phase2x_weighted/collar_012b1_phase2aa_stage2a_expand_export/phase2o/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_tail_radius_scan.csv
+wrote candidate: artifacts/proof_audit/lower_corridor/phase2x_weighted/collar_012b1_phase2aa_stage2a_expand_export/phase2o/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_tail_radius_candidate.json
+
+$ /pscratch/sd/s/suryact/code_runs/phase2k_repo/code_repository/.venv_phase2/bin/python scripts/audit/run_lower_anchor_phase2p_modewise_tail_scan.py --input artifacts/proof_audit/lower_corridor/phase2x_weighted/collar_012b1_phase2aa_stage2a_expand_export/phase2o/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_tail_radius_candidate.json --out artifacts/proof_audit/lower_corridor/phase2x_weighted/collar_012b1_phase2aa_stage2a_expand_export/phase2p/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_modewise_tail_scan.json --csv tables/proof_audit/lower_corridor/phase2x_weighted/collar_012b1_phase2aa_stage2a_expand_export/phase2p/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_modewise_tail_scan.csv --candidate-out artifacts/proof_audit/lower_corridor/phase2x_weighted/collar_012b1_phase2aa_stage2a_expand_export/phase2p/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_modewise_tail_candidate.json --sigma-values 0.0000001 --tail-cutoffs 1536 --oversample-factors 16
+{
+  "status": "phase2p-diagnostic-modewise-tail-not-closed",
+  "theorem_ready_count": 0,
+  "theorem_eligible_count": 13,
+  "best_theorem_eligible": {
+    "model_name": "strict_modewise_tail_from_strict_source_tail_radius_x1_04_sg1.000e-07_os16_cut1536",
+    "tail_model": "strict_modewise_geometric_tail_response",
+    "theorem_ready": false,
+    "sigma": 1e-07,
+    "tail_cutoff": 1536,
+    "radii_margin": -2.778121429457782e-08,
+    "tail_T": 4.789839790674593e-07,
+    "allowable_tail_max": 4.5120376477288147e-07,
+    "tail_response_bound": 3.601435701063758e-07,
+    "nonlinear_guard": 1.1884040896108343e-07,
+    "failure_reasons": [
+      "analytic_radii_margin_not_safely_positive"
+    ]
+  },
+  "conclusion": {
+    "closed": false,
+    "recommended_next_step": "if_modewise_tail_fails_change_the_lower_norm_or_recompute_a_better_finite_inverse",
+    "message": "No theorem-eligible modewise tail row closed.",
+    "best_eligible_margin": -2.778121429457782e-08,
+    "best_eligible_tail_T": 4.789839790674593e-07,
+    "best_eligible_allowable_tail_max": 4.5120376477288147e-07
+  }
+}
+wrote report: artifacts/proof_audit/lower_corridor/phase2x_weighted/collar_012b1_phase2aa_stage2a_expand_export/phase2p/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_modewise_tail_scan.json
+wrote csv: tables/proof_audit/lower_corridor/phase2x_weighted/collar_012b1_phase2aa_stage2a_expand_export/phase2p/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_modewise_tail_scan.csv
+wrote candidate: artifacts/proof_audit/lower_corridor/phase2x_weighted/collar_012b1_phase2aa_stage2a_expand_export/phase2p/phase2x_collar_012b1_phase2aa_stage2a_expand_export_p0161_pinpoint_modewise_tail_candidate.json

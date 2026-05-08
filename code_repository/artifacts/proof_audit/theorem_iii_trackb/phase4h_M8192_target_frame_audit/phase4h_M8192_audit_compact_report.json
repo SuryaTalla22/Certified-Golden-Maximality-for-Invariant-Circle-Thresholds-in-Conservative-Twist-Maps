@@ -1,0 +1,73 @@
+{
+  "counts": {
+    "completed_records": 1,
+    "moderate": 1,
+    "needs_polish": 0,
+    "ready": 0,
+    "tasks": 1
+  },
+  "interpretation_hints": {
+    "main_decision": "If target-frame recomputation drops determinant/triangular defects to sub-1e-4 or better, proceed to one more high-precision polish/intervalization prep; if not, improve the seed or frame model before intervalization.",
+    "primary_fix_checked": "Recompute M(theta+omega)'s symplectic normal from the shifted tangent, instead of shifting the nonlinear normal vector."
+  },
+  "parameters": {
+    "cutoff_fracs": [
+      1.0,
+      0.95,
+      0.9,
+      0.75
+    ],
+    "npz_count": 1,
+    "nu_grid": [
+      1.002,
+      1.003,
+      1.005
+    ],
+    "omega_override": null,
+    "oversample_factors": [
+      1,
+      2
+    ],
+    "tail_start_fracs": [
+      0.5,
+      0.75,
+      0.9
+    ],
+    "workers_requested": 2,
+    "workers_used": 1
+  },
+  "schema": "theorem_iii_trackb_phase4d_compact_report_v1",
+  "status": "phase4d-target-frame-audit-complete",
+  "top_candidates": [
+    {
+      "K": 0.971635,
+      "M": 8192,
+      "base_embedding_residual_linf_max_lift_aware": 1.4577228313328305e-13,
+      "base_old_shifted_normal_upper_triangular_defect_linf_max": 0.01579265315418854,
+      "base_scalar_residual_linf": 1.4580003870889868e-13,
+      "base_shifted_normal_target_det_defect_linf": 0.015546290213032776,
+      "base_source_frame_det_defect_linf": 2.220446049250313e-16,
+      "base_tangent_residual_linf_max": 0.0001722232835441595,
+      "base_target_frame_det_defect_linf": 2.220446049250313e-16,
+      "base_upper_triangular_defect_linf_max": 0.00063768989592905,
+      "best_any_case": "L8192_cut_0.950",
+      "best_any_cutoff_mode": 3891,
+      "best_any_scalar_residual_linf": 3.758513361651339e-09,
+      "best_any_tangent_residual_linf_max": 0.00018392637399511358,
+      "best_any_upper_triangular_defect_linf_max": 0.0006027542089288573,
+      "best_full_a21_linf": 0.00063768989592905,
+      "best_full_case": "L8192_full",
+      "best_full_grid_size": 8192,
+      "best_full_scalar_residual_linf": 1.4580003870889868e-13,
+      "best_full_source_frame_det_defect_linf": 2.220446049250313e-16,
+      "best_full_tangent_residual_linf_max": 0.0001722232835441595,
+      "best_full_target_frame_det_defect_linf": 2.220446049250313e-16,
+      "best_full_upper_triangular_defect_linf_max": 0.00063768989592905,
+      "npz_path": "artifacts/proof_audit/theorem_iii_trackb/phase4h_native_M8192_refine_compare/embeddings/K0p9716350000_M8192_fromM4096.npz",
+      "recommendation_label": "moderate_needs_one_more_precision_or_frame_polish",
+      "recommendation_score": 4,
+      "record_path": "artifacts/proof_audit/theorem_iii_trackb/phase4h_M8192_target_frame_audit/records/K0p9716350000_M8192_fromM4096.phase4d_target_frame_audit.json",
+      "twist_average_best_full": 1.5251894944972881
+    }
+  ]
+}
