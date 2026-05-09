@@ -1,0 +1,738 @@
+{
+  "active_assumptions": [],
+  "audit_metadata": {
+    "audit_type": "transport-budget-ledger",
+    "heavy_regeneration": false,
+    "ledger": {
+      "available_gap": 1e-05,
+      "branch_chart_present": true,
+      "branch_label": "golden-native-tail",
+      "chart_label": "standard-sine-threshold-chart",
+      "component_formulas": {
+        "delta_branch": "0.25 * target_width",
+        "delta_rat": "0.35 * target_width",
+        "delta_round": "max(1e-12, 8 * ulp(target_hi))",
+        "delta_tail": "0.30 * target_width"
+      },
+      "component_source": "formula-derived-from-target-width-and-rounding-floor",
+      "components": [
+        {
+          "formula": "0.35 * target_width",
+          "name": "delta_rat",
+          "source_fields": [
+            "target_interval",
+            "q_tail_model"
+          ],
+          "theorem_facing": true,
+          "value": 6.999999999812711e-07
+        },
+        {
+          "formula": "0.25 * target_width",
+          "name": "delta_branch",
+          "source_fields": [
+            "target_interval",
+            "branch_window"
+          ],
+          "theorem_facing": true,
+          "value": 4.999999999866223e-07
+        },
+        {
+          "formula": "0.30 * target_width",
+          "name": "delta_tail",
+          "source_fields": [
+            "target_interval",
+            "tail_modulus"
+          ],
+          "theorem_facing": true,
+          "value": 5.999999999839467e-07
+        },
+        {
+          "formula": "max(1e-12, 8 * ulp(target_hi))",
+          "name": "delta_round",
+          "source_fields": [
+            "rounding_floor"
+          ],
+          "theorem_facing": true,
+          "value": 1e-12
+        }
+      ],
+      "components_nonnegative": true,
+      "delta_branch": 4.999999999866223e-07,
+      "delta_rat": 6.999999999812711e-07,
+      "delta_round": 1e-12,
+      "delta_tail": 5.999999999839467e-07,
+      "exported_target_width": 2e-06,
+      "gap_preserved": true,
+      "ledger_certified": true,
+      "margin_ratio": 5.55555246928616,
+      "margin_ratio_matches": true,
+      "margin_ratio_recomputed": 5.55555246928616,
+      "observed_challenger_upper": 0.9716348,
+      "observed_lower_anchor_lo": 0.971635,
+      "observed_top_gap": 2.0000000000575113e-07,
+      "raw_shell_consumed": false,
+      "remaining_margin": 8.19999900004816e-06,
+      "remaining_matches": true,
+      "remaining_recomputed": 8.19999900004816e-06,
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "target_hi": 0.971637,
+      "target_interval_ordered": true,
+      "target_lo": 0.971635,
+      "target_width": 1.999999999946489e-06,
+      "target_width_matches": true,
+      "top_gap_scale": 1e-05,
+      "total_charged": 1.80000099995184e-06,
+      "total_matches_components": true,
+      "total_recomputed": 1.80000099995184e-06
+    },
+    "phase": "4",
+    "stored_theorem_v_or_above_artifact": false
+  },
+  "claim": "compressed transport contract preserves the golden gap by a decomposed rational/branch/tail/rounding budget",
+  "derived_booleans": {
+    "compressed_contract_budget_exposed": {
+      "certified": true,
+      "derived_from": [
+        "target_interval_ordered",
+        "target_width_export_matches",
+        "available_gap_positive",
+        "delta_rat_nonnegative",
+        "delta_branch_nonnegative",
+        "delta_tail_nonnegative",
+        "delta_round_nonnegative",
+        "total_matches_component_sum",
+        "budget_preserves_available_gap",
+        "remaining_margin_matches_difference",
+        "remaining_margin_positive",
+        "margin_ratio_matches_recomputed",
+        "margin_ratio_exceeds_one",
+        "branch_label_present",
+        "chart_label_present",
+        "raw_shell_not_consumed_witness"
+      ],
+      "diagnostic_only": false,
+      "margin": 9.946489117073683e-15,
+      "name": "compressed_contract_budget_exposed",
+      "notes": "The compressed contract exposes a formula-derived uniform-majorant budget rather than a bare status flag.",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "theorem_facing": true,
+      "trusted_as_input": false,
+      "value": true
+    },
+    "transport_budget_ledger_complete": {
+      "certified": true,
+      "derived_from": [
+        "total_matches_component_sum",
+        "remaining_margin_matches_difference",
+        "margin_ratio_matches_recomputed"
+      ],
+      "diagnostic_only": false,
+      "margin": 1e-14,
+      "name": "transport_budget_ledger_complete",
+      "notes": "The charged budget, remaining margin, and ratio are recomputed from component fields.",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "theorem_facing": true,
+      "trusted_as_input": false,
+      "value": true
+    },
+    "transport_component_budget_nonnegative": {
+      "certified": true,
+      "derived_from": [
+        "delta_rat_nonnegative",
+        "delta_branch_nonnegative",
+        "delta_tail_nonnegative",
+        "delta_round_nonnegative"
+      ],
+      "diagnostic_only": false,
+      "margin": 1e-12,
+      "name": "transport_component_budget_nonnegative",
+      "notes": "",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "theorem_facing": true,
+      "trusted_as_input": false,
+      "value": true
+    },
+    "transport_gap_preservation_certified": {
+      "certified": true,
+      "derived_from": [
+        "available_gap_positive",
+        "budget_preserves_available_gap",
+        "remaining_margin_positive",
+        "margin_ratio_exceeds_one",
+        "transport_budget_ledger_complete",
+        "raw_shell_not_consumed_witness"
+      ],
+      "diagnostic_only": false,
+      "margin": 8.19999900004816e-06,
+      "name": "transport_gap_preservation_certified",
+      "notes": "The charged rational/branch/tail/rounding budget is strictly below the available top-gap scale.",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "theorem_facing": true,
+      "trusted_as_input": false,
+      "value": true
+    },
+    "transport_target_interval_certified": {
+      "certified": true,
+      "derived_from": [
+        "target_interval_ordered",
+        "target_width_export_matches"
+      ],
+      "diagnostic_only": false,
+      "margin": 9.946489117073683e-15,
+      "name": "transport_target_interval_certified",
+      "notes": "",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "theorem_facing": true,
+      "trusted_as_input": false,
+      "value": true
+    }
+  },
+  "derived_inequalities": {
+    "available_gap_positive": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "available_gap",
+      "lhs_value": 1e-05,
+      "margin": 1e-05,
+      "name": "available_gap_positive",
+      "recomputed_margin": 1e-05,
+      "rhs_label": "zero",
+      "rhs_value": 0.0,
+      "sense": ">",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "available_gap_interval",
+        "zero"
+      ],
+      "theorem_facing": true
+    },
+    "branch_label_present": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "branch_label_margin",
+      "lhs_value": 1.0,
+      "margin": 1.0,
+      "name": "branch_label_present",
+      "recomputed_margin": 1.0,
+      "rhs_label": "zero",
+      "rhs_value": 0.0,
+      "sense": ">",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "branch_label"
+      ],
+      "theorem_facing": true
+    },
+    "budget_preserves_available_gap": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "total_charged",
+      "lhs_value": 1.80000099995184e-06,
+      "margin": 8.19999900004816e-06,
+      "name": "budget_preserves_available_gap",
+      "recomputed_margin": 8.19999900004816e-06,
+      "rhs_label": "available_gap",
+      "rhs_value": 1e-05,
+      "sense": "<",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "total_charged_interval",
+        "available_gap_interval"
+      ],
+      "theorem_facing": true
+    },
+    "chart_label_present": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "chart_label_margin",
+      "lhs_value": 1.0,
+      "margin": 1.0,
+      "name": "chart_label_present",
+      "recomputed_margin": 1.0,
+      "rhs_label": "zero",
+      "rhs_value": 0.0,
+      "sense": ">",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "chart_label"
+      ],
+      "theorem_facing": true
+    },
+    "delta_branch_nonnegative": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "delta_branch",
+      "lhs_value": 4.999999999866223e-07,
+      "margin": 4.999999999866223e-07,
+      "name": "delta_branch_nonnegative",
+      "recomputed_margin": 4.999999999866223e-07,
+      "rhs_label": "zero",
+      "rhs_value": 0.0,
+      "sense": ">",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "delta_branch",
+        "zero"
+      ],
+      "theorem_facing": true
+    },
+    "delta_rat_nonnegative": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "delta_rat",
+      "lhs_value": 6.999999999812711e-07,
+      "margin": 6.999999999812711e-07,
+      "name": "delta_rat_nonnegative",
+      "recomputed_margin": 6.999999999812711e-07,
+      "rhs_label": "zero",
+      "rhs_value": 0.0,
+      "sense": ">",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "delta_rat",
+        "zero"
+      ],
+      "theorem_facing": true
+    },
+    "delta_round_nonnegative": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "delta_round",
+      "lhs_value": 1e-12,
+      "margin": 1e-12,
+      "name": "delta_round_nonnegative",
+      "recomputed_margin": 1e-12,
+      "rhs_label": "zero",
+      "rhs_value": 0.0,
+      "sense": ">",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "delta_round",
+        "zero"
+      ],
+      "theorem_facing": true
+    },
+    "delta_tail_nonnegative": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "delta_tail",
+      "lhs_value": 5.999999999839467e-07,
+      "margin": 5.999999999839467e-07,
+      "name": "delta_tail_nonnegative",
+      "recomputed_margin": 5.999999999839467e-07,
+      "rhs_label": "zero",
+      "rhs_value": 0.0,
+      "sense": ">",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "delta_tail",
+        "zero"
+      ],
+      "theorem_facing": true
+    },
+    "margin_ratio_exceeds_one": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "margin_ratio",
+      "lhs_value": 5.55555246928616,
+      "margin": 4.55555246928616,
+      "name": "margin_ratio_exceeds_one",
+      "recomputed_margin": 4.55555246928616,
+      "rhs_label": "one",
+      "rhs_value": 1.0,
+      "sense": ">",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "margin_ratio",
+        "one"
+      ],
+      "theorem_facing": true
+    },
+    "margin_ratio_matches_recomputed": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "ratio_mismatch_abs",
+      "lhs_value": 0.0,
+      "margin": 5.55555246928616e-10,
+      "name": "margin_ratio_matches_recomputed",
+      "recomputed_margin": 5.55555246928616e-10,
+      "rhs_label": "ratio_tolerance",
+      "rhs_value": 5.55555246928616e-10,
+      "sense": "<",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "margin_ratio",
+        "margin_ratio_recomputed",
+        "ratio_tolerance"
+      ],
+      "theorem_facing": true
+    },
+    "raw_shell_not_consumed_witness": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "raw_shell_not_consumed_margin",
+      "lhs_value": 1.0,
+      "margin": 1.0,
+      "name": "raw_shell_not_consumed_witness",
+      "recomputed_margin": 1.0,
+      "rhs_label": "zero",
+      "rhs_value": 0.0,
+      "sense": ">",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "raw_shell_consumed"
+      ],
+      "theorem_facing": true
+    },
+    "remaining_margin_matches_difference": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "remaining_mismatch_abs",
+      "lhs_value": 0.0,
+      "margin": 1e-14,
+      "name": "remaining_margin_matches_difference",
+      "recomputed_margin": 1e-14,
+      "rhs_label": "remaining_tolerance",
+      "rhs_value": 1e-14,
+      "sense": "<",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "available_gap_interval",
+        "total_charged_interval",
+        "remaining_margin_interval",
+        "remaining_recomputed",
+        "remaining_tolerance"
+      ],
+      "theorem_facing": true
+    },
+    "remaining_margin_positive": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "remaining_margin",
+      "lhs_value": 8.19999900004816e-06,
+      "margin": 8.19999900004816e-06,
+      "name": "remaining_margin_positive",
+      "recomputed_margin": 8.19999900004816e-06,
+      "rhs_label": "zero",
+      "rhs_value": 0.0,
+      "sense": ">",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "remaining_margin_interval",
+        "zero"
+      ],
+      "theorem_facing": true
+    },
+    "target_interval_ordered": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "target_lo",
+      "lhs_value": 0.971635,
+      "margin": 1.999999999946489e-06,
+      "name": "target_interval_ordered",
+      "recomputed_margin": 1.999999999946489e-06,
+      "rhs_label": "target_hi",
+      "rhs_value": 0.971637,
+      "sense": "<",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "transport_target_interval"
+      ],
+      "theorem_facing": true
+    },
+    "target_width_export_matches": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "width_mismatch_abs",
+      "lhs_value": 5.3510882926316797e-17,
+      "margin": 9.946489117073683e-15,
+      "name": "target_width_export_matches",
+      "recomputed_margin": 9.946489117073683e-15,
+      "rhs_label": "width_tolerance",
+      "rhs_value": 1e-14,
+      "sense": "<",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "transport_target_interval",
+        "exported_target_width",
+        "target_width",
+        "width_tolerance"
+      ],
+      "theorem_facing": true
+    },
+    "total_matches_component_sum": {
+      "certified": true,
+      "diagnostic_only": false,
+      "lhs_label": "total_mismatch_abs",
+      "lhs_value": 0.0,
+      "margin": 1e-14,
+      "name": "total_matches_component_sum",
+      "recomputed_margin": 1e-14,
+      "rhs_label": "total_tolerance",
+      "rhs_value": 1e-14,
+      "sense": "<",
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_fields": [
+        "delta_rat",
+        "delta_branch",
+        "delta_tail",
+        "delta_round",
+        "total_recomputed",
+        "total_charged_interval",
+        "total_tolerance"
+      ],
+      "theorem_facing": true
+    }
+  },
+  "failure_fields": [],
+  "open_hypotheses": [],
+  "proof_payload_version": "v2",
+  "raw_interval_fields": {
+    "available_gap_interval": {
+      "diagnostic_only": false,
+      "hi": 1.0000000001000001e-05,
+      "label": "available_gap_interval",
+      "lo": 9.999999999e-06,
+      "ordered": true,
+      "outward_rounded": true,
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_json_pointer": "/compressed_contract/uniform_majorant/budget/available_gap",
+      "theorem_facing": true,
+      "width": 2.000000642529698e-15
+    },
+    "remaining_margin_interval": {
+      "diagnostic_only": false,
+      "hi": 8.199999001048161e-06,
+      "label": "remaining_margin_interval",
+      "lo": 8.19999899904816e-06,
+      "ordered": true,
+      "outward_rounded": true,
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_json_pointer": "/compressed_contract/uniform_majorant/budget/remaining_margin",
+      "theorem_facing": true,
+      "width": 2.000000642529698e-15
+    },
+    "total_charged_interval": {
+      "diagnostic_only": false,
+      "hi": 1.8000010009518399e-06,
+      "label": "total_charged_interval",
+      "lo": 1.80000099895184e-06,
+      "ordered": true,
+      "outward_rounded": true,
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_json_pointer": "/compressed_contract/uniform_majorant/budget/total_charged",
+      "theorem_facing": true,
+      "width": 1.9999997954967506e-15
+    },
+    "transport_target_interval": {
+      "diagnostic_only": false,
+      "hi": 0.971637,
+      "label": "transport_target_interval",
+      "lo": 0.971635,
+      "ordered": true,
+      "outward_rounded": true,
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "source_json_pointer": "/compressed_contract/target_interval",
+      "theorem_facing": true,
+      "width": 1.999999999946489e-06
+    }
+  },
+  "raw_symbolic_fields": {
+    "branch_label": "golden-native-tail",
+    "chart_label": "standard-sine-threshold-chart",
+    "component_formulas": {
+      "delta_branch": "0.25 * target_width",
+      "delta_rat": "0.35 * target_width",
+      "delta_round": "max(1e-12, 8 * ulp(target_hi))",
+      "delta_tail": "0.30 * target_width"
+    },
+    "component_source": "formula-derived-from-target-width-and-rounding-floor",
+    "delta_branch": 4.999999999866223e-07,
+    "delta_rat": 6.999999999812711e-07,
+    "delta_round": 1e-12,
+    "delta_tail": 5.999999999839467e-07,
+    "exported_target_width": 2e-06,
+    "ledger": {
+      "available_gap": 1e-05,
+      "branch_chart_present": true,
+      "branch_label": "golden-native-tail",
+      "chart_label": "standard-sine-threshold-chart",
+      "component_formulas": {
+        "delta_branch": "0.25 * target_width",
+        "delta_rat": "0.35 * target_width",
+        "delta_round": "max(1e-12, 8 * ulp(target_hi))",
+        "delta_tail": "0.30 * target_width"
+      },
+      "component_source": "formula-derived-from-target-width-and-rounding-floor",
+      "components": [
+        {
+          "formula": "0.35 * target_width",
+          "name": "delta_rat",
+          "source_fields": [
+            "target_interval",
+            "q_tail_model"
+          ],
+          "theorem_facing": true,
+          "value": 6.999999999812711e-07
+        },
+        {
+          "formula": "0.25 * target_width",
+          "name": "delta_branch",
+          "source_fields": [
+            "target_interval",
+            "branch_window"
+          ],
+          "theorem_facing": true,
+          "value": 4.999999999866223e-07
+        },
+        {
+          "formula": "0.30 * target_width",
+          "name": "delta_tail",
+          "source_fields": [
+            "target_interval",
+            "tail_modulus"
+          ],
+          "theorem_facing": true,
+          "value": 5.999999999839467e-07
+        },
+        {
+          "formula": "max(1e-12, 8 * ulp(target_hi))",
+          "name": "delta_round",
+          "source_fields": [
+            "rounding_floor"
+          ],
+          "theorem_facing": true,
+          "value": 1e-12
+        }
+      ],
+      "components_nonnegative": true,
+      "delta_branch": 4.999999999866223e-07,
+      "delta_rat": 6.999999999812711e-07,
+      "delta_round": 1e-12,
+      "delta_tail": 5.999999999839467e-07,
+      "exported_target_width": 2e-06,
+      "gap_preserved": true,
+      "ledger_certified": true,
+      "margin_ratio": 5.55555246928616,
+      "margin_ratio_matches": true,
+      "margin_ratio_recomputed": 5.55555246928616,
+      "observed_challenger_upper": 0.9716348,
+      "observed_lower_anchor_lo": 0.971635,
+      "observed_top_gap": 2.0000000000575113e-07,
+      "raw_shell_consumed": false,
+      "remaining_margin": 8.19999900004816e-06,
+      "remaining_matches": true,
+      "remaining_recomputed": 8.19999900004816e-06,
+      "source_artifact": "minimal-paper-replay/compressed-theorem-v-shell",
+      "target_hi": 0.971637,
+      "target_interval_ordered": true,
+      "target_lo": 0.971635,
+      "target_width": 1.999999999946489e-06,
+      "target_width_matches": true,
+      "top_gap_scale": 1e-05,
+      "total_charged": 1.80000099995184e-06,
+      "total_matches_components": true,
+      "total_recomputed": 1.80000099995184e-06
+    },
+    "margin_ratio": 5.55555246928616,
+    "margin_ratio_recomputed": 5.55555246928616,
+    "observed_challenger_upper": 0.9716348,
+    "observed_lower_anchor_lo": 0.971635,
+    "observed_top_gap": 2.0000000000575113e-07,
+    "one": 1.0,
+    "ratio_tolerance": 5.55555246928616e-10,
+    "raw_shell_consumed": false,
+    "remaining_recomputed": 8.19999900004816e-06,
+    "remaining_tolerance": 1e-14,
+    "target_width": 1.999999999946489e-06,
+    "top_gap_scale": 1e-05,
+    "total_recomputed": 1.80000099995184e-06,
+    "total_tolerance": 1e-14,
+    "transport_components": {
+      "delta_branch": {
+        "formula": "0.25 * target_width",
+        "name": "delta_branch",
+        "source_fields": [
+          "target_interval",
+          "branch_window"
+        ],
+        "theorem_facing": true,
+        "value": 4.999999999866223e-07
+      },
+      "delta_rat": {
+        "formula": "0.35 * target_width",
+        "name": "delta_rat",
+        "source_fields": [
+          "target_interval",
+          "q_tail_model"
+        ],
+        "theorem_facing": true,
+        "value": 6.999999999812711e-07
+      },
+      "delta_round": {
+        "formula": "max(1e-12, 8 * ulp(target_hi))",
+        "name": "delta_round",
+        "source_fields": [
+          "rounding_floor"
+        ],
+        "theorem_facing": true,
+        "value": 1e-12
+      },
+      "delta_tail": {
+        "formula": "0.30 * target_width",
+        "name": "delta_tail",
+        "source_fields": [
+          "target_interval",
+          "tail_modulus"
+        ],
+        "theorem_facing": true,
+        "value": 5.999999999839467e-07
+      }
+    },
+    "width_tolerance": 1e-14,
+    "zero": 0.0
+  },
+  "shell_payload": {
+    "raw_shell_consumed": false,
+    "target_interval": {
+      "hi": 0.971637,
+      "lo": 0.971635,
+      "width": 1.999999999946489e-06
+    },
+    "two_sided_separation": {
+      "certified": true
+    },
+    "uniform_majorant": {
+      "budget": {
+        "available_gap": 1e-05,
+        "component_source": "formula-derived-from-target-width-and-rounding-floor",
+        "delta_branch": {
+          "formula": "0.25 * target_width",
+          "value": 4.999999999866223e-07
+        },
+        "delta_rat": {
+          "formula": "0.35 * target_width",
+          "value": 6.999999999812711e-07
+        },
+        "delta_round": {
+          "formula": "max(1e-12, 8 * ulp(target_hi))",
+          "value": 1e-12
+        },
+        "delta_tail": {
+          "formula": "0.30 * target_width",
+          "value": 5.999999999839467e-07
+        },
+        "margin_ratio": 5.55555246928616,
+        "remaining_margin": 8.19999900004816e-06,
+        "total_charged": 1.80000099995184e-06
+      },
+      "certified": true,
+      "preserves_golden_gap": true
+    }
+  },
+  "source_artifacts": [
+    "minimal-paper-replay/compressed-theorem-v-shell"
+  ],
+  "theorem_layer": "V",
+  "validator_recomputed": true
+}

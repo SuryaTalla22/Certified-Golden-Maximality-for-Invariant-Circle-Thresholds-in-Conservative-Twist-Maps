@@ -1,0 +1,207 @@
+{
+  "certificate_kind": "direct_lower_anchor_persistence_certificate",
+  "certificate_sha256": "b43eba123345adc309cff9db5ecbf781ab8a8a327e477e434877020fd00c7930",
+  "checks": [
+    {
+      "detail": "PROMOTE",
+      "name": "phase5e_decision_promote",
+      "ok": true
+    },
+    {
+      "detail": true,
+      "name": "phase5e_formal_attachment_ok",
+      "ok": true
+    },
+    {
+      "detail": true,
+      "name": "phase5e_theorem_replay_accepted",
+      "ok": true
+    },
+    {
+      "detail": true,
+      "name": "phase5e_theorem_facing",
+      "ok": true
+    },
+    {
+      "detail": true,
+      "name": "phase5e_promotion_allowed",
+      "ok": true
+    },
+    {
+      "detail": null,
+      "name": "phase5e_no_failed_attachment_checks",
+      "ok": true
+    },
+    {
+      "detail": true,
+      "name": "phase5e_negative_controls_passed",
+      "ok": true
+    },
+    {
+      "detail": true,
+      "name": "attachment_theorem_facing",
+      "ok": true
+    },
+    {
+      "detail": true,
+      "name": "attachment_promotion_allowed",
+      "ok": true
+    },
+    {
+      "detail": true,
+      "name": "attachment_formal_attachment_ok",
+      "ok": true
+    },
+    {
+      "detail": [],
+      "name": "all_required_formal_flags_true",
+      "ok": true
+    },
+    {
+      "detail": "b43eba123345adc309cff9db5ecbf781ab8a8a327e477e434877020fd00c7930",
+      "name": "attachment_has_certificate_sha256",
+      "ok": true
+    },
+    {
+      "detail": 0.971635,
+      "name": "lower_anchor_meets_required",
+      "ok": true
+    },
+    {
+      "detail": 1.001,
+      "name": "nu_matches",
+      "ok": true
+    },
+    {
+      "detail": 3e-05,
+      "name": "radius_matches",
+      "ok": true
+    },
+    {
+      "detail": "full",
+      "name": "cutoff_matches",
+      "ok": true
+    },
+    {
+      "detail": 0.9,
+      "name": "tail_start_matches",
+      "ok": true
+    },
+    {
+      "detail": 0.7107868247483005,
+      "name": "relative_margin_threshold",
+      "ok": true
+    },
+    {
+      "detail": 0.25811349767868097,
+      "name": "Z_threshold",
+      "ok": true
+    },
+    {
+      "detail": 2.1323604742449015e-05,
+      "name": "positive_margin",
+      "ok": true
+    },
+    {
+      "detail": [
+        4.883881412552892e-07,
+        0.25811349767868097,
+        494.00020659473796
+      ],
+      "name": "finite_YZQ",
+      "ok": true
+    },
+    {
+      "detail": {
+        "actual": "b43eba123345adc309cff9db5ecbf781ab8a8a327e477e434877020fd00c7930",
+        "reported": "b43eba123345adc309cff9db5ecbf781ab8a8a327e477e434877020fd00c7930"
+      },
+      "name": "attachment_hash_matches_certificate_file",
+      "ok": true
+    }
+  ],
+  "consumption_scope": {
+    "direct_lower_anchor_only": true,
+    "does_not_claim_mesh_corridor": true,
+    "does_not_claim_parameter_interval": true,
+    "replacement_for_obsolete_theorem_iii_artifact": true
+  },
+  "copied_inputs": {
+    "certificate": {
+      "bytes": 6542,
+      "copied_path": "artifacts/proof_audit/theorem_iii_trackb/phase6_final_integration/inputs_copied/theorem_iii_phase5d_certificate_scaffold.json",
+      "sha256": "b43eba123345adc309cff9db5ecbf781ab8a8a327e477e434877020fd00c7930",
+      "source_path": "artifacts/proof_audit/theorem_iii_trackb/phase5d_certificate_scaffold_selected_seed/theorem_iii_trackb_phase5d_certificate_scaffold.json"
+    },
+    "phase5e_summary": {
+      "bytes": 11569,
+      "copied_path": "artifacts/proof_audit/theorem_iii_trackb/phase6_final_integration/inputs_copied/theorem_iii_phase5e_final_promotion_summary.json",
+      "sha256": "e95c2a416cf02237fab7578edf9ab7664ff519e6e0da999916d1329ec758783c",
+      "source_path": "artifacts/proof_audit/theorem_iii_trackb/phase5k_phase5e_final_promotion/phase5e_promotion_gate_summary.json"
+    },
+    "promoted_attachment": {
+      "bytes": 16045,
+      "copied_path": "artifacts/proof_audit/theorem_iii_trackb/phase6_final_integration/inputs_copied/theorem_iii_phase5k_promoted_attachment.json",
+      "sha256": "65acbaa29a1b102fccfedc9b8137ba663d9da2d31e14e0e33938693cd6305f28",
+      "source_path": "artifacts/proof_audit/theorem_iii_trackb/phase5k_independent_replay/phase5k_formal_interval_attachment_PROMOTED.json"
+    }
+  },
+  "failed_checks": [],
+  "formal_evidence_true_flags": [
+    "formal_interval_backend",
+    "independent_replay_passed",
+    "outward_rounded_residual_proof",
+    "small_divisor_proof",
+    "cohomology_inverse_proof",
+    "frame_reducibility_proof",
+    "nonlinear_bound_proof",
+    "tail_bound_proof",
+    "branch_chart_compatibility_proof",
+    "final_graph_consumption_proof"
+  ],
+  "passed": true,
+  "phase5e_summary_sha256": "e95c2a416cf02237fab7578edf9ab7664ff519e6e0da999916d1329ec758783c",
+  "promoted_attachment_sha256": "65acbaa29a1b102fccfedc9b8137ba663d9da2d31e14e0e33938693cd6305f28",
+  "promotion_allowed": true,
+  "schema": "theorem_iii_trackb_phase6_final_lower_anchor_certificate_v1",
+  "selected_constants": {
+    "K": 0.971635,
+    "M": 8192,
+    "Q_interval_upper": 494.00020659473796,
+    "Y_interval_upper": 4.883881412552892e-07,
+    "Z_interval_upper": 0.25811349767868097,
+    "a11_minus_1_linf": 7.294536406021734e-06,
+    "a21_linf": 0.00021590847288877058,
+    "a22_minus_1_linf": 3.6415241495557638e-06,
+    "cohomology_inverse_linf_resolved_upper": 919.5972798609583,
+    "cutoff_spec": "full",
+    "grid_factor": 4,
+    "grid_size": 32768,
+    "nu": 1.001,
+    "radii_lhs_interval_upper": 8.676394257550983e-06,
+    "radii_margin_interval_lower": 2.1323604742449015e-05,
+    "radii_relative_margin_interval_lower": 0.7107868247483005,
+    "radius": 3e-05,
+    "residual_l1_nu_total_upper": 3.027250111685328e-08,
+    "scalar_residual_linf": 1.2148626671922708e-08,
+    "small_divisor_min_denominator_lower": 0.0010874325336751739,
+    "small_divisor_min_mode": 2584,
+    "source_record_path": "artifacts/proof_audit/theorem_iii_trackb/phase5c_interval_backend_selected_seed/records/K0p971635_M8192_nu1p001_full_tail0p9_g4_r3em05.phase5c_interval_backend.json",
+    "tail_residual_component_upper": 1.5439707800956685e-10,
+    "tail_start_frac": 0.9,
+    "twist_average": 1.368202169884863,
+    "upper_triangular_defect_linf_max": 0.00021590847288877058
+  },
+  "source_paths": {
+    "certificate": "artifacts/proof_audit/theorem_iii_trackb/phase5d_certificate_scaffold_selected_seed/theorem_iii_trackb_phase5d_certificate_scaffold.json",
+    "phase5e_summary": "artifacts/proof_audit/theorem_iii_trackb/phase5k_phase5e_final_promotion/phase5e_promotion_gate_summary.json",
+    "promoted_attachment": "artifacts/proof_audit/theorem_iii_trackb/phase5k_independent_replay/phase5k_formal_interval_attachment_PROMOTED.json",
+    "theorem_II_artifact": "artifacts/final_discharge/stage_cache/theorem_i_ii.json",
+    "theorem_IV_artifact": "artifacts/final_discharge/stage_cache/theorem_iv.json",
+    "theorem_I_artifact": "artifacts/final_discharge/stage_cache/theorem_i_ii.json"
+  },
+  "status": "phase6-final-theorem-iii-lower-anchor-artifact-assembled",
+  "theorem": "III",
+  "theorem_facing": true,
+  "track": "TrackB"
+}

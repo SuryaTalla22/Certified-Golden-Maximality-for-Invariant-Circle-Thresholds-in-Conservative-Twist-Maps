@@ -1,0 +1,63 @@
+{
+  "artifact_audit_suite": {
+    "hardware": "platform-independent lightweight path",
+    "heavy_layer": false,
+    "returncode": 0,
+    "runtime_seconds": 0.03927605098579079,
+    "script": "scripts/replay_artifact_audit_suite.py"
+  },
+  "downstream": {
+    "hardware": "platform-independent lightweight path",
+    "heavy_layer": false,
+    "returncode": null,
+    "runtime_seconds": 0.0,
+    "script": "scripts/replay_downstream_from_cache.py"
+  },
+  "full_verified": {
+    "hardware": {
+      "cpu_count": 256,
+      "machine": "x86_64",
+      "platform": "Linux-6.4.0-150600.23.73_15.0.14-cray_shasta_c-x86_64-with-glibc2.38",
+      "processor": "x86_64",
+      "python": "3.13.11"
+    },
+    "heavy_layer": true,
+    "returncode": null,
+    "runtime_seconds": 0.0,
+    "script": "scripts/replay_full_verified.py"
+  },
+  "heavy_lower": {
+    "hardware": {
+      "cpu_count": 256,
+      "machine": "x86_64",
+      "platform": "Linux-6.4.0-150600.23.73_15.0.14-cray_shasta_c-x86_64-with-glibc2.38",
+      "processor": "x86_64",
+      "python": "3.13.11"
+    },
+    "heavy_layer": true,
+    "returncode": null,
+    "runtime_seconds": 0.0,
+    "script": "scripts/replay_heavy_lower.py"
+  },
+  "heavy_upper": {
+    "hardware": {
+      "cpu_count": 256,
+      "machine": "x86_64",
+      "platform": "Linux-6.4.0-150600.23.73_15.0.14-cray_shasta_c-x86_64-with-glibc2.38",
+      "processor": "x86_64",
+      "python": "3.13.11"
+    },
+    "heavy_layer": true,
+    "returncode": null,
+    "runtime_seconds": 0.0,
+    "script": "scripts/replay_heavy_upper.py"
+  },
+  "minimal": {
+    "hardware": "platform-independent lightweight path",
+    "heavy_layer": false,
+    "returncode": null,
+    "runtime_seconds": 0.0,
+    "script": "scripts/replay_minimal.py"
+  },
+  "schema": "phase7_replay_runtime_table_v1"
+}

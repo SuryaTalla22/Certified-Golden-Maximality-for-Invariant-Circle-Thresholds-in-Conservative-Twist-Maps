@@ -1,0 +1,50 @@
+
+$ /pscratch/sd/s/suryact/phase2k_venv/bin/python scripts/audit/run_lower_anchor_phase2o_radius_tail_scan.py --input artifacts/proof_audit/lower_corridor/phase2n_probes/phase2n_collar_008_phase2n_batch_summary.json --out artifacts/proof_audit/lower_corridor/phase2o_tail_radius/phase2o_collar_008_tail_radius_scan.json --csv tables/proof_audit/lower_corridor/phase2o_tail_radius/phase2o_collar_008_tail_radius_scan.csv --candidate-out artifacts/proof_audit/lower_corridor/phase2o_tail_radius/phase2o_collar_008_tail_radius_candidate.json --radius-multipliers 1.0,1.02,1.05 --sigma-values 0.0001,0.00001,0.000005,0.0000025,0.000001 --tail-band-fractions 0.5,0.65,0.75,0.85 --tail-safety-factors 2,4,8,16
+{
+  "status": "phase2o-diagnostic-tail-radius-not-closed",
+  "theorem_ready_count": 0,
+  "theorem_eligible_count": 8,
+  "diagnostic_ready_count": 0,
+  "best_theorem_eligible": {
+    "model_name": "strict_sigma_override_sg1.000e-06",
+    "tail_model": "strict_cauchy_tail_sigma_override",
+    "radii_margin": -8.902372522059004e-06,
+    "sigma": 1e-06,
+    "radius_multiplier": 1.0,
+    "tail_T": 9.508616236420204e-06,
+    "allowable_tail_max": 6.062447143611984e-07,
+    "finite_contraction_q": 0.9051411163930289,
+    "failure_reasons": [
+      "analytic_radii_margin_not_safely_positive"
+    ]
+  },
+  "best_diagnostic": {
+    "model_name": "diag_highmode_sg1.000e-04_b0.85_sf2",
+    "tail_model": "diagnostic_high_mode_envelope_tail",
+    "radii_margin": -0.04287069491581618,
+    "sigma": 0.0001,
+    "tail_T": 0.04287129852481171,
+    "allowable_tail_max": 6.036099955285066e-07,
+    "failure_reasons": [
+      "diagnostic_margin_not_positive"
+    ]
+  },
+  "conclusion": {
+    "closed": false,
+    "recommended_next_step": "inspect_best_diagnostic_tail_rows_then_implement_a_sharper_tail_lemma_or_change_the_lower_norm",
+    "message": "No theorem-eligible tail/radius row closed.  The report identifies whether radius inflation is blocked by finite contraction and whether diagnostic tail models would close.",
+    "best_eligible_margin": -8.902372522059004e-06,
+    "best_eligible_tail_T": 9.508616236420204e-06,
+    "best_eligible_allowable_tail_max": 6.062447143611984e-07,
+    "radius_inflation_blocked_by_finite_contraction": false,
+    "source_samples": {
+      "source_validation_present": true,
+      "has_u": true,
+      "N_from_u": 1024,
+      "lambda_value": 1.7582641387382173e-19
+    }
+  }
+}
+wrote report: artifacts/proof_audit/lower_corridor/phase2o_tail_radius/phase2o_collar_008_tail_radius_scan.json
+wrote csv: tables/proof_audit/lower_corridor/phase2o_tail_radius/phase2o_collar_008_tail_radius_scan.csv
+wrote candidate: artifacts/proof_audit/lower_corridor/phase2o_tail_radius/phase2o_collar_008_tail_radius_candidate.json

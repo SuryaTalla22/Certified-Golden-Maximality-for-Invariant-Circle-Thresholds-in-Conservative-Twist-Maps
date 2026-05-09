@@ -1,0 +1,18 @@
+Phase 10 manuscript-output checks
+=================================
+
+Commands exercised:
+  python -S scripts/generate_manuscript_audit_tables.py --strict
+  python -S scripts/generate_manuscript_audit_figures.py --strict
+  custom unittest runner for tests.test_manuscript_audit_outputs
+
+Observed results:
+  generated_tables: 5
+  generated_figures: 5
+  manifest_status: passed-with-known-lower-gap
+  known_lower_gap: true
+  tests/test_manuscript_audit_outputs.py: 4 tests passed
+
+Notes:
+  The strict final theorem readiness remains blocked by the known Phase-2 lower final-anchor gap.
+  Phase 10 intentionally preserves that status in the manifest instead of silently converting it to a pass.

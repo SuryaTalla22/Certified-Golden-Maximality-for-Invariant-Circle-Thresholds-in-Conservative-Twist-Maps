@@ -1,0 +1,15 @@
+Phase 9 proof-audit notebook checks completed.
+
+Checks run:
+- Static compile/read check for new Phase-9 module, scripts, and tests: passed.
+- Notebook inventory validation for notebooks/proof_audit/: passed.
+- All 8 generated proof-audit notebooks loaded as nbformat-v4 JSON: passed.
+- All 8 proof-audit notebooks executed with the lightweight code-cell executor: passed.
+- Negative-control failing notebook test: passed.
+
+Current expected scientific status:
+- phase9_status: passed-with-known-lower-gap
+- strict_final_ready: false
+- known_lower_gap: true
+
+The known lower gap is the existing Phase-2 final-anchor gap, not a Phase-9 notebook failure.

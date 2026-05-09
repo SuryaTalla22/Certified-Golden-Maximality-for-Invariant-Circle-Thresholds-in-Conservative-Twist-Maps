@@ -1,0 +1,114 @@
+
+$ /pscratch/sd/s/suryact/code_runs/phase2k_repo/code_repository/.venv_phase2/bin/python scripts/audit/run_lower_anchor_phase2n_batch.py --segment-id phase2v_collar_012b1_v256_p0236 --K-lo 0.966365326562 --K-hi 0.966366015234 --K-mid 0.966365670898 --N-values 1024 --oversample-factors 16 --sigma-caps 0.0001 --timeout-seconds 900.0 --skip-existing --seed-json artifacts/proof_audit/lower_corridor/phase2n_probes/phase2n_collar_012a_N1024_os16_sg0p0001.json
+{
+  "attempt_count": 1,
+  "best": {
+    "K_mid": 0.966365670898,
+    "N": 1024,
+    "elapsed_seconds": 10.819701194763184,
+    "failure_reasons": [
+      "analytic_radii_margin_not_safely_positive"
+    ],
+    "finite_radii_margin": 1.387813377334792e-07,
+    "linear_Z": 0.07982625677449452,
+    "oversample_factor": 16,
+    "path": "artifacts/proof_audit/lower_corridor/phase2n_probes/phase2v_collar_012b1_v256_p0236_N1024_os16_sg0p0001.json",
+    "radii_margin": -2.543760489743152e-05,
+    "radius_r": 1.5082096134146004e-07,
+    "residual_Y": 3.356880829878788e-08,
+    "segment_id": "phase2v_collar_012b1_v256_p0236",
+    "sigma_cap": 0.0001,
+    "sigma_used": 0.0001,
+    "source_theorem_margin": -2.915292051879758e-05,
+    "status": "phase2n-diagnostic-single-N",
+    "tail_T": 2.5542816577687172e-05,
+    "theorem_ready": false
+  },
+  "best_candidate_path": "artifacts/proof_audit/lower_corridor/phase2n_probes/phase2v_collar_012b1_v256_p0236_best_single_segment_candidate.json",
+  "csv_path": "tables/proof_audit/lower_corridor/phase2n_probes/phase2v_collar_012b1_v256_p0236_phase2n_batch_summary.csv",
+  "summary_path": "artifacts/proof_audit/lower_corridor/phase2n_probes/phase2v_collar_012b1_v256_p0236_phase2n_batch_summary.json",
+  "theorem_ready_count": 0
+}
+
+$ /pscratch/sd/s/suryact/code_runs/phase2k_repo/code_repository/.venv_phase2/bin/python scripts/audit/run_lower_anchor_phase2o_radius_tail_scan.py --input artifacts/proof_audit/lower_corridor/phase2n_probes/phase2v_collar_012b1_v256_p0236_phase2n_batch_summary.json --out artifacts/proof_audit/lower_corridor/phase2v_micro/collar_012b1_v256/phase2o/phase2v_collar_012b1_v256_p0236_tail_radius_scan.json --csv tables/proof_audit/lower_corridor/phase2v_micro/collar_012b1_v256/phase2o/phase2v_collar_012b1_v256_p0236_tail_radius_scan.csv --candidate-out artifacts/proof_audit/lower_corridor/phase2v_micro/collar_012b1_v256/phase2o/phase2v_collar_012b1_v256_p0236_tail_radius_candidate.json --radius-multipliers 1.0,1.04,1.06,1.08,1.1,1.12,1.14,1.16,1.18,1.2,1.22,1.25 --sigma-values 0.0000001 --tail-band-fractions 0.65,0.85 --tail-safety-factors 2,4
+{
+  "status": "phase2o-diagnostic-tail-radius-not-closed",
+  "theorem_ready_count": 0,
+  "theorem_eligible_count": 13,
+  "diagnostic_ready_count": 0,
+  "best_theorem_eligible": {
+    "model_name": "strict_sigma_override_sg1.000e-07",
+    "tail_model": "strict_cauchy_tail_sigma_override",
+    "radii_margin": -1.8245157415693665e-05,
+    "sigma": 1e-07,
+    "radius_multiplier": 1.0,
+    "tail_T": 1.8359265316116274e-05,
+    "allowable_tail_max": 1.1410890042260636e-07,
+    "finite_contraction_q": 0.15965251354898904,
+    "failure_reasons": [
+      "analytic_radii_margin_not_safely_positive"
+    ]
+  },
+  "best_diagnostic": {
+    "model_name": "diag_highmode_sg1.000e-07_b0.85_sf2",
+    "tail_model": "diagnostic_high_mode_envelope_tail",
+    "radii_margin": -96.76685752322791,
+    "sigma": 1e-07,
+    "tail_T": 96.76685763733582,
+    "allowable_tail_max": 1.1410890042260636e-07,
+    "failure_reasons": [
+      "diagnostic_margin_not_positive"
+    ]
+  },
+  "conclusion": {
+    "closed": false,
+    "recommended_next_step": "inspect_best_diagnostic_tail_rows_then_implement_a_sharper_tail_lemma_or_change_the_lower_norm",
+    "message": "No theorem-eligible tail/radius row closed.  The report identifies whether radius inflation is blocked by finite contraction and whether diagnostic tail models would close.",
+    "best_eligible_margin": -1.8245157415693665e-05,
+    "best_eligible_tail_T": 1.8359265316116274e-05,
+    "best_eligible_allowable_tail_max": 1.1410890042260636e-07,
+    "radius_inflation_blocked_by_finite_contraction": false,
+    "source_samples": {
+      "source_validation_present": true,
+      "has_u": true,
+      "N_from_u": 1024,
+      "lambda_value": -1.1981283095153466e-18
+    }
+  }
+}
+wrote report: artifacts/proof_audit/lower_corridor/phase2v_micro/collar_012b1_v256/phase2o/phase2v_collar_012b1_v256_p0236_tail_radius_scan.json
+wrote csv: tables/proof_audit/lower_corridor/phase2v_micro/collar_012b1_v256/phase2o/phase2v_collar_012b1_v256_p0236_tail_radius_scan.csv
+wrote candidate: artifacts/proof_audit/lower_corridor/phase2v_micro/collar_012b1_v256/phase2o/phase2v_collar_012b1_v256_p0236_tail_radius_candidate.json
+
+$ /pscratch/sd/s/suryact/code_runs/phase2k_repo/code_repository/.venv_phase2/bin/python scripts/audit/run_lower_anchor_phase2p_modewise_tail_scan.py --input artifacts/proof_audit/lower_corridor/phase2v_micro/collar_012b1_v256/phase2o/phase2v_collar_012b1_v256_p0236_tail_radius_candidate.json --out artifacts/proof_audit/lower_corridor/phase2v_micro/collar_012b1_v256/phase2p/phase2v_collar_012b1_v256_p0236_modewise_tail_scan.json --csv tables/proof_audit/lower_corridor/phase2v_micro/collar_012b1_v256/phase2p/phase2v_collar_012b1_v256_p0236_modewise_tail_scan.csv --candidate-out artifacts/proof_audit/lower_corridor/phase2v_micro/collar_012b1_v256/phase2p/phase2v_collar_012b1_v256_p0236_modewise_tail_candidate.json --sigma-values 0.0000001,0.00000025,0.0000005,0.000001 --tail-cutoffs 1024,1536,2048 --oversample-factors 16
+{
+  "status": "phase2p-diagnostic-modewise-tail-not-closed",
+  "theorem_ready_count": 0,
+  "theorem_eligible_count": 156,
+  "best_theorem_eligible": {
+    "model_name": "strict_modewise_tail_from_strict_source_tail_radius_x1_25_sg1.000e-07_os16_cut1536",
+    "tail_model": "strict_modewise_geometric_tail_response",
+    "theorem_ready": false,
+    "sigma": 1e-07,
+    "tail_cutoff": 1536,
+    "radii_margin": -2.5852733911084126e-07,
+    "tail_T": 4.03568276421092e-07,
+    "allowable_tail_max": 1.4504193731025072e-07,
+    "tail_response_bound": 3.6113968276581114e-07,
+    "nonlinear_guard": 4.242859365528088e-08,
+    "failure_reasons": [
+      "analytic_radii_margin_not_safely_positive"
+    ]
+  },
+  "conclusion": {
+    "closed": false,
+    "recommended_next_step": "if_modewise_tail_fails_change_the_lower_norm_or_recompute_a_better_finite_inverse",
+    "message": "No theorem-eligible modewise tail row closed.",
+    "best_eligible_margin": -2.5852733911084126e-07,
+    "best_eligible_tail_T": 4.03568276421092e-07,
+    "best_eligible_allowable_tail_max": 1.4504193731025072e-07
+  }
+}
+wrote report: artifacts/proof_audit/lower_corridor/phase2v_micro/collar_012b1_v256/phase2p/phase2v_collar_012b1_v256_p0236_modewise_tail_scan.json
+wrote csv: tables/proof_audit/lower_corridor/phase2v_micro/collar_012b1_v256/phase2p/phase2v_collar_012b1_v256_p0236_modewise_tail_scan.csv
+wrote candidate: artifacts/proof_audit/lower_corridor/phase2v_micro/collar_012b1_v256/phase2p/phase2v_collar_012b1_v256_p0236_modewise_tail_candidate.json

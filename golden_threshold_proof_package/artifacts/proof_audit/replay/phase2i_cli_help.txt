@@ -1,0 +1,40 @@
+usage: run_lower_anchor_phase2i_segment_executor.py [-h]
+                                                    [--repo-root REPO_ROOT]
+                                                    [--plan PLAN]
+                                                    [--lower-dir LOWER_DIR]
+                                                    [--refinement-dir REFINEMENT_DIR]
+                                                    [--table-dir TABLE_DIR]
+                                                    [--report-out REPORT_OUT]
+                                                    [--refreshed-status-out REFRESHED_STATUS_OUT]
+                                                    [--log-dir LOG_DIR]
+                                                    [--python-executable PYTHON_EXECUTABLE]
+                                                    [--site]
+                                                    [--n-values N_VALUES]
+                                                    [--oversample-factor OVERSAMPLE_FACTOR]
+                                                    [--sigma-cap SIGMA_CAP]
+                                                    [--segment-timeout-seconds SEGMENT_TIMEOUT_SECONDS]
+                                                    [--max-segments MAX_SEGMENTS]
+                                                    [--include-failed-present]
+                                                    [--extra-pythonpath EXTRA_PYTHONPATH]
+
+Bounded Phase-2I executor for missing lower-anchor segments.
+
+options:
+  -h, --help            show this help message and exit
+  --repo-root REPO_ROOT
+  --plan PLAN
+  --lower-dir LOWER_DIR
+  --refinement-dir REFINEMENT_DIR
+  --table-dir TABLE_DIR
+  --report-out REPORT_OUT
+  --refreshed-status-out REFRESHED_STATUS_OUT
+  --log-dir LOG_DIR
+  --python-executable PYTHON_EXECUTABLE
+  --site                Do not pass -S to segment subprocesses.
+  --n-values N_VALUES
+  --oversample-factor OVERSAMPLE_FACTOR
+  --sigma-cap SIGMA_CAP
+  --segment-timeout-seconds SEGMENT_TIMEOUT_SECONDS
+  --max-segments MAX_SEGMENTS
+  --include-failed-present
+  --extra-pythonpath EXTRA_PYTHONPATH

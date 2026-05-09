@@ -1,0 +1,48 @@
+{
+  "status": "phase2o-diagnostic-tail-radius-not-closed",
+  "theorem_ready_count": 0,
+  "theorem_eligible_count": 41,
+  "diagnostic_ready_count": 0,
+  "best_theorem_eligible": {
+    "model_name": "strict_sigma_override_sg1.000e-07",
+    "tail_model": "strict_cauchy_tail_sigma_override",
+    "radii_margin": -1.775345470116738e-05,
+    "sigma": 1e-07,
+    "radius_multiplier": 1.0,
+    "tail_T": 1.8075511158271203e-05,
+    "allowable_tail_max": 3.2205745710381993e-07,
+    "finite_contraction_q": 0.47463505530875144,
+    "failure_reasons": [
+      "analytic_radii_margin_not_safely_positive"
+    ]
+  },
+  "best_diagnostic": {
+    "model_name": "diag_highmode_sg1.000e-04_b0.85_sf2",
+    "tail_model": "diagnostic_high_mode_envelope_tail",
+    "radii_margin": -0.09193495445271375,
+    "sigma": 0.0001,
+    "tail_T": 0.09193526793256898,
+    "allowable_tail_max": 3.1348085523064173e-07,
+    "failure_reasons": [
+      "diagnostic_margin_not_positive"
+    ]
+  },
+  "conclusion": {
+    "closed": false,
+    "recommended_next_step": "inspect_best_diagnostic_tail_rows_then_implement_a_sharper_tail_lemma_or_change_the_lower_norm",
+    "message": "No theorem-eligible tail/radius row closed.  The report identifies whether radius inflation is blocked by finite contraction and whether diagnostic tail models would close.",
+    "best_eligible_margin": -1.775345470116738e-05,
+    "best_eligible_tail_T": 1.8075511158271203e-05,
+    "best_eligible_allowable_tail_max": 3.2205745710381993e-07,
+    "radius_inflation_blocked_by_finite_contraction": true,
+    "source_samples": {
+      "source_validation_present": true,
+      "has_u": true,
+      "N_from_u": 1024,
+      "lambda_value": -9.894515984619526e-19
+    }
+  }
+}
+wrote report: artifacts/proof_audit/lower_corridor/phase2o_tail_radius/phase2o_collar_012b1_d00_p0006_tail_radius_scan.json
+wrote csv: tables/proof_audit/lower_corridor/phase2o_tail_radius/phase2o_collar_012b1_d00_p0006_tail_radius_scan.csv
+wrote candidate: artifacts/proof_audit/lower_corridor/phase2o_tail_radius/phase2o_collar_012b1_d00_p0006_tail_radius_candidate.json
